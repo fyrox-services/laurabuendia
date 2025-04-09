@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import logo from "@/assets/mark/logo.png";
+import { HeaderNavbar } from "@/components/preact/HeaderNavbar";
+import { MenuMobileBtn } from "@/components/preact/MenuMobileBtn";
+---
+
+<header>
+  <div class="header-wrap wrapper">
+    <a href="/">
+      <Image src={logo} alt="logo de laura buendía" />
+    </a>
+
+    <HeaderNavbar client:visible />
+
+    <MenuMobileBtn client:visible />
+  </div>
+</header>
+
+<style>
+  header {
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+    background: rgba(255, 255, 255, 0.7); /* Color semitransparente */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    backdrop-filter: blur(10px); /* Aplica el desenfoque */
+    z-index: 1000;
+  }
+
+  img {
+    max-width: 2.5rem;
+  }
+
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>

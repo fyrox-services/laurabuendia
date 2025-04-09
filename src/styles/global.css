@@ -1,0 +1,164 @@
+/* Reset CSS Universal */
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit SemiBold";
+  src: url("/fonts/Poppins-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: #0593a2;
+  --secondary: #033729;
+
+  --black: #000;
+  --dark-100: #111;
+  --dark-300: #333;
+  --dark-900: #999;
+  --gray: #ccc;
+  --light: #eee;
+  --white: #fff;
+  --text-gray: #9eaaba;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 18px;
+  --fs-base: 22px;
+  --fs-xl: 24px;
+  --fs-2xl: 30px;
+  --fs-3xl: 36px;
+  --fs-4xl: 46px;
+  --fs-5xl: 56px;
+  --fs-6xl: 66px;
+
+  --base: "Outfit";
+  --base-bold: "Outfit SemiBold";
+
+  --radius: 8px;
+  --radius-m: 14px;
+  --radius-l: 24px;
+  --radius-full: 50%;
+
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  --header-height: 50px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+::first-letter {
+  text-transform: capitalize;
+}
+
+/* Hereda estilos de texto */
+html {
+  line-height: 1.5; /* Altura de línea consistente */
+  font-family: var(--base); /* Fuente predeterminada */
+  -webkit-text-size-adjust: 100%; /* Previene zoom en dispositivos móviles */
+  -webkit-font-smoothing: antialiased; /* Suaviza las fuentes */
+}
+
+/* Estilos base para body */
+body {
+  margin: 0;
+  font-size: var(--fs-base); /* Tamaño base de texto */
+  min-height: 100dvh; /* Asegura el cuerpo mínimo de pantalla */
+  line-height: 1.5; /* Espaciado consistente */
+  color: var(--dark-100);
+  background-color: #f0f0f0;
+  /* padding: calc(var(--header-height) * 1.5) 0 0; */
+}
+
+/* Elimina decoración de enlaces */
+a {
+  text-decoration: none;
+  color: var(--dark-100);
+}
+
+/* Reseteo de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Imágenes y videos */
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block; /* Hace que sean block-level elements */
+  height: auto; /* Escala proporcionalmente */
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina espacios entre celdas */
+}
+
+/* Formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Hereda fuentes del padre */
+}
+
+button {
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* H1-H6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--base-bold);
+  font-size: inherit; /* Hereda tamaño del padre */
+  line-height: 1; /* Altura de línea consistente */
+}
+
+/* Bloque cita */
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Campo de búsqueda */
+[hidden] {
+  display: none !important;
+}
+
+/* 
+      
+      para parrafos en movil 18px y 20 para desktop
+      
+      Móvil:
+      
+      h1: 24px - 28px
+      h2: 20px - 24px
+      h3: 18px - 20px
+      
+      Desktop:
+      
+      h1: 32px - 36px (o más, según diseño)
+      h2: 28px - 32px
+      h3: 24px
+  */

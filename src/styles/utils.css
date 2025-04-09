@@ -1,0 +1,25 @@
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.bg-gradient-primary {
+  background-color: #070920;
+  background-image: radial-gradient(
+      at 88% 96%,
+      hsla(217, 100%, 0%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 12%, hsla(164, 0%, 0%, 1) 0px, transparent 50%);
+}
+
+.bg-gradient-circle {
+  background-color: #ffffff;
+  background-image: radial-gradient(
+      at 88% 96%,
+      rgba(5, 147, 162, 0.3) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 12%, rgb(217, 217, 217) 0px, transparent 50%);
+}
