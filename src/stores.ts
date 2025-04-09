@@ -5,8 +5,8 @@ export const handleMenuMobile = {
   set: (state: boolean) => isMenuMobileOpen.set(!state),
 };
 
-export const isAboveModalOpen = atom(false);
-export const handleAboveModal = {
-  open: () => isAboveModalOpen.set(true),
-  close: () => isAboveModalOpen.set(false),
+export const isMainModalForm = atom(false);
+export const handleMainModalForm = {
+  open: () => isMainModalForm.set(true),
+  close: () => isMainModalForm.set(false),
 };

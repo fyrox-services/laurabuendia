@@ -17,11 +17,12 @@
 
 :root {
   --primary: #0593a2;
-  --secondary: #033729;
+  --secondary: #7873f5;
 
   --black: #000;
   --dark-100: #111;
   --dark-300: #333;
+  --dark-500: #555;
   --dark-900: #999;
   --gray: #ccc;
   --light: #eee;
@@ -79,7 +80,7 @@ body {
   min-height: 100dvh; /* Asegura el cuerpo mínimo de pantalla */
   line-height: 1.5; /* Espaciado consistente */
   color: var(--dark-100);
-  background-color: #f0f0f0;
+  background-color: var(--light);
   /* padding: calc(var(--header-height) * 1.5) 0 0; */
 }
 

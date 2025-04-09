@@ -9,13 +9,13 @@ import { MainCTA } from "@/components/preact/Buttons";
   <div class="wrapper above-wrap">
     <div class="presentation">
       <span class="name">laura buendía</span>
-      <h1>perito médico</h1>
+      <h1 class="text-gradient-primary">perito médico</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
         obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero
         nesciunt nulla nemo incidunt.
       </p>
-      <MainCTA>pedir presupuesto</MainCTA>
+      <MainCTA client:load>pedir presupuesto</MainCTA>
 
       <!-- <ContactWays /> -->
     </div>
@@ -55,13 +55,11 @@ import { MainCTA } from "@/components/preact/Buttons";
   .name {
     text-transform: capitalize;
     font-family: var(--base-bold);
+    font-size: var(--fs-xl);
   }
 
   h1 {
     font-size: var(--fs-4xl);
-    background: linear-gradient(90deg, var(--primary), #7873f5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .image-mask {
@@ -104,7 +102,7 @@ import { MainCTA } from "@/components/preact/Buttons";
     }
 
     .name {
-      font-size: var(--fs-md);
+      font-size: var(--fs-xl);
     }
 
     h1 {

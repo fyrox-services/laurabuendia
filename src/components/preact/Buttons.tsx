@@ -1,3 +1,4 @@
+import { handleMainModalForm } from "@/stores";
 import css from "@/styles/components/Buttons.module.css";
 
 interface Props {
@@ -5,5 +6,9 @@ interface Props {
 }
 
 export function MainCTA({ children = "contactar" }: Props) {
-  return <button class={css.Btn}>{children}</button>;
+  return (
+    <button onClick={handleMainModalForm.open} class={css.Btn}>
+      {children}
+    </button>
+  );
 }
