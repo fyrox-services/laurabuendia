@@ -12,7 +12,7 @@ export function MainCTA({ children = "contactar", modifier = "" }: Props) {
       onClick={handleMainModalForm.open}
       class={`${css.Btn} ${css[modifier]}`}
     >
-      {children}
+      <span>{children}</span>
     </button>
   );
 }

@@ -18,7 +18,8 @@
 :root {
   --primary: #0593a2;
   --secondary: #7873f5;
-  --third: #bee2ee;
+  --third: #e0f3f9;
+  --primary-dark: #052970;
 
   --black: #000;
   --dark-100: #111;
@@ -26,7 +27,7 @@
   --dark-500: #555;
   --dark-900: #999;
   --gray: #ccc;
-  --light: #eee;
+  --light: #f2f2f2;
   --white: #fff;
   --text-gray: #9eaaba;
 

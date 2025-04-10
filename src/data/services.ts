@@ -13,6 +13,24 @@ export const services: Service[] = [
       ilustration: inform
     },
     {
+      name: "informes",
+      phrase:
+        "si necesitas un informe pericial o de orientación",
+      description:
+        "elaboraré un documento técnico en el que se analizan y valoran las lesiones, secuelas o daños sufridos por una persona.",
+      link: "/",
+      ilustration: inform
+    },
+    {
+      name: "informes",
+      phrase:
+        "si necesitas un informe pericial o de orientación",
+      description:
+        "elaboraré un documento técnico en el que se analizan y valoran las lesiones, secuelas o daños sufridos por una persona.",
+      link: "/",
+      ilustration: inform
+    },
+    {
       name: "valoración de daño corporal",
       phrase:
         "si sufres una operación o tratamiento mal realizado",

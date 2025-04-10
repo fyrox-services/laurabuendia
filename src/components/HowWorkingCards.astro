@@ -1,0 +1,103 @@
+---
+import { Arrow } from "@/components/preact/Icons";
+import { steps } from "@/data/steps";
+---
+
+<ul class="wrapper">
+  {
+    steps.map(({ description, title }, i) => {
+      return (
+        <li class="card">
+          <span>{i + 1}</span>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </li>
+        <>
+           {i <= 1 && (
+            <li class='li-with-arrow'>
+              <Arrow/>
+            </li>
+          )}
+        </>
+
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 3rem;
+  }
+
+  .card {
+    border: 2px solid var(--third);
+    padding: 1rem;
+    border-radius: var(--radius);
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    min-height: 40dvh;
+  }
+
+  .li-with-arrow {
+    color: var(--primary);
+    transform: rotate(90deg);
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    font-size: var(--fs-md);
+    width: max-content;
+    background-color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--base-bold);
+    color: var(--white);
+  }
+
+  h3 {
+    font-size: var(--fs-xl);
+  }
+
+  p {
+    font-size: var(--fs-md);
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    ul {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      max-width: none;
+      margin-inline: none;
+      /* grid-template-columns: repeat(3, 1fr); */
+    }
+
+    li {
+      max-width: 400px;
+    }
+
+    .li-with-arrow {
+      transform: rotate(0);
+    }
+  }
+</style>

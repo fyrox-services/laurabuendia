@@ -5,3 +5,8 @@ export interface Service {
   link: string;
   ilustration: ImageMetadata
 }
+
+export interface Step {
+  title: string;
+  description: string;
+}

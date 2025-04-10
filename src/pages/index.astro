@@ -1,8 +1,14 @@
 ---
+import AboutMe from "@/components/AboutMe.astro";
 import Above from "@/components/Above.astro";
 import Heading from "@/components/Heading.astro";
+import HowWorkingCards from "@/components/HowWorkingCards.astro";
+import { MainCTA } from "@/components/preact/Buttons";
 import Section from "@/components/Section.astro";
 import ServicesCards from "@/components/ServicesCards.astro";
+import ShortDescription from "@/components/ShortDescription.astro";
+import SubHeading from "@/components/SubHeading.astro";
+import TargetCards from "@/components/TargetCards.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -12,4 +18,54 @@ import Layout from "@/layouts/Layout.astro";
     <Heading> mis servicios </Heading>
     <ServicesCards />
   </Section>
+  <Section>
+    <Heading> cómo trabajaremos </Heading>
+    <HowWorkingCards />
+    <div>
+      <SubHeading>solicita información</SubHeading>
+      <ShortDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ea
+        assumenda esse. Excepturi nulla doloribus quia veritatis nobis
+        blanditiis voluptatem quisquam, illum pariatur beatae sint molestias
+        veniam eos obcaecati voluptatibus.
+      </ShortDescription>
+      <MainCTA client:load>pedir presupuesto</MainCTA>
+    </div>
+  </Section>
+  <Section>
+    <Heading> perito médico judicial </Heading>
+    <p class="mt-1 delimit-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsam quod
+      quo blanditiis, voluptate molestiae asperiores eaque, nemo magnam autem
+      sapiente delectus incidunt deleniti quasi in facere labore. Excepturi,
+      eum.
+    </p>
+    <TargetCards/>
+  </Section>
+  <Section>
+    <Heading> sobre mi </Heading>
+    <p class="mt-1 delimit-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsam quod
+      quo blanditiis, voluptate molestiae asperiores eaque, nemo magnam autem
+      sapiente delectus incidunt deleniti quasi in facere labore. Excepturi,
+      eum.
+    </p>
+    <AboutMe/>
+  </Section>
+  <Section>
+    <Heading> particulares y empresas satisfechas </Heading>
+  </Section>
+  <Section>
+    <Heading> artículos destacados </Heading>
+  </Section>
 </Layout>
+
+<style>
+  div {
+    margin: 5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+0</style>

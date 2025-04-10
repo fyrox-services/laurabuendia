@@ -1,0 +1,166 @@
+---
+import lineaDirecta from "@/assets/jobs/linea-directa.jpeg";
+import promede from "@/assets/jobs/promede-logo.jpeg";
+import servicioSaludMadrid from "@/assets/jobs/servicio-salud-madrid.jpeg";
+import { Image } from "astro:assets";
+import LauraRbg from "@/assets/mark/laura-rbg.webp";
+import { getElapsedTime } from "@/helpers/getElapsedTime";
+
+interface Work {
+  logo: ImageMetadata;
+  company: string;
+  job: string;
+  date: {
+    month: string;
+    year: number;
+  };
+  description: string;
+}
+
+const works: Work[] = [
+  {
+    company: "linea directa aseguradora",
+    date: {
+      month: "octubre",
+      year: 2019,
+    },
+    description: "sdsd",
+    logo: lineaDirecta,
+    job: "Valoradora del Daño Corporal de Accidentes de Tráfico",
+  },
+  {
+    company: "linea directa aseguradora",
+    date: {
+      month: "octubre",
+      year: 2019,
+    },
+    description: "sdsd",
+    logo: promede,
+    job: "Valoradora del Daño Corporal de Accidentes de Tráfico",
+  },
+  {
+    company: "linea directa aseguradora",
+    date: {
+      month: "octubre",
+      year: 2019,
+    },
+    description: "sdsd",
+    logo: servicioSaludMadrid,
+    job: "Valoradora del Daño Corporal de Accidentes de Tráfico",
+  },
+];
+---
+
+<div class="about-me">
+  <div class="photo-wrap">
+    <Image class="photo" src={LauraRbg} alt="foto de laura" />
+  </div>
+  <div>
+    <ul>
+      {
+        works.map(({ company, date, description, logo, job }) => {
+          return (
+            <li>
+              <picture>
+                <Image src={logo} alt={`logo de ${company}`} />
+              </picture>
+              <div class="info">
+                <h3>{company}</h3>
+                <h4>{job}</h4>
+                <span>{getElapsedTime(date.month, date.year)}</span>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0;
+    gap: 5rem;
+  }
+
+  .photo {
+    max-width: 20rem;
+    mask-image: linear-gradient(var(--light) 40%, transparent 100%);
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    position: relative;
+  }
+
+  picture {
+    max-width: 3rem;
+    max-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  li::before {
+    content: "";
+    height: 60%;
+    width: 2px;
+    background-color: var(--gray);
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 24px;
+    border-radius: var(--radius-l);
+  }
+
+  li img {
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .info h3 {
+    color: var(--dark-500);
+    font-size: var(--fs-sm);
+  }
+
+  .info h4 {
+    font-size: var(--fs-md);
+  }
+
+  .info span {
+    font-size: var(--fs-sm);
+  }
+
+  ul {
+    display: grid;
+    gap: 3rem;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    .about-me {
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 0;
+
+      /* align-items: center; */
+    }
+  }
+</style>

@@ -1,0 +1,90 @@
+---
+import particular from "@/assets/ilustrations/particular.png";
+import { Image } from "astro:assets";
+
+interface Target {
+  title: string;
+  description: string;
+  icon: ImageMetadata;
+}
+
+const targets: Target[] = [
+  {
+    title: "Lorem ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus veniam iste placeat similique quisquam recusandae quam, est cupiditate architecto sapiente, illo blanditiis. Similique totam harum, nostrum omnis beatae aspernatur?",
+    icon: particular,
+  },
+  {
+    title: "Lorem ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus veniam iste placeat similique quisquam recusandae quam, est cupiditate architecto sapiente, illo blanditiis. Similique totam harum, nostrum omnis beatae aspernatur?",
+    icon: particular,
+  },
+  {
+    title: "Lorem ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus veniam iste placeat similique quisquam recusandae quam, est cupiditate architecto sapiente, illo blanditiis. Similique totam harum, nostrum omnis beatae aspernatur?",
+    icon: particular,
+  },
+  {
+    title: "Lorem ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus veniam iste placeat similique quisquam recusandae quam, est cupiditate architecto sapiente, illo blanditiis. Similique totam harum, nostrum omnis beatae aspernatur?",
+    icon: particular,
+  },
+];
+---
+
+<ul>
+  {
+    targets.map(({ description, icon, title }) => {
+      return (
+        <li>
+          <h3>
+            <Image src={icon} alt={`icono de ${title}`} />
+            <span>{title}</span>
+          </h3>
+          <p>{description}</p>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    margin: 3rem 0 0;
+    display: grid;
+    gap: 2rem;
+  }
+
+  li {
+    display: grid;
+    gap: 1rem;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-xl);
+  }
+
+  img {
+    max-width: 2.5rem;
+  }
+
+  p {
+    font-size: var(--fs-md);
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
