@@ -1,0 +1,76 @@
+---
+import { testimonials } from "@/data/testimonials";
+import { Image } from "astro:assets";
+---
+
+<ul>
+  {
+    testimonials.map(({ comment, name, photo, work }) => {
+      return (
+        <li>
+          <header>
+            <Image src={photo} alt={`foto de ${name}`} />
+            <div>
+              <h3>{name}</h3>
+              <span>{work}</span>
+            </div>
+          </header>
+          <p>{comment}</p>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    margin: 3rem 0 0;
+    display: grid;
+    gap: 2rem;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #ffffff;
+    background-image: radial-gradient(
+        at 88% 96%,
+        rgb(217, 217, 217) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 0% 12%, rgb(217, 217, 217) 0px, transparent 50%);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  img {
+    max-width: 4rem;
+    border-radius: var(--radius-full);
+  }
+
+  header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  h3,
+  p {
+    font-size: var(--fs-md);
+  }
+
+  span {
+    font-size: var(--fs-sm);
+    color: var(--dark-500);
+  }
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

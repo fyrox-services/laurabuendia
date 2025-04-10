@@ -4,11 +4,13 @@ import Above from "@/components/Above.astro";
 import Heading from "@/components/Heading.astro";
 import HowWorkingCards from "@/components/HowWorkingCards.astro";
 import { MainCTA } from "@/components/preact/Buttons";
+import { MainForm } from "@/components/preact/MainForm";
 import Section from "@/components/Section.astro";
 import ServicesCards from "@/components/ServicesCards.astro";
 import ShortDescription from "@/components/ShortDescription.astro";
 import SubHeading from "@/components/SubHeading.astro";
 import TargetCards from "@/components/TargetCards.astro";
+import TestimonialCards from "@/components/TestimonialCards.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -51,9 +53,12 @@ import Layout from "@/layouts/Layout.astro";
       eum.
     </p>
     <AboutMe/>
+    <MainForm modifier="about-me"  />
+
   </Section>
   <Section>
     <Heading> particulares y empresas satisfechas </Heading>
+    <TestimonialCards/>
   </Section>
   <Section>
     <Heading> artículos destacados </Heading>
