@@ -18,6 +18,7 @@
 :root {
   --primary: #0593a2;
   --secondary: #7873f5;
+  --third: #bee2ee;
 
   --black: #000;
   --dark-100: #111;
@@ -30,7 +31,7 @@
   --text-gray: #9eaaba;
 
   --fs-xs: 12px;
-  --fs-sm: 14px;
+  --fs-sm: 16px;
   --fs-md: 18px;
   --fs-base: 22px;
   --fs-xl: 24px;
@@ -133,7 +134,7 @@ h5,
 h6 {
   font-family: var(--base-bold);
   font-size: inherit; /* Hereda tamaño del padre */
-  line-height: 1; /* Altura de línea consistente */
+  line-height: 1.25; /* Altura de línea consistente */
 }
 
 /* Bloque cita */

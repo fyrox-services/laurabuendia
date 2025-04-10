@@ -1,13 +1,16 @@
 .Btn {
   background-color: var(--primary);
-  /* background-image: radial-gradient(
-      at 88% 96%,
-      rgb(8, 213, 245) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 0% 12%, rgb(0, 192, 236) 0px, transparent 50%); */
   width: fit-content;
   border: 1px solid var(--primary);
   padding: 0.5rem 2rem;
   border-radius: var(--radius);
+}
+
+.Btn.services {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: var(--fs-md);
+  width: max-content;
 }

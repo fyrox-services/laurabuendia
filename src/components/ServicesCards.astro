@@ -1,0 +1,91 @@
+---
+import { services } from "@/data/services";
+import { MainCTA } from "@/components/preact/Buttons";
+import { LinkExternal } from "@/components/preact/Icons";
+import { Image } from "astro:assets";
+---
+
+<ul>
+  {
+    services.map(({ name, description, link, phrase, ilustration }) => {
+      return (
+        <li>
+          <h3>{name}</h3>
+          <h4>{phrase}</h4>
+          <p>{description}</p>
+          <a href={link}>
+            <span>más información</span>
+            <LinkExternal />
+          </a>
+          <Image src={ilustration} alt={`ilustración de ${name}`} />
+          <MainCTA modifier="services" client:load>
+            contratar
+          </MainCTA>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    margin: 3rem 0;
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 3rem;
+  }
+
+  li {
+    background-color: var(--third);
+    padding: 5rem 1rem 5rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+
+  h3 {
+    font-size: var(--fs-md);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    width: 100%;
+  }
+
+  h4 {
+    font-size: var(--fs-xl);
+  }
+
+  p,
+  a {
+    font-size: var(--fs-sm);
+  }
+
+  a {
+    color: var(--dark-500);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  img {
+    position: absolute;
+    max-width: 4rem;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

@@ -7,7 +7,7 @@ export function HeaderNavbar() {
 
   return (
     <nav class={`${css.Nav} ${$isMenuMobileOpen ? css.active : ""}`}>
-      <ul class={`wrapper ${css.Wrap}`}>
+      <ul class={css.Wrap}>
         <li>
           <a href="/">informes</a>
         </li>
