@@ -1,32 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import PostCard from "@/components/PostCard.astro";
+import WrapperPosts from "@/components/WrapperPosts.astro";
 
 const posts = await getCollection("posts");
 const filteredPosts = posts.filter(({ data }) => data.topPick);
 ---
 
-<ul>
-  {
-    filteredPosts.map((post) => {
-      return <PostCard post={post} />;
-    })
-  }
-</ul>
-
-<style>
-  ul {
-    display: grid;
-    gap: 2rem;
-    margin: 3rem 0 0;
-  }
-
-  /* DESKTOP */
-
-  @media (min-width: 1024px) {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-</style>
+<WrapperPosts posts={filteredPosts} />

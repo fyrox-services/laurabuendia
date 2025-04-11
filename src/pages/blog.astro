@@ -1,6 +1,7 @@
 ---
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
+import WrapperPosts from "@/components/WrapperPosts.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -10,16 +11,6 @@ const posts = await getCollection("posts");
 <Layout>
   <PageSection>
     <H1Heading> blog </H1Heading>
-    <ul>
-      {
-        posts.map(({ data, slug }) => {
-          return (
-            <li>
-              <a href={`/${slug}`}>{data.h1}</a>
-            </li>
-          );
-        })
-      }
-    </ul>
+    <WrapperPosts posts={posts} />
   </PageSection>
 </Layout>

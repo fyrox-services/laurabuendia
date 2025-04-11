@@ -32,10 +32,6 @@ const { data, slug } = post;
     transition: transform 0.3s ease;
   }
 
-  li:hover {
-    transform: scale(1.05);
-  }
-
   picture {
     position: relative;
   }
@@ -61,9 +57,17 @@ const { data, slug } = post;
     border-top: 1px solid var(--gray);
     margin: 0 2rem;
     padding: 1rem 0;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
     color: var(--dark-900);
     display: flex;
     justify-content: space-between;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    li:hover {
+      transform: scale(1.03);
+    }
   }
 </style>

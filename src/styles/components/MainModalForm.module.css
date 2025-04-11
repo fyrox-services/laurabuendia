@@ -22,7 +22,7 @@
 }
 
 .Close {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-xs);
   background-color: var(--gray);
   align-self: flex-end;
   border: none;
