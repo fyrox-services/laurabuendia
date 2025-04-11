@@ -1,0 +1,71 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => {
+    const params = {
+      post: post.slug,
+    };
+
+    const props = {
+      post,
+    };
+
+    const paths = {
+      params,
+      props,
+    };
+
+    return paths;
+  });
+}
+
+const { post } = Astro.props;
+const { data } = post;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": Astro.url,
+  headline: data.h1,
+  author: { "@type": "Person", name: data.author },
+  datePublished: data.datePublished.toISOString(),
+  dateModified: data.dateModified.toISOString(),
+  potentialAction: [
+    {
+      "@type": "ReadAction",
+      target: [Astro.url],
+    },
+  ],
+  image: `${Astro.url.origin}${data.image}`,
+  articleSection: data.category,
+  description: data.description,
+  wordCount: data.wordCount,
+  url: Astro.url,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": Astro.url,
+  },
+};
+---
+
+<Layout>
+  <div class="wrapper">
+    <h1>{post.data.h1}</h1>
+  </div>
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify(structuredData)}
+  />
+</Layout>
+
+<style>
+  div {
+    margin-top: 8rem;
+    min-height: 100vh;
+  }
+</style>

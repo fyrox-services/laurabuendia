@@ -1,0 +1,69 @@
+---
+import { transformDate } from "@/helpers/transformDate";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  post: CollectionEntry<"posts">;
+}
+
+const { post } = Astro.props;
+const { data, slug } = post;
+---
+
+<li>
+  <a href={`/${slug}`}>
+    <picture class="mask-1">
+      <h3>{data.h1}</h3>
+      <img src={data.image} alt={`imagen de ${data.h1}`} />
+    </picture>
+    <p>{data.description}</p>
+    <footer>
+      <span>{transformDate(data.datePublished)}</span>
+      <span>{data.readingTime} min de lectura</span>
+    </footer>
+  </a>
+</li>
+
+<style>
+  li {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  li:hover {
+    transform: scale(1.05);
+  }
+
+  picture {
+    position: relative;
+  }
+
+  h3,
+  p {
+    padding: 1rem 2rem;
+  }
+
+  h3 {
+    position: absolute;
+    color: var(--white);
+    z-index: 10;
+    font-size: var(--fs-2xl);
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: var(--fs-sm);
+  }
+
+  footer {
+    border-top: 1px solid var(--gray);
+    margin: 0 2rem;
+    padding: 1rem 0;
+    font-size: var(--fs-sm);
+    color: var(--dark-900);
+    display: flex;
+    justify-content: space-between;
+  }
+</style>

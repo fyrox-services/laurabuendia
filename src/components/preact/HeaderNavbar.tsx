@@ -18,7 +18,7 @@ export function HeaderNavbar() {
           <a href="/">asistencia</a>
         </li>
         <li>
-          <a href="/">blog</a>
+          <a href="/blog">blog</a>
         </li>
         <li>
           <a href="/">contacto</a>
