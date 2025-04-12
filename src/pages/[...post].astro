@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { getCollection } from "astro:content";
+import PostLayout from "@/layouts/PostLayout.astro";
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -24,7 +25,8 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { data } = post;
+const { data, body } = post;
+const { Content } = await render(post);
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -53,19 +55,13 @@ const structuredData = {
 ---
 
 <Layout>
-  <div class="wrapper">
-    <h1>{post.data.h1}</h1>
-  </div>
+  <PostLayout body={body} post={post}>
+    <Content />
+  </PostLayout>
+
   <script
     is:inline
     type="application/ld+json"
     set:html={JSON.stringify(structuredData)}
   />
 </Layout>
-
-<style>
-  div {
-    margin-top: 8rem;
-    min-height: 100vh;
-  }
-</style>

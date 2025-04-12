@@ -1,0 +1,41 @@
+---
+import { buildHeadings } from "@/helpers/buildHeading";
+
+interface Props {
+  body: string;
+  slug: string;
+}
+
+const { body, slug } = Astro.props;
+const headings = buildHeadings(body);
+console.log(slug);
+---
+
+<ul>
+  {
+    headings.map(({ text, type }, i) => {
+      const splitedText = text.split(" ");
+      const createSlug = splitedText.join("-");
+      console.log(createSlug);
+      return (
+        <li>
+          <a href={`/${slug}#${createSlug}`}>{text}</a>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    position: absolute;
+    top: 0;
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    ul {
+      position: initial;
+    }
+  }
+</style>

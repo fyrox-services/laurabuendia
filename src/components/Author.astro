@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import profilePhoto from "@/assets/mark/laura-profile.jpg";
+---
+
+<div class="card">
+  <picture>
+    <Image src={profilePhoto} alt="foto de perfil de Laura Buendía" />
+  </picture>
+
+  <div class="text">
+    <a href="/" class="name">laura buendía</a>
+    <span class="job">perito médico</span>
+  </div>
+</div>
+
+<style>
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  picture {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-full);
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: var(--fs-md);
+    text-transform: capitalize;
+  }
+
+  .job {
+    font-size: var(--fs-sm);
+    color: var(--text-gray);
+  }
+</style>

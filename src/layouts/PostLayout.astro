@@ -1,0 +1,129 @@
+---
+import Author from "@/components/Author.astro";
+import TOC from "@/components/TOC.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  body: string;
+  post: CollectionEntry<"posts">;
+}
+
+const { body, post } = Astro.props;
+const { data, slug } = post;
+---
+
+<section class="post wrapper">
+  <div class="above">
+    <picture class="mask-1">
+      <h1>{data.h1}</h1>
+      <img src={data.image} alt={data.h1} />
+    </picture>
+    <header>
+      <Author />
+    </header>
+  </div>
+
+  <div class="content-wrap">
+    <aside class="toc-aside">
+      <TOC body={body} slug={slug} />
+    </aside>
+
+    <div class="body-content">
+      <slot />
+    </div>
+
+    <aside class="form-aside">
+      <h2>formulario</h2>
+    </aside>
+  </div>
+</section>
+
+<style is:global>
+  .post .body-content p {
+    font-size: var(--fs-base);
+    line-height: 1.75;
+  }
+
+  .post .body-content p:first-child {
+    margin: 0 0 1rem;
+  }
+
+  .post .body-content p:not(p:first-child) {
+    margin: 1rem 0;
+  }
+</style>
+
+<style>
+  section {
+    display: grid;
+    gap: 1rem;
+    --fs-base: 18px;
+  }
+
+  .above {
+    --max-width-content: 600px;
+    max-width: var(--max-width-content);
+    margin: var(--header-height) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  picture {
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+
+  h1 {
+    position: absolute;
+    color: var(--white);
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .content-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .toc-aside {
+    background-color: darkred;
+  }
+
+  .body-content {
+    /* background-color: darkblue; */
+  }
+
+  .form-aside {
+    background-color: darkslategrey;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    .content-wrap {
+      --max-width-content: 600px;
+      gap: 1rem;
+      flex-direction: row;
+    }
+
+    .toc-aside {
+      flex: 1;
+    }
+
+    .body-content {
+      flex: 1;
+      min-width: var(--max-width-content);
+    }
+
+    .form-aside {
+      flex: 1;
+    }
+  }
+</style>

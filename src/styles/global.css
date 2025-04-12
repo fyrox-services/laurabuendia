@@ -29,7 +29,7 @@
   --gray: #ccc;
   --light: #f2f2f2;
   --white: #fff;
-  --text-gray: #9eaaba;
+  --text-gray: #9198a2;
 
   --fs-xs: 12px;
   --fs-sm: 16px;
@@ -52,7 +52,8 @@
 
   --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-  --header-height: 50px;
+  --header-height: 60px;
+  scroll-padding-top: 14%;
 }
 
 *,
@@ -73,6 +74,7 @@ html {
   font-family: var(--base); /* Fuente predeterminada */
   -webkit-text-size-adjust: 100%; /* Previene zoom en dispositivos móviles */
   -webkit-font-smoothing: antialiased; /* Suaviza las fuentes */
+  scroll-behavior: smooth;
 }
 
 /* Estilos base para body */
