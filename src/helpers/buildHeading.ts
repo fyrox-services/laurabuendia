@@ -13,7 +13,5 @@ export function buildHeadings(body: string) {
       };
     });
 
-    console.log('desde fun', headings)
-
   return headings;
 }

@@ -1,0 +1,95 @@
+---
+import { MinimalArrow } from "@/components/preact/Icons";
+
+interface Props {
+  slug: string;
+  h1: string;
+}
+
+const { slug, h1 } = Astro.props;
+const urlSections = slug.split("/");
+const urlsWithoutLast = urlSections.slice(0, -1);
+
+const textFixes: Record<string, string> = {
+  "negligencias-medicas": "Negligencias médicas",
+  "peritaje-medico": "Peritaje médico",
+};
+---
+
+<nav aria-label="Breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <a itemprop="item" href="/">
+        <span itemprop="name">Inicio</span>
+      </a>
+      <MinimalArrow />
+      <meta itemprop="position" content="1" />
+    </li>
+
+    {
+      urlsWithoutLast.map((item, i) => {
+        const cleanText = textFixes[item] || item.split("-").join(" ");
+
+        const path = "/" + urlSections.slice(0, i + 1).join("/");
+
+        return (
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <a itemprop="item" href={path}>
+              <span itemprop="name">{cleanText}</span>
+            </a>
+            <MinimalArrow />
+            <meta itemprop="position" content={(i + 2).toString()} />
+          </li>
+        );
+      })
+    }
+    <li
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <span itemprop="name">{h1}</span>
+      <meta
+        itemprop="position"
+        content={(urlsWithoutLast.length + 2).toString()}
+      />
+    </li>
+  </ol>
+</nav>
+
+<style>
+  nav {
+    grid-column: 1/3;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fs-sm);
+    gap: 0.5rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  li a {
+    color: var(--primary);
+  }
+
+  @media (min-width: 1024px) {
+    ol {
+      flex-direction: row;
+    }
+  }
+</style>

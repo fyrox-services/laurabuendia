@@ -8,34 +8,94 @@ interface Props {
 
 const { body, slug } = Astro.props;
 const headings = buildHeadings(body);
-console.log(slug);
 ---
 
-<ul>
-  {
-    headings.map(({ text, type }, i) => {
-      const splitedText = text.split(" ");
-      const createSlug = splitedText.join("-");
-      console.log(createSlug);
-      return (
-        <li>
-          <a href={`/${slug}#${createSlug}`}>{text}</a>
-        </li>
-      );
-    })
-  }
-</ul>
+<nav
+  aria-label="Tabla de contenidos"
+  itemscope
+  itemtype="https://schema.org/SiteNavigationElement"
+>
+  <h2 class="heading">tabla de contenidos</h2>
+  <ul>
+    {
+      headings.map(({ text, type }, i) => {
+        const splitedText = text.split(" ");
+        const createSlug = splitedText.join("-");
+        return (
+          <li class="item">
+            <a href={`/${slug}#${createSlug}`} itemprop="url">
+              <span class="index">{i + 1}.</span>
+              <span class="text" itemprop="name">
+                {text}
+              </span>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
 
 <style>
-  ul {
+  nav {
     position: absolute;
     top: 0;
+    display: none;
   }
 
   /* DESKTOP */
   @media (min-width: 1024px) {
+    nav {
+      position: sticky;
+      top: calc(var(--header-height) * 1.25);
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-height: 80dvh;
+      overflow-y: auto;
+      --fs-base: 14px;
+    }
+
+    nav::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    nav::-webkit-scrollbar-track {
+      background: var(--gray); /* Color de fondo de la barra */
+      border-radius: 10px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background: var(--dark-900); /* Color del pnavgar (thumb) */
+      border-radius: 10px;
+    }
+
     ul {
-      position: initial;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    li a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .heading {
+      font-size: var(--fs-md);
+      font-family: var(--base-bold);
+    }
+
+    .index {
+      font-size: var(--fs-xs);
+      color: var(--text-gray);
+    }
+
+    .text {
+      color: var(--dark-500);
+      font-size: var(--fs-base);
     }
   }
 </style>

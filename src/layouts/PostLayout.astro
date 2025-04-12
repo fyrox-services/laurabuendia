@@ -2,6 +2,8 @@
 import Author from "@/components/Author.astro";
 import TOC from "@/components/TOC.astro";
 import type { CollectionEntry } from "astro:content";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import PostMeta from "@/components/PostMeta.astro";
 
 interface Props {
   body: string;
@@ -19,7 +21,14 @@ const { data, slug } = post;
       <img src={data.image} alt={data.h1} />
     </picture>
     <header>
+      <Breadcrumbs slug={slug} h1={data.h1} />
+
       <Author />
+
+      <PostMeta
+        datePublished={data.datePublished}
+        readingTime={data.readingTime}
+      />
     </header>
   </div>
 
@@ -58,11 +67,12 @@ const { data, slug } = post;
     display: grid;
     gap: 1rem;
     --fs-base: 18px;
+    --fs-h1: 28px;
   }
 
   .above {
-    --max-width-content: 600px;
-    max-width: var(--max-width-content);
+    --content-wrap: 600px;
+    max-width: var(--content-wrap);
     margin: var(--header-height) auto 0;
     display: flex;
     flex-direction: column;
@@ -70,7 +80,7 @@ const { data, slug } = post;
   }
 
   picture {
-    max-height: 300px;
+    max-height: 250px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -84,6 +94,16 @@ const { data, slug } = post;
     z-index: 2;
     text-align: center;
     padding: 1rem;
+    font-size: var(--fs-h1);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--text-gray);
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .content-wrap {
@@ -93,7 +113,7 @@ const { data, slug } = post;
   }
 
   .toc-aside {
-    background-color: darkred;
+    /* background-color: darkred; */
   }
 
   .body-content {
@@ -107,8 +127,22 @@ const { data, slug } = post;
   /* DESKTOP */
 
   @media (min-width: 1024px) {
+    section {
+      --fs-h1: 42px;
+      --content-wrap: 600px;
+    }
+
+    h1 {
+      font-size: var(--fs-h1);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
     .content-wrap {
-      --max-width-content: 600px;
       gap: 1rem;
       flex-direction: row;
     }
@@ -119,7 +153,7 @@ const { data, slug } = post;
 
     .body-content {
       flex: 1;
-      min-width: var(--max-width-content);
+      min-width: var(--content-wrap);
     }
 
     .form-aside {

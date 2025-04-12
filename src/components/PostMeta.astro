@@ -1,0 +1,52 @@
+---
+import { Timer, Calendar } from "@/components/preact/Icons";
+import { transformDate } from "@/helpers/transformDate";
+
+interface Props {
+  readingTime: number;
+  datePublished: Date;
+}
+
+const { datePublished, readingTime } = Astro.props;
+---
+
+<div class="post-meta" itemscope itemtype="https://schema.org/Article">
+  <span>
+    <Calendar />
+    <time datetime={datePublished.toISOString()} itemprop="datePublished">
+      {transformDate(datePublished)}
+    </time>
+  </span>
+
+  <span>
+    <Timer />
+    <span itemprop="timeRequired">
+      {readingTime} min de lectura
+    </span>
+    <meta itemprop="timeRequired" content={`PT${readingTime}M`} />
+  </span>
+</div>
+
+<style>
+  .post-meta {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    font-size: var(--fs-xs);
+  }
+
+  .post-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  @media (min-width: 1024px) {
+    .post-meta {
+      align-items: flex-end;
+      gap: 0;
+    }
+  }
+</style>
