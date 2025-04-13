@@ -4,12 +4,26 @@
   margin-inline: auto;
 }
 
+/* BUTTONS */
+
 .btn {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
   border: none;
   border-radius: var(--radius);
   padding: 0.5rem;
   font-size: var(--fs-md);
+}
+
+.btn-border {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-gradient-primary {

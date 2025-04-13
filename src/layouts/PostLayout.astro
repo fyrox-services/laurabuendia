@@ -5,6 +5,7 @@ import type { CollectionEntry } from "astro:content";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import PostMeta from "@/components/PostMeta.astro";
 import { PostForm } from "@/components/preact/PostForm";
+import BottomKeypad from "@/components/BottomKeypad.astro";
 
 interface Props {
   body: string;
@@ -46,6 +47,7 @@ const { data, slug } = post;
       <PostForm heading="solicita información" />
     </aside>
   </div>
+  <BottomKeypad />
 </section>
 
 <style is:global>
@@ -122,7 +124,7 @@ const { data, slug } = post;
 
   @media (min-width: 1024px) {
     section {
-      --fs-h1: 42px;
+      --fs-h1: 40px;
       --content-wrap: 600px;
     }
 

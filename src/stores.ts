@@ -10,3 +10,5 @@ export const handleMainModalForm = {
   open: () => isMainModalForm.set(true),
   close: () => isMainModalForm.set(false),
 };
+
+export const isTocOpen = atom(false)

@@ -1,5 +1,6 @@
 ---
 import { buildHeadings } from "@/helpers/buildHeading";
+import Close from "@/components/icons/Close.astro";
 
 interface Props {
   body: string;
@@ -11,14 +12,20 @@ const headings = buildHeadings(body);
 ---
 
 <nav
+  id="toc"
   aria-label="Tabla de contenidos"
   itemscope
   itemtype="https://schema.org/SiteNavigationElement"
 >
-  <h2 class="heading">tabla de contenidos</h2>
+  <header>
+    <h2 class="heading">tabla de contenidos</h2>
+    <button id="close" class="close">
+      <Close />
+    </button>
+  </header>
   <ul>
     {
-      headings.map(({ text, type }, i) => {
+      headings.map(({ text }, i) => {
         const splitedText = text.split(" ");
         const createSlug = splitedText.join("-");
         return (
@@ -36,11 +43,87 @@ const headings = buildHeadings(body);
   </ul>
 </nav>
 
+<script>
+  import { isTocOpen } from "@/stores";
+
+  const $toc = document.getElementById("toc");
+  const $close = document.getElementById("close");
+
+  if ($close !== null) {
+    $close.addEventListener("click", () => {
+      isTocOpen.set(false);
+    });
+  }
+
+  isTocOpen.subscribe((visible) => {
+    $toc?.classList.toggle("active", visible);
+  });
+</script>
+
 <style>
-  nav {
-    position: absolute;
-    top: 0;
-    display: none;
+  li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .index {
+    font-size: var(--fs-xs);
+    color: var(--dark-500);
+  }
+
+  @media (max-width: 1024px) {
+    nav {
+      position: fixed;
+      bottom: var(--bottom-height);
+      height: fit-content;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: var(--fs-xs);
+      padding: 1rem;
+      gap: 1rem;
+      border-radius: var(--radius) var(--radius) 0 0;
+      background: rgba(230, 230, 230, 0.819); /* Color semitransparente */
+      -webkit-backdrop-filter: blur(12px); /* Compatibilidad con Safari */
+      backdrop-filter: blur(12px); /* Aplica el desenfoque */
+      z-index: 50;
+      box-shadow: var(--shadow);
+      transform: translateY(calc(100% + var(--bottom-height)));
+      transition: transform 0.5s ease;
+    }
+
+    nav.active {
+      transform: translateY(0);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dark-500);
+      background-color: transparent;
+      border: none;
+    }
+
+    h2 {
+      font-size: var(--fs-md);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      max-height: 40dvh;
+      overflow-y: auto;
+    }
   }
 
   /* DESKTOP */
@@ -55,6 +138,10 @@ const headings = buildHeadings(body);
       max-height: 80dvh;
       overflow-y: auto;
       --fs-base: 14px;
+    }
+
+    .close {
+      display: none;
     }
 
     nav::-webkit-scrollbar {
@@ -77,20 +164,8 @@ const headings = buildHeadings(body);
       gap: 0.8rem;
     }
 
-    li a {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
     .heading {
       font-size: var(--fs-md);
-      font-family: var(--base-bold);
-    }
-
-    .index {
-      font-size: var(--fs-xs);
-      color: var(--dark-500);
     }
 
     .text {
