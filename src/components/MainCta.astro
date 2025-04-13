@@ -1,0 +1,76 @@
+---
+interface Props {
+  modifier?: string;
+}
+
+const { modifier = "" } = Astro.props;
+---
+
+<button class:list={["main-cta", modifier]}>
+  <span>
+    <slot>contactar</slot>
+  </span>
+</button>
+
+<script>
+  import { handleMainModalForm } from "@/stores";
+
+  const $btns = document.querySelectorAll(".main-cta");
+
+  $btns.forEach((btn) => {
+    btn.addEventListener("click", handleMainModalForm.open);
+  });
+</script>
+
+<style>
+  button {
+    background-color: var(--primary-dark);
+    width: fit-content;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+  }
+
+  button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  button::before,
+  button::after {
+    content: "";
+    display: block;
+    height: 51%;
+    width: 100%;
+    background-color: var(--primary);
+    left: 0;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+
+  button::before {
+    transform-origin: top;
+    top: 0;
+  }
+
+  button::after {
+    transform-origin: bottom;
+    bottom: 0;
+  }
+
+  button:hover::after,
+  button:hover::before {
+    transform: scaleY(0);
+  }
+
+  button.services {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: var(--fs-md);
+    width: max-content;
+  }
+</style>

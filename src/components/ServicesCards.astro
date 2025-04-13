@@ -1,8 +1,8 @@
 ---
 import { services } from "@/data/services";
-import { MainCTA } from "@/components/preact/Buttons";
-import LinkExternal from "@/components/icons/LinkExternal.astro";
 import { Image } from "astro:assets";
+import MainCta from "@/components/MainCta.astro";
+import LinkExternal from "@/components/icons/LinkExternal.astro";
 ---
 
 <ul>
@@ -18,9 +18,7 @@ import { Image } from "astro:assets";
             <LinkExternal />
           </a>
           <Image src={ilustration} alt={`ilustración de ${name}`} />
-          <MainCTA modifier="services" client:load>
-            contratar
-          </MainCTA>
+          <MainCta modifier="services">contratar</MainCta>
         </li>
       );
     })

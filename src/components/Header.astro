@@ -1,8 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo from "@/assets/mark/logo.png";
-import { HeaderNavbar } from "@/components/preact/HeaderNavbar";
-import { MenuMobileBtn } from "@/components/preact/MenuMobileBtn";
+import HeaderNav from "@/components/HeaderNav.astro";
+import MenuMobileBtn from "@/components/MenuMobileBtn.astro";
 ---
 
 <header>
@@ -11,9 +11,9 @@ import { MenuMobileBtn } from "@/components/preact/MenuMobileBtn";
       <Image src={logo} alt="logo de laura buendía" />
     </a>
 
-    <HeaderNavbar client:visible />
+    <HeaderNav />
 
-    <MenuMobileBtn client:visible />
+    <MenuMobileBtn />
   </div>
 </header>
 

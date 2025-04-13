@@ -2,7 +2,7 @@ import { atom } from "nanostores";
 
 export const isMenuMobileOpen = atom(false);
 export const handleMenuMobile = {
-  set: (state: boolean) => isMenuMobileOpen.set(!state),
+  set: () => isMenuMobileOpen.set(!isMenuMobileOpen.get()),
 };
 
 export const isMainModalForm = atom(false);

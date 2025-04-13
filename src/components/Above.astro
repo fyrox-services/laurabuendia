@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import abovePhoto from "@/assets/mark/laura.jpg";
-import { MainCTA } from "@/components/preact/Buttons";
-// import ContactWays from "@/components/ContactWays.astro";
+import MainCta from "@/components/MainCta.astro";
 ---
 
 <section class="bg-gradient-circle">
@@ -15,9 +14,7 @@ import { MainCTA } from "@/components/preact/Buttons";
         obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero
         nesciunt nulla nemo incidunt.
       </p>
-      <MainCTA client:load>pedir presupuesto</MainCTA>
-
-      <!-- <ContactWays /> -->
+      <MainCta />
     </div>
 
     <div class="photo">
