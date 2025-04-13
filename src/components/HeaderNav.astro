@@ -1,34 +1,57 @@
 ---
 import ContactWays from "@/components/ContactWays.astro";
+import ShortArrow from "@/components/icons/ShortArrow.astro";
 ---
 
 <nav id="header-nav">
   <ul class="ul">
     <li class="li li-with-submenu">
-      <span class="span">informes</span>
-
-      <ul class="submenu-ul">
-        <li>
-          <a class="a" href=""> periciales </a>
-        </li>
-        <li>
-          <a class="a" href=""> orientación </a>
-        </li>
-      </ul>
+      <span class="span">servicios </span>
+      <span class="arrow">
+        <ShortArrow color="#999" />
+      </span>
+      <div class="submenu-ul-wrap">
+        <ul class="submenu-ul">
+          <li>
+            <a class="a" href=""> informes de viabilidad </a>
+          </li>
+          <li>
+            <a class="a" href=""> informes periciales </a>
+          </li>
+          <li>
+            <a class="a" href=""> valoración del daño corporal </a>
+          </li>
+          <li>
+            <a class="a" href=""> perdida de oportunidad </a>
+          </li>
+          <li>
+            <a class="a" href=""> accidentes de tráfico y hogar </a>
+          </li>
+          <li>
+            <a class="a" href=""> reuniones con abogados </a>
+          </li>
+          <li>
+            <a class="a" href=""> mediación </a>
+          </li>
+          <li>
+            <a class="a" href=""> ratificaciones judiciales </a>
+          </li>
+        </ul>
+      </div>
     </li>
-
+    <!-- 
     <li class="li li-with-submenu">
       <span class="span">valoraciones</span>
 
       <ul class="submenu-ul">
         <li>
-          <a class="a" href=""> periciales </a>
+          <a class="a" href=""> daño corporal </a>
         </li>
         <li>
-          <a class="a" href=""> orientación </a>
+          <a class="a" href=""> cuantificación económica </a>
         </li>
       </ul>
-    </li>
+    </li> -->
 
     <li class="li">
       <a class="a" href="/">asistencia</a>
@@ -116,6 +139,10 @@ import ContactWays from "@/components/ContactWays.astro";
       gap: 0.5rem;
     }
 
+    .arrow {
+      display: none;
+    }
+
     .li:not(.li-with-submenu) .a {
       font-family: var(--base-bold);
       font-size: var(--base);
@@ -155,7 +182,66 @@ import ContactWays from "@/components/ContactWays.astro";
       gap: 2rem;
     }
 
-    .a {
+    .li-with-submenu {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .li-with-submenu:hover .submenu-ul-wrap {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .li-with-submenu:hover .arrow {
+      transform: rotate(180deg);
+    }
+
+    .submenu-ul-wrap {
+      position: absolute;
+      top: 100%;
+      padding-top: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+    }
+
+    .submenu-ul {
+      display: flex;
+      background-color: var(--third);
+      box-shadow: var(--shadow);
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 2rem;
+      border-radius: var(--radius);
+    }
+
+    .submenu-ul > li {
+      display: flex;
+      width: max-content;
+    }
+
+    .submenu-ul .a {
+      font-size: var(--fs-sm);
+    }
+
+    .span {
+      cursor: default;
+    }
+
+    .a,
+    .span {
       transition: color 0.5s ease;
       font-size: var(--fs-md);
     }

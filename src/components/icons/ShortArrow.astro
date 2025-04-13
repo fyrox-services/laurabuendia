@@ -1,0 +1,38 @@
+---
+interface Props {
+  className?: string;
+  width?: number;
+  height?: number;
+  color?: string;
+}
+
+const {
+  className = "",
+  height = 18,
+  width = 18,
+  color = "currentColor",
+} = Astro.props;
+---
+
+<svg
+  class={className}
+  xmlns="http://www.w3.org/2000/svg"
+  width={width}
+  height={height}
+  viewBox="0 0 24 24"
+  ><path
+    fill="none"
+    stroke={color}
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    d="m17 14l-5-5m0 0l-5 5"></path></svg
+>
+
+<!-- <style>
+  @media (max-width: 1024px) {
+    svg.header-nav {
+      display: none;
+    }
+  }
+</style> -->
