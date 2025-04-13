@@ -1,30 +1,63 @@
+---
+import ContactWays from "@/components/ContactWays.astro";
+---
+
 <nav id="header-nav">
-  <ul>
-    <li>
-      <a href="/">informes</a>
+  <ul class="ul">
+    <li class="li li-with-submenu">
+      <span class="span">informes</span>
+
+      <ul class="submenu-ul">
+        <li>
+          <a class="a" href=""> periciales </a>
+        </li>
+        <li>
+          <a class="a" href=""> orientación </a>
+        </li>
+      </ul>
     </li>
-    <li>
-      <a href="/">valoraciones</a>
+
+    <li class="li li-with-submenu">
+      <span class="span">valoraciones</span>
+
+      <ul class="submenu-ul">
+        <li>
+          <a class="a" href=""> periciales </a>
+        </li>
+        <li>
+          <a class="a" href=""> orientación </a>
+        </li>
+      </ul>
     </li>
-    <li>
-      <a href="/">asistencia</a>
+
+    <li class="li">
+      <a class="a" href="/">asistencia</a>
     </li>
-    <li>
-      <a href="/blog">blog</a>
+
+    <li class="li">
+      <a class="a" href="/blog">blog</a>
     </li>
-    <li>
-      <a href="/">contacto</a>
+
+    <li class="li">
+      <a class="a" href="/">contacto</a>
     </li>
   </ul>
+  <ContactWays />
 </nav>
 
 <script>
   import { isMenuMobileOpen } from "@/stores";
 
-  const $nav = document.getElementById("header-nav");
+  document.addEventListener("astro:page-load", () => {
+    const $nav = document.getElementById("header-nav");
 
-  isMenuMobileOpen.subscribe((value) => {
-    $nav?.classList.toggle("active", value);
+    isMenuMobileOpen.subscribe((value) => {
+      $nav?.classList.toggle("active", value);
+    });
+  });
+
+  document.addEventListener("astro:after-swap", () => {
+    isMenuMobileOpen.set(false);
   });
 </script>
 
@@ -42,32 +75,65 @@
       z-index: -1;
       transform: translateX(-100%);
       transition: all 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 2rem;
+      padding: calc(var(--header-height)) 0 0;
     }
 
     nav.active {
       transform: translateX(0);
-      display: flex;
     }
 
-    nav ul {
+    .ul {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      height: inherit;
+
+      width: 95%;
+      max-width: 1200px;
+      margin-inline: auto;
+
+      gap: 1rem;
+      max-height: 60dvh;
+      overflow-y: auto;
+      flex: 1;
     }
 
-    nav li {
+    .submenu-ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .li {
       position: relative;
-      overflow: hidden;
     }
 
-    nav a {
-      font-size: 42px;
+    .li-with-submenu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .li:not(.li-with-submenu) .a {
+      font-family: var(--base-bold);
+      font-size: var(--base);
+    }
+
+    .a,
+    .span {
+      font-size: var(--fs-md);
       display: block;
-      /* color: var(--); */
     }
 
-    nav.active a {
+    .span {
+      font-size: var(--fs-base);
+      font-family: var(--base-bold);
+    }
+
+    nav.active .a,
+    nav.active .span {
       transform: translateY(80%);
       opacity: 0;
       animation: rise-up 0.5s ease-out forwards;
@@ -84,17 +150,17 @@
   /* DESKTOP */
 
   @media (min-width: 1024px) {
-    nav ul {
+    .ul {
       display: flex;
       gap: 2rem;
     }
 
-    nav a {
+    .a {
       transition: color 0.5s ease;
       font-size: var(--fs-md);
     }
 
-    nav a:hover {
+    .a:hover {
       color: var(--primary);
     }
   }

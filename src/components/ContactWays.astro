@@ -4,23 +4,39 @@ import WhatsApp from "@/components/icons/WhatsApp.astro";
 import Phone from "@/components/icons/Phone.astro";
 ---
 
-<ul>
+<ul class="wrapper">
   <li>
-    <Phone />
+    <a href="tel:661082338">
+      <Phone />
+    </a>
   </li>
   <li>
-    <WhatsApp />
+    <a href="">
+      <WhatsApp />
+    </a>
   </li>
   <li>
-    <Email />
+    <a href="mailto:">
+      <Email />
+    </a>
   </li>
 </ul>
 
 <style>
   ul {
+    border-top: 1px solid var(--gray);
+    padding: 1rem 0 0;
     display: flex;
+    gap: 2rem;
+  }
+
+  a {
     color: var(--primary);
-    justify-content: space-between;
-    max-width: 200px;
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+      display: none;
+    }
   }
 </style>

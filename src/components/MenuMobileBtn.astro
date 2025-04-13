@@ -7,14 +7,16 @@
 <script>
   import { handleMenuMobile } from "@/stores";
 
-  const $btn = document.getElementById("menu-mobile-btn");
+  document.addEventListener("astro:page-load", () => {
+    const $btn = document.getElementById("menu-mobile-btn");
 
-  if ($btn !== null) {
-    $btn.addEventListener("click", () => {
-      $btn.classList.toggle("active");
-      handleMenuMobile.set();
-    });
-  }
+    if ($btn !== null) {
+      $btn.addEventListener("click", () => {
+        $btn.classList.toggle("active");
+        handleMenuMobile.set();
+      });
+    }
+  });
 </script>
 
 <style>
