@@ -9,6 +9,7 @@
   border: none;
   border-radius: var(--radius);
   padding: 0.5rem;
+  font-size: var(--fs-md);
 }
 
 .text-gradient-primary {

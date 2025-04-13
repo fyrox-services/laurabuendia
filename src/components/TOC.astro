@@ -90,12 +90,17 @@ const headings = buildHeadings(body);
 
     .index {
       font-size: var(--fs-xs);
-      color: var(--text-gray);
+      color: var(--dark-500);
     }
 
     .text {
       color: var(--dark-500);
       font-size: var(--fs-base);
+      transition: color 0.3s ease;
+    }
+
+    .text:hover {
+      color: var(--primary);
     }
   }
 </style>

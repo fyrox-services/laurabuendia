@@ -4,6 +4,7 @@ import TOC from "@/components/TOC.astro";
 import type { CollectionEntry } from "astro:content";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import PostMeta from "@/components/PostMeta.astro";
+import { PostForm } from "@/components/preact/PostForm";
 
 interface Props {
   body: string;
@@ -42,7 +43,7 @@ const { data, slug } = post;
     </div>
 
     <aside class="form-aside">
-      <h2>formulario</h2>
+      <PostForm heading="solicita información" />
     </aside>
   </div>
 </section>
@@ -68,10 +69,10 @@ const { data, slug } = post;
     gap: 1rem;
     --fs-base: 18px;
     --fs-h1: 28px;
+    --content-wrap: 600px;
   }
 
   .above {
-    --content-wrap: 600px;
     max-width: var(--content-wrap);
     margin: var(--header-height) auto 0;
     display: flex;
@@ -101,7 +102,7 @@ const { data, slug } = post;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: var(--text-gray);
+    color: var(--dark-500);
     flex-direction: column;
     gap: 2rem;
   }
@@ -112,16 +113,9 @@ const { data, slug } = post;
     flex-direction: column;
   }
 
-  .toc-aside {
-    /* background-color: darkred; */
-  }
-
   .body-content {
-    /* background-color: darkblue; */
-  }
-
-  .form-aside {
-    background-color: darkslategrey;
+    max-width: var(--content-wrap);
+    margin: auto;
   }
 
   /* DESKTOP */
