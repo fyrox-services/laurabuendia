@@ -1,4 +1,12 @@
-<section class="wrapper">
+---
+interface Props {
+  modifier?: string;
+}
+
+const { modifier = "" } = Astro.props;
+---
+
+<section class:list={[modifier]} class="wrapper">
   <slot />
 </section>
 

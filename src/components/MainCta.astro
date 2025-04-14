@@ -15,10 +15,12 @@ const { modifier = "" } = Astro.props;
 <script>
   import { handleMainModalForm } from "@/stores";
 
-  const $btns = document.querySelectorAll(".main-cta");
+  document.addEventListener("astro:page-load", () => {
+    const $btns = document.querySelectorAll(".main-cta");
 
-  $btns.forEach((btn) => {
-    btn.addEventListener("click", handleMainModalForm.open);
+    $btns.forEach((btn) => {
+      btn.addEventListener("click", handleMainModalForm.open);
+    });
   });
 </script>
 

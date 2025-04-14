@@ -1,0 +1,46 @@
+---
+import H1Heading from "@/components/H1Heading.astro";
+import PageSection from "@/components/PageSection.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  body: string;
+  service: CollectionEntry<"services">;
+}
+
+const { body, service } = Astro.props;
+const { data, slug } = service;
+---
+
+<PageSection modifier="service-page">
+  <H1Heading modifier="service-page"> {data.h1} </H1Heading>
+  <div class="body-content">
+    <slot />
+  </div>
+</PageSection>
+
+<style is:global>
+  section.service-page {
+    --fs-base: 16px;
+  }
+
+  section.service-page .body-content p {
+    font-size: var(--fs-base);
+    line-height: 1.75;
+  }
+
+  .body-content p:first-child {
+    margin: 0 0 1rem;
+  }
+
+  .body-content p:not(p:first-child) {
+    margin: 1rem 0;
+  }
+</style>
+
+<style>
+  .body-content {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+</style>

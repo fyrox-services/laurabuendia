@@ -17,4 +17,14 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { posts };
+const services = defineCollection({
+  schema: z.object({
+    metaTitle: z.string(),
+    metaDescription: z.string(),
+    h1: z.string(),
+    category: z.enum(['deporte']),
+    image: z.string(),
+  }),
+});
+
+export const collections = { posts, services };

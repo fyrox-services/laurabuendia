@@ -13,13 +13,19 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
       <div class="submenu-ul-wrap">
         <ul class="submenu-ul">
           <li>
-            <a class="a" href=""> informes de viabilidad </a>
+            <a class="a" href="/servicios/informes-viabilidad">
+              informes de viabilidad
+            </a>
           </li>
           <li>
-            <a class="a" href=""> informes periciales </a>
+            <a class="a" href="/servicios/informes-periciales">
+              informes periciales
+            </a>
           </li>
           <li>
-            <a class="a" href=""> valoración del daño corporal </a>
+            <a class="a" href="/servicios/valoracion-dano-corporal">
+              valoración del daño corporal
+            </a>
           </li>
           <li>
             <a class="a" href=""> perdida de oportunidad </a>
@@ -39,22 +45,47 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
         </ul>
       </div>
     </li>
-    <!-- 
+
     <li class="li li-with-submenu">
-      <span class="span">valoraciones</span>
+      <span class="span">peritaje médico </span>
+      <span class="arrow">
+        <ShortArrow color="#999" />
+      </span>
+      <div class="submenu-ul-wrap">
+        <ul class="submenu-ul">
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad"> artículo 1 </a>
+          </li>
+        </ul>
+      </div>
+    </li>
 
-      <ul class="submenu-ul">
-        <li>
-          <a class="a" href=""> daño corporal </a>
-        </li>
-        <li>
-          <a class="a" href=""> cuantificación económica </a>
-        </li>
-      </ul>
-    </li> -->
+    <li class="li li-with-submenu">
+      <span class="span">negligencias médicas </span>
+      <span class="arrow">
+        <ShortArrow color="#999" />
+      </span>
+      <div class="submenu-ul-wrap">
+        <ul class="submenu-ul">
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad"> artículo 1 </a>
+          </li>
+        </ul>
+      </div>
+    </li>
 
-    <li class="li">
-      <a class="a" href="/">asistencia</a>
+    <li class="li li-with-submenu">
+      <span class="span">mala praxis </span>
+      <span class="arrow">
+        <ShortArrow color="#999" />
+      </span>
+      <div class="submenu-ul-wrap">
+        <ul class="submenu-ul">
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad"> artículo 1 </a>
+          </li>
+        </ul>
+      </div>
     </li>
 
     <li class="li">
@@ -62,7 +93,7 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
     </li>
 
     <li class="li">
-      <a class="a" href="/">contacto</a>
+      <a class="a" href="/contacto">contacto</a>
     </li>
   </ul>
   <ContactWays />
@@ -193,7 +224,7 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
       display: flex;
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translateY(0) translateX(50%);
     }
 
     .arrow {
@@ -207,10 +238,11 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
     .submenu-ul-wrap {
       position: absolute;
       top: 100%;
+      right: 50%;
       padding-top: 1.5rem;
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-20px);
+      transform: translateY(-20px) translateX(50%);
       transition:
         transform 0.3s ease,
         opacity 0.3s ease,
@@ -243,7 +275,7 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
     .a,
     .span {
       transition: color 0.5s ease;
-      font-size: var(--fs-md);
+      font-size: var(--fs-sm);
     }
 
     .a:hover {

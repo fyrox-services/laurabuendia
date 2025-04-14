@@ -1,9 +1,30 @@
-<h1 class="text-gradient-primary">
+---
+interface Props {
+  modifier?: string;
+}
+
+const { modifier = "" } = Astro.props;
+---
+
+<h1 class:list={["text-gradient-primary", modifier]}>
   <slot />
 </h1>
 
 <style>
   h1 {
     font-size: var(--fs-2xl);
+  }
+
+  h1.service-page {
+    text-align: center;
+  }
+
+  /* DESKTOP */
+
+  @media (min-width: 1024px) {
+    h1.service-page {
+      text-align: center;
+      font-size: var(--fs-4xl);
+    }
   }
 </style>
