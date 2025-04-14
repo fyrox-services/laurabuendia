@@ -25,12 +25,38 @@ export async function getStaticPaths() {
 }
 
 const { service } = Astro.props;
+const { data } = service;
 const { body } = service;
 const { Content } = await render(service);
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": Astro.url,
+  name: data.h1,
+  description: data.description,
+  provider: {
+    "@type": "Organization",
+    name: "Laura Buendía - Perito Médico",
+    url: Astro.url.origin,
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "España",
+  },
+  serviceType: "Peritaje médico legal",
+  url: Astro.url,
+};
 ---
 
 <Layout>
   <ServiceLayout service={service} body={body}>
     <Content />
   </ServiceLayout>
+
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify(structuredData)}
+  />
 </Layout>
