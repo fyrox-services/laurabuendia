@@ -30,7 +30,11 @@ export function getElapsedTime(monthName: string, year: number): string {
     months += 12;
   }
 
-  return `${years} año${years !== 1 ? "s" : ""} ${months} mes${
+  const withYears = `${years} año${years !== 1 ? "s" : ""} ${months} mes${
     months !== 1 ? "es" : ""
   }`;
+
+  const yearsOff = `${months} mes${months !== 1 ? "es" : ""}`;
+
+  return years === 0 ? yearsOff : withYears;
 }

@@ -1,54 +1,8 @@
 ---
-import lineaDirecta from "@/assets/jobs/linea-directa.jpeg";
-import promede from "@/assets/jobs/promede-logo.jpeg";
-import servicioSaludMadrid from "@/assets/jobs/servicio-salud-madrid.jpeg";
 import { Image } from "astro:assets";
 import LauraRbg from "@/assets/mark/laura-rbg.webp";
 import { getElapsedTime } from "@/helpers/getElapsedTime";
-
-interface Work {
-  logo: ImageMetadata;
-  company: string;
-  job: string;
-  date: {
-    month: string;
-    year: number;
-  };
-  description: string;
-}
-
-const works: Work[] = [
-  {
-    company: "linea directa aseguradora",
-    date: {
-      month: "octubre",
-      year: 2019,
-    },
-    description: "sdsd",
-    logo: lineaDirecta,
-    job: "Valoradora del Daño Corporal de Accidentes de Tráfico",
-  },
-  {
-    company: "linea directa aseguradora",
-    date: {
-      month: "octubre",
-      year: 2019,
-    },
-    description: "sdsd",
-    logo: promede,
-    job: "Valoradora del Daño Corporal de Accidentes de Tráfico",
-  },
-  {
-    company: "linea directa aseguradora",
-    date: {
-      month: "octubre",
-      year: 2019,
-    },
-    description: "sdsd",
-    logo: servicioSaludMadrid,
-    job: "Valoradora del Daño Corporal de Accidentes de Tráfico",
-  },
-];
+import { works } from "@/data/works";
 ---
 
 <div class="about-me">
@@ -141,6 +95,7 @@ const works: Work[] = [
 
   .info h4 {
     font-size: var(--fs-md);
+    max-width: 35ch;
   }
 
   .info span {

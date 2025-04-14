@@ -18,3 +18,19 @@ export interface Testimonial {
   work: string;
 }
 
+export interface Target {
+  title: string;
+  description: string;
+  icon: ImageMetadata;
+}
+
+export interface Work {
+  logo: ImageMetadata;
+  company: string;
+  job: string;
+  date: {
+    month: string;
+    year: number;
+  };
+  description: string;
+}
