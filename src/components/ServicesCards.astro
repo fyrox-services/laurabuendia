@@ -1,8 +1,8 @@
 ---
 import { services } from "@/data/services";
-import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
 import LinkExternal from "@/components/icons/LinkExternal.astro";
+import Check from "@/components/icons/Check.astro";
 ---
 
 <ul>
@@ -17,8 +17,11 @@ import LinkExternal from "@/components/icons/LinkExternal.astro";
             <span>más información</span>
             <LinkExternal />
           </a>
-          <Image src={ilustration} alt={`ilustración de ${name}`} />
-          <MainCta modifier="services">contratar</MainCta>
+
+          <MainCta modifier="services">
+            Contratar
+            <Check />
+          </MainCta>
         </li>
       );
     })
@@ -29,13 +32,12 @@ import LinkExternal from "@/components/icons/LinkExternal.astro";
   ul {
     margin: 3rem 0 0;
     display: grid;
-    column-gap: 1.5rem;
-    row-gap: 3rem;
+    gap: 1rem;
   }
 
   li {
     background-color: var(--third);
-    padding: 5rem 1rem 5rem;
+    padding: 1rem;
     border-radius: var(--radius);
     display: flex;
     flex-direction: column;
@@ -46,14 +48,7 @@ import LinkExternal from "@/components/icons/LinkExternal.astro";
 
   h3 {
     font-size: var(--fs-md);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 1rem;
-    border-radius: var(--radius) var(--radius) 0 0;
-    width: 100%;
+    color: var(--primary);
   }
 
   h4 {

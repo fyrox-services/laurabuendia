@@ -68,11 +68,13 @@ const { modifier = "" } = Astro.props;
   }
 
   button.services {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    margin: 1rem 0 0;
+  }
+
+  button.services span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: var(--fs-md);
-    width: max-content;
   }
 </style>
