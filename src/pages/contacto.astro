@@ -1,11 +1,21 @@
 ---
+import CenterContent from "@/components/CenterContent.astro";
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
+import ShortDescription from "@/components/ShortDescription.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
   <PageSection>
-    <H1Heading> hablémos </H1Heading>
+    <CenterContent>
+      <H1Heading modifier="contact-page"> hablémos </H1Heading>
+      <ShortDescription>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+        dolorum qui quaerat eum, fuga quos? Cupiditate placeat, modi nobis ea
+        laborum voluptatibus rem deserunt corporis fugit soluta! Nihil,
+        explicabo dolores?
+      </ShortDescription>
+    </CenterContent>
   </PageSection>
 </Layout>

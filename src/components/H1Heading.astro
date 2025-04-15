@@ -15,14 +15,16 @@ const { modifier = "" } = Astro.props;
     font-size: var(--fs-2xl);
   }
 
-  h1.service-page {
+  h1.service-page,
+  h1.contact-page {
     text-align: center;
   }
 
   /* DESKTOP */
 
   @media (min-width: 1024px) {
-    h1.service-page {
+    h1.service-page,
+    h1.contact-page {
       text-align: center;
       font-size: var(--fs-4xl);
     }
