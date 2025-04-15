@@ -1,6 +1,151 @@
+---
+import Linkedin from "@/components/icons/Linkedin.astro";
+import WhatsApp from "@/components/icons/WhatsApp.astro";
+import Email from "@/components/icons/Email.astro";
+import Phone from "@/components/icons/Phone.astro";
+import Location from "@/components/icons/Location.astro";
+---
+
 <footer>
-  <div class="wrapper">
-    <h2>soy el footer</h2>
+  <div class="wrapper footer-wrap">
+    <nav>
+      <h2>servicios</h2>
+      <ul>
+        <li>
+          <a href="">
+            <span> servicio 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> servicio 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> servicio 1 </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <h2>peritaje médico</h2>
+      <ul>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <h2>negligencias médicas</h2>
+      <ul>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <h2>mala praxis</h2>
+      <ul>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> art 1 </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="contact-nav">
+      <h2>contacto</h2>
+      <ul>
+        <li>
+          <a href="">
+            <Phone width={20} height={20} />
+            <span> 658 147 228 </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <WhatsApp width={20} height={20} />
+            <span> whatsApp </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <Email width={20} height={20} />
+            <span> info@laurabuendia.com </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <Linkedin />
+            <span> linkedin </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://maps.app.goo.gl/q83hZFmFNvdiyTfk8">
+            <Location />
+            <span>
+              Hospital Beata María Ana, C. del Dr. Esquerdo, 83, Retiro, 28007
+              Madrid
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="nav-legal">
+      <ul>
+        <li>
+          <a href="">
+            <span> aviso legal </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> política de cookies </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span> política de privacidad </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </footer>
 
@@ -8,6 +153,63 @@
   footer {
     margin: 5rem 0 0;
     background-color: var(--white);
-    padding: 5rem 0 10rem;
+    padding: 2rem 0;
+  }
+
+  .footer-wrap {
+    display: grid;
+    gap: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  ul:not(.nav-legal ul) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h2 {
+    font-size: var(--fs-md);
+    color: var(--dark-900);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-sm);
+    color: var(--dark-500);
+  }
+
+  .contact-nav a {
+    color: var(--dark-500);
+    font-size: var(--fs-sm);
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-legal {
+    border-top: 1px solid var(--gray);
+    grid-column: 1 / -1;
+    padding: 1rem 0;
+    margin: 3rem 0 0;
+  }
+
+  @media (min-width: 1024px) {
+    .footer-wrap {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .nav-legal ul {
+      display: flex;
+      font-size: var(--fs-sm);
+      gap: 3rem;
+    }
   }
 </style>
