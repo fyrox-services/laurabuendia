@@ -1,0 +1,79 @@
+---
+import WhatsApp from "@/components/icons/WhatsApp.astro";
+import Phone from "@/components/icons/Phone.astro";
+import Email from "@/components/icons/Email.astro";
+
+interface Props {
+  modifier?: string;
+}
+
+const { modifier = "" } = Astro.props;
+---
+
+<ul class:list={["contact-links", modifier]}>
+  <li>
+    <a href="">
+      <Phone width={25} height={25} />
+      <span> llamar </span>
+    </a>
+  </li>
+  <li>
+    <a href="">
+      <WhatsApp width={25} height={25} />
+      <span> whatsApp </span>
+    </a>
+  </li>
+
+  <li>
+    <a href="">
+      <Email width={25} height={25} />
+      <span> correo </span>
+    </a>
+  </li>
+</ul>
+
+<style>
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+  }
+
+  .contact-links.service-page {
+    margin: 2rem 0;
+  }
+
+  .contact-links li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius-l);
+    font-size: var(--fs-md);
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-links li a:hover {
+    background-color: var(--primary-dark);
+  }
+
+  /* MODIFIERS */
+
+  .contact-links.service-page {
+    margin: 2rem 0;
+  }
+
+  .contact-links.service-page li a {
+    font-size: var(--fs-sm);
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    .contact-links {
+      flex-direction: row;
+    }
+  }
+</style>
