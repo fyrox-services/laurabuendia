@@ -2,20 +2,47 @@
 import CenterContent from "@/components/CenterContent.astro";
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
+import { ContactForm } from "@/components/preact/ContactForm";
 import ShortDescription from "@/components/ShortDescription.astro";
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import abovePhoto from "@/assets/mark/laura.jpg";
 ---
 
 <Layout>
   <PageSection>
     <CenterContent>
       <H1Heading modifier="contact-page"> hablémos </H1Heading>
+      <picture class="image-mask">
+        <Image src={abovePhoto} alt="foto de Laura Buendía" />
+      </picture>
       <ShortDescription>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
         dolorum qui quaerat eum, fuga quos? Cupiditate placeat, modi nobis ea
         laborum voluptatibus rem deserunt corporis fugit soluta! Nihil,
         explicabo dolores?
       </ShortDescription>
+
+      <ContactForm heading="hablemos" />
     </CenterContent>
   </PageSection>
 </Layout>
+
+<style>
+  .image-mask {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    mask-image: linear-gradient(var(--light) 50%, transparent 100%);
+  }
+
+  .image-mask img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+</style>

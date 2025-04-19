@@ -47,14 +47,31 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
     </li>
 
     <li class="li li-with-submenu">
-      <span class="span">peritaje médico </span>
+      <span class="span">accidentes de tráfico </span>
       <span class="arrow">
         <ShortArrow color="#999" />
       </span>
       <div class="submenu-ul-wrap">
         <ul class="submenu-ul">
           <li>
-            <a class="a" href="/servicios/informes-viabilidad"> artículo 1 </a>
+            <a class="a" href="/servicios/informes-viabilidad">
+              calcular indemnización
+            </a>
+          </li>
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad">
+              latigazo cervical
+            </a>
+          </li>
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad">
+              informe médico pericial
+            </a>
+          </li>
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad">
+              valoración del daño corporal
+            </a>
           </li>
         </ul>
       </div>
@@ -68,13 +85,20 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
       <div class="submenu-ul-wrap">
         <ul class="submenu-ul">
           <li>
-            <a class="a" href="/servicios/informes-viabilidad"> artículo 1 </a>
+            <a class="a" href="/servicios/informes-viabilidad">
+              ¿Qué es una negligencia médica?
+            </a>
+          </li>
+          <li>
+            <a class="a" href="/servicios/informes-viabilidad">
+              tipos de negligencia médica
+            </a>
           </li>
         </ul>
       </div>
     </li>
 
-    <li class="li li-with-submenu">
+    <!-- <li class="li li-with-submenu">
       <span class="span">mala praxis </span>
       <span class="arrow">
         <ShortArrow color="#999" />
@@ -86,7 +110,7 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
           </li>
         </ul>
       </div>
-    </li>
+    </li> -->
 
     <li class="li">
       <a class="a" href="/blog">blog</a>
@@ -247,6 +271,8 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
         transform 0.3s ease,
         opacity 0.3s ease,
         visibility 0.3s ease;
+      width: 130%;
+      height: 50px;
     }
 
     .submenu-ul {
@@ -255,8 +281,11 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
       box-shadow: var(--shadow);
       flex-direction: column;
       gap: 0.5rem;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: var(--radius);
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
     }
 
     .submenu-ul > li {

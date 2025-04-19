@@ -183,6 +183,7 @@ import Location from "@/components/icons/Location.astro";
     align-items: center;
     font-size: var(--fs-sm);
     color: var(--dark-500);
+    transition: color 0.3s ease;
   }
 
   .contact-nav a {
@@ -210,6 +211,11 @@ import Location from "@/components/icons/Location.astro";
       display: flex;
       font-size: var(--fs-sm);
       gap: 3rem;
+    }
+
+    a:hover,
+    .contact-nav a:hover {
+      color: var(--primary);
     }
   }
 </style>
