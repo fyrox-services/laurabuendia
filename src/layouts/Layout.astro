@@ -6,6 +6,7 @@ import "@/styles/global.css";
 import "@/styles/utils.css";
 import { ClientRouter } from "astro:transitions";
 import logo from "@/assets/mark/logo.png";
+import FloatMobileBtn from "@/components/FloatMobileBtn.astro";
 ---
 
 <!doctype html>
@@ -23,6 +24,7 @@ import logo from "@/assets/mark/logo.png";
       <slot />
     </main>
     <MainModalForm client:load />
+    <FloatMobileBtn />
     <Footer />
   </body>
 </html>

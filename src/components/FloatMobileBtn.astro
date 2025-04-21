@@ -1,0 +1,127 @@
+---
+import Chat from "@/components/icons/Chat.astro";
+import Form from "@/components/icons/Form.astro";
+import OriginalWhatsApp from "@/components/icons/OriginalWhatsApp.astro";
+import Phone from "@/components/icons/Phone.astro";
+---
+
+<div class="float-mobile-btn">
+  <button class="chat-btn">
+    <Chat />
+  </button>
+
+  <button class="form-btn">
+    <Form width={40} height={40} />
+  </button>
+
+  <a class="ws-btn" href="">
+    <OriginalWhatsApp />
+  </a>
+
+  <a class="phone-btn" href="">
+    <Phone width={40} width={40} />
+  </a>
+</div>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const chatBtn = document.querySelector(".chat-btn");
+    const formBtn = document.querySelector(".form-btn");
+    const wsBtn = document.querySelector(".ws-btn");
+    const phoneBtn = document.querySelector(".phone-btn");
+    const hiddenBtns = [formBtn, wsBtn, phoneBtn];
+
+    chatBtn?.addEventListener("click", () => {
+      hiddenBtns.forEach((btn) => {
+        btn?.classList.toggle("active");
+      });
+    });
+  });
+</script>
+
+<style>
+  .float-mobile-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    z-index: 80;
+  }
+
+  .chat-btn {
+    background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 65px;
+    height: 65px;
+    border-radius: var(--radius-full);
+  }
+
+  .chat-btn:active {
+    background-image: linear-gradient(90deg, var(--black), var(--primary));
+  }
+
+  .hidden-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .phone-btn,
+  .ws-btn,
+  .form-btn {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: var(--black);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow);
+    width: 55px;
+    height: 55px;
+    border: none;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease,
+      visibility 0.5s ease;
+    --distance: -80px;
+  }
+
+  .phone-btn.active,
+  .ws-btn.active,
+  .form-btn.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .phone-btn.active {
+    transform: translateY(calc(var(--distance) * 2.6));
+  }
+
+  .ws-btn.active {
+    transform: translateY(calc(var(--distance) * 1.8));
+  }
+
+  .form-btn.active {
+    transform: translateY(calc(var(--distance)));
+  }
+
+  @media (min-width: 1024px) {
+    .float-mobile-btn {
+      display: none;
+    }
+  }
+</style>
