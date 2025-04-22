@@ -101,8 +101,8 @@ const { faqs } = Astro.props;
 
 <style>
   ul {
-    padding: 0;
-    margin: 2rem 0 0;
+    padding: 0 !important;
+    margin: 2rem 0 0 !important;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -110,8 +110,9 @@ const { faqs } = Astro.props;
   }
 
   li {
-    padding: 1rem;
+    padding: 1rem 0;
     border-top: 1px solid var(--gray);
+    list-style: none !important;
   }
 
   details {
@@ -127,7 +128,7 @@ const { faqs } = Astro.props;
     justify-content: space-between;
     gap: 0.5rem;
     margin: 0;
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl) !important;
     cursor: pointer;
     color: var(--primary);
   }

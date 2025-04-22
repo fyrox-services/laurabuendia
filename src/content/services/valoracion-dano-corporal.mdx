@@ -4,23 +4,59 @@ metaDescription: mundo
 h1: valoración del daño corporal
 description: soy la description
 category: deporte
-image: /ruta
+image: /img/services/informe-medico-pericial.jpeg
 ---
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+import { FAQ_HOME } from "@/data/faqs";
+import FAQ from "@/components/FAQ.astro";
+import { ServiceForm } from "@/components/preact/ServiceForm";
+import CtaLinks from "@/components/CtaLinks.astro";
+import { Image } from "astro:assets";
 
-## encabezado 2
+La valoración del daño **corporal es un proceso médico-legal fundamental que permite determinar y cuantificar las secuelas físicas,** psíquicas y estéticas que sufre una persona como consecuencia de un accidente, una agresión, una negligencia médica o cualquier otro hecho lesivo.
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+## ¿Qué es exactamente la valoración del daño corporal?
 
-## encabezado 2
+Se trata de un informe elaborado por un médico perito especializado, cuyo objetivo es analizar las lesiones sufridas por una persona, describir su evolución clínica y establecer las secuelas resultantes, si las hubiera. Este informe puede tener diversas finalidades: servir de base para una reclamación judicial, para negociar con aseguradoras, o para solicitar una indemnización.
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+<ServiceForm heading="contacta conmigo" />
 
-### subheading 3
+## ¿Quién necesita una valoración del daño corporal?
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+- Personas que han sufrido un accidente de tráfico o laboral.
+- Víctimas de negligencias médicas o errores sanitarios.
+- Pacientes con secuelas permanentes tras una intervención quirúrgica.
+- Abogados que necesitan un documento pericial para sustentar su defensa o demanda.
 
-### subheading 3
+<Image
+  src="/img/services/informe-medico-pericial.jpeg"
+  alt="informe"
+  height={1200}
+  width={750}
+/>
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+## ¿Qué incluye este tipo de informe?
+
+- Revisión de la documentación clínica (informes médicos, pruebas diagnósticas, historiales...).
+- Exploración física del paciente si es necesario.
+- Cálculo de días de perjuicio (hospitalización, baja laboral, rehabilitación).
+- Valoración de secuelas (físicas, psíquicas, estéticas).
+- Estimación económica conforme al Baremo de la Ley 35/2015.
+
+## Marco legal: Ley 35/2015
+
+La cuantificación económica del daño corporal en España se basa en la Ley 35/2015, que establece los criterios para calcular la indemnización por daños personales derivados de accidentes de tráfico, pero que también se utiliza como referencia en otros ámbitos.
+
+<CtaLinks modifier="service-page" />
+
+## ¿Por qué es importante contar con un informe pericial bien fundamentado?
+
+Un informe bien estructurado y redactado por un profesional independiente aporta objetividad, rigor técnico y respaldo legal. Puede marcar la diferencia en un proceso judicial o en una negociación extrajudicial, ya que es el documento que sustenta el daño sufrido y su valoración económica.
+
+## Conclusión
+
+La valoración del daño corporal no es solo un trámite: es una herramienta clave para la defensa de los derechos de quien ha sufrido un perjuicio. Contar con un perito médico especializado garantiza que esa valoración sea precisa, objetiva y eficaz en cualquier ámbito legal o asegurador.
+
+## Preguntas frecuentes
+
+<FAQ faqs={FAQ_HOME} />
