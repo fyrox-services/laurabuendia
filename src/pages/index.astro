@@ -2,6 +2,7 @@
 import AboutMe from "@/components/AboutMe.astro";
 import Above from "@/components/Above.astro";
 import CenterContent from "@/components/CenterContent.astro";
+import FAQ from "@/components/FAQ.astro";
 import Heading from "@/components/Heading.astro";
 import HighlightPosts from "@/components/HighlightPosts.astro";
 import HowWorkingCards from "@/components/HowWorkingCards.astro";
@@ -12,7 +13,7 @@ import ServicesCards from "@/components/ServicesCards.astro";
 import ShortDescription from "@/components/ShortDescription.astro";
 import SubHeading from "@/components/SubHeading.astro";
 import TargetCards from "@/components/TargetCards.astro";
-import TestimonialCards from "@/components/TestimonialCards.astro";
+import { FAQ_HOME } from "@/data/faqs";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -28,10 +29,9 @@ import Layout from "@/layouts/Layout.astro";
     <CenterContent modifier="how-working-section">
       <SubHeading>solicita información</SubHeading>
       <ShortDescription>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ea
-        assumenda esse. Excepturi nulla doloribus quia veritatis nobis
-        blanditiis voluptatem quisquam, illum pariatur beatae sint molestias
-        veniam eos obcaecati voluptatibus.
+        Estoy aquí para ayudarte. Si necesitas orientación sobre tu caso, los
+        informes o el proceso, puedes ponerte en contacto sin ningún tipo de
+        compromiso. Estudiaré tu situación y te daré una respuesta clara.
       </ShortDescription>
       <MainCta>más información</MainCta>
     </CenterContent>
@@ -39,10 +39,10 @@ import Layout from "@/layouts/Layout.astro";
   <Section>
     <Heading> perito médico judicial </Heading>
     <p class="mt-1 delimit-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsam quod
-      quo blanditiis, voluptate molestiae asperiores eaque, nemo magnam autem
-      sapiente delectus incidunt deleniti quasi in facere labore. Excepturi,
-      eum.
+      Como perito médico, colaboro con diferentes perfiles profesionales e
+      institucionales, ofreciendo informes rigurosos y asesoramiento experto en
+      procedimientos judiciales, reclamaciones o valoraciones. Sea cual sea tu
+      situación, puedo ayudarte.
     </p>
     <TargetCards />
   </Section>
@@ -58,8 +58,11 @@ import Layout from "@/layouts/Layout.astro";
     <MainForm modifier="about-me" />
   </Section>
   <Section>
-    <Heading>empresas y particulares satisfechos</Heading>
-    <TestimonialCards />
+    <CenterContent modifier="how-working-section">
+      <Heading> preguntas frecuentes </Heading>
+
+      <FAQ faqs={FAQ_HOME} />
+    </CenterContent>
   </Section>
   <Section>
     <Heading> artículos destacados </Heading>

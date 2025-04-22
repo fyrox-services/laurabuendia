@@ -2,18 +2,18 @@ import type { Step } from "@/types";
 
 export const steps: Step[] = [
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Análisis inicial del caso",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique impedit quae porro quisquam architecto esse, minus iste placeat, distinctio dolores? Sed necessitatibus, quibusdam nostrum facere aliquam voluptatum iusto obcaecati..",
+      "Tras el primer contacto, revisaré su situación y la documentación disponible para valorar si el caso es viable desde el punto de vista médico-legal.",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Elaboración del informe",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique impedit quae porro quisquam architecto esse, minus iste placeat, distinctio dolores? Sed necessitatibus, quibusdam nostrum facere aliquam voluptatum iusto obcaecati..",
+      "Si el caso es defendible, procederé a redactar el informe correspondiente, basado en criterios médicos y jurídicos objetivos.",
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Entrega y acompañamiento",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique impedit quae porro quisquam architecto esse, minus iste placeat, distinctio dolores? Sed necessitatibus, quibusdam nostrum facere aliquam voluptatum iusto obcaecati..",
+      "Le haré entrega del informe completo y, si lo necesita, le acompañaré en reuniones con su abogado o en sede judicial para ratificar el contenido.",
   },
 ];

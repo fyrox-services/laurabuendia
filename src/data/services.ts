@@ -5,74 +5,74 @@ import valorationDanoCorporal from "@/assets/ilustrations/valoracion-dano-corpor
 
 export const services: Service[] = [
   {
-    name: "Informes de viabilidad",
+    name: "Valoración del daño corporal",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Has sufrido lesiones tras una intervención médica o un accidente?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Elaboro informes médicos que cuantifican de forma objetiva tus lesiones, secuelas o perjuicios según el baremo legal vigente. Este documento puede ser clave para reclamaciones, negociaciones o procesos judiciales.",
     link: "/",
     ilustration: informesViabilidad,
   },
   {
     name: "Informes periciales",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Necesitás demostrar que hubo una mala actuación médica?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Elaboro informes periciales objetivos y detallados que analizan si las actuaciones médicas se ajustaron a la lex artis. Estos documentos pueden ser determinantes en juicios, reclamaciones o acuerdos extrajudiciales.",
     link: "/",
     ilustration: informesPericiales,
   },
   {
-    name: "Valoración del daño corporal",
+    name: "Accidentes de tráfico y del hogar",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Has sufrido un accidente y necesitás reclamar por tus lesiones?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Elaboro informes periciales tras la exploración médica del lesionado y el análisis de toda la documentación del caso. Estos informes son clave para obtener una indemnización justa en procesos legales o negociaciones con aseguradoras.",
     link: "/",
     ilustration: valorationDanoCorporal,
   },
   {
-    name: "Pérdida de oportunidad",
+    name: "Informes de viabilidad",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿No sabés si tu caso tiene fundamento legal o médico?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Analizo tu caso de forma preliminar y te doy una respuesta clara sobre si es viable iniciar una reclamación. Este informe ahorra tiempo, evita costes innecesarios y permite tomar decisiones con criterio profesional.",
     link: "/",
     ilustration: informesViabilidad,
   },
   {
-    name: "Accidentes de tráfico y del hogar",
+    name: "Perdida de oportunidad",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Creés que un diagnóstico tardío empeoró tu salud?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Cuando un retraso médico evita un tratamiento oportuno y agrava tu estado, puedes reclamar por pérdida de oportunidad. Elaboro informes que demuestran ese daño invisible, con base clínica y argumentos claros para tu defensa.",
     link: "/",
     ilustration: informesViabilidad,
   },
   {
     name: "Reuniones con abogados",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Necesita preparar su estrategia con respaldo médico riguroso?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Colaboro con letrados en la preparación del caso, aportando criterio médico en la elaboración de preguntas clave para la ratificación judicial. Estas reuniones permiten al abogado anticipar escenarios y reforzar la solidez del testimonio pericial.",
     link: "/",
     ilustration: informesViabilidad,
   },
   {
     name: "Mediación",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Busca resolver el conflicto sin llegar a juicio?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Acompaño a los letrados en reuniones de mediación entre las partes, explicando con precisión los actos médicos implicados y su repercusión económica. Mi intervención permite facilitar acuerdos fundados en criterios técnicos y comprensibles para todos los implicados.",
     link: "/",
     ilustration: informesViabilidad,
   },
   {
     name: "Ratificaciones judiciales",
     phrase:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati",
+      "¿Necesita respaldo médico en juicio para defender su informe?",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati, sapiente, ab porro autem inventore a perspiciatis rerum vero nesciunt nulla nemo incidunt.",
+      "Asisto a juicios para ratificar los informes periciales elaborados previamente y responder a las preguntas de las partes. Mi intervención ayuda a que el juez comprenda con precisión los hechos médicos y sus implicaciones en el caso.",
     link: "/",
     ilustration: informesViabilidad,
   },

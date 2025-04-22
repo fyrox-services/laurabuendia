@@ -34,3 +34,8 @@ export interface Work {
   };
   description: string;
 }
+
+export interface FAQ {
+  heading: string;
+  text: string;
+}

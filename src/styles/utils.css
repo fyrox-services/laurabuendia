@@ -51,6 +51,10 @@
   max-width: 60ch;
 }
 
+.strong {
+  font-family: var(--base-bold);
+}
+
 /* SHADOW MASK */
 
 .mask-1 {
