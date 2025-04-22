@@ -41,50 +41,52 @@ const { faqs } = Astro.props;
 </ul>
 
 <script>
-  document.querySelectorAll("details").forEach((detail) => {
-    const summary = detail.querySelector("summary");
-    const content = detail.querySelector(".answer-content");
+  document.addEventListener("astro:page-load", () => {
+    document.querySelectorAll("details").forEach((detail) => {
+      const summary = detail.querySelector("summary");
+      const content = detail.querySelector(".answer-content");
 
-    if (!summary || !content) return;
+      if (!summary || !content) return;
 
-    summary.addEventListener("click", (e) => {
-      e.preventDefault();
-      summary.classList.toggle("active");
+      summary.addEventListener("click", (e) => {
+        e.preventDefault();
+        summary.classList.toggle("active");
 
-      const isOpen = detail.hasAttribute("open");
+        const isOpen = detail.hasAttribute("open");
 
-      if (isOpen) {
-        // Animar cierre
-        const closingAnim = content.animate(
-          [
-            { height: content.scrollHeight + "px", opacity: 1 },
-            { height: "0px", opacity: 0 },
-          ],
-          {
-            duration: 300,
-            easing: "ease",
-          }
-        );
+        if (isOpen) {
+          // Animar cierre
+          const closingAnim = content.animate(
+            [
+              { height: content.scrollHeight + "px", opacity: 1 },
+              { height: "0px", opacity: 0 },
+            ],
+            {
+              duration: 300,
+              easing: "ease",
+            }
+          );
 
-        closingAnim.onfinish = () => {
-          detail.removeAttribute("open");
-        };
-      } else {
-        // Preparar apertura
-        detail.setAttribute("open", "true");
-        const fullHeight = content.scrollHeight + "px";
+          closingAnim.onfinish = () => {
+            detail.removeAttribute("open");
+          };
+        } else {
+          // Preparar apertura
+          detail.setAttribute("open", "true");
+          const fullHeight = content.scrollHeight + "px";
 
-        content.animate(
-          [
-            { height: "0px", opacity: 0 },
-            { height: fullHeight, opacity: 1 },
-          ],
-          {
-            duration: 300,
-            easing: "ease",
-          }
-        );
-      }
+          content.animate(
+            [
+              { height: "0px", opacity: 0 },
+              { height: fullHeight, opacity: 1 },
+            ],
+            {
+              duration: 300,
+              easing: "ease",
+            }
+          );
+        }
+      });
     });
   });
 </script>

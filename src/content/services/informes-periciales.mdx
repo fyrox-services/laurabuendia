@@ -9,25 +9,67 @@ image: /ruta
 
 import { ServiceForm } from "@/components/preact/ServiceForm";
 import CtaLinks from "@/components/CtaLinks.astro";
+import { FAQ_INFORME_MEDICO_PERICIAL } from "@/data/faqs";
+import FAQ from "@/components/FAQ.astro";
+import { Image } from "astro:assets";
+import MainCta from "@/components/MainCta.astro";
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+La elaboración de un informe pericial médico es un paso fundamental cuando se necesita analizar de forma técnica y objetiva una situación clínica que puede tener implicaciones legales. Este tipo de documento es clave en casos de negligencia médica, accidentes, reclamaciones a aseguradoras o litigios.
+
+## ¿Qué es un informe pericial médico?
+
+Es un documento redactado por un médico perito, que analiza una situación clínica concreta, evalúa la actuación médica realizada y determina si ha sido adecuada conforme a la lex artis médica. También puede valorar daños o secuelas que presente el paciente, con el objetivo de aportar evidencia clara en un proceso legal o reclamación.
 
 <ServiceForm heading="contacta conmigo" />
 
-## encabezado 2
+## Finalidades del informe pericial
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+Un informe pericial puede utilizarse para:
+
+- Apoyar una demanda judicial por negligencia médica.
+- Aportar pruebas médicas en una reclamación extrajudicial.
+- Servir como herramienta de negociación con una aseguradora.
+- Justificar secuelas físicas, psicológicas o estéticas derivadas de un daño.
+
+## ¿En qué casos se necesita?
+
+Este tipo de informe es especialmente útil en situaciones como:
+
+- Errores médicos o diagnósticos tardíos.
+- Lesiones derivadas de intervenciones quirúrgicas.
+- Accidentes de tráfico o laborales.
+- Valoración de daños en procedimientos administrativos o civiles.
 
 <CtaLinks modifier="service-page" />
 
-## encabezado 2
+## Contenido habitual de un informe pericial médico
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+Un informe bien elaborado suele incluir:
 
-### subheading 3
+- Revisión de la historia clínica y documentación médica.
+- Análisis de las pruebas diagnósticas.
+- Evaluación de la actuación médica realizada.
+- Valoración del daño corporal o secuelas.
+- Conclusiones motivadas con respaldo técnico.
+- Bibliografía médica (cuando procede).
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+<Image
+  src="/img/services/informe-medico-pericial.jpeg"
+  alt="informe"
+  height={1200}
+  width={750}
+/>
 
-### subheading 3
+## Quién debe elaborarlo
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+Solo puede redactarlo un médico con formación específica en peritaje médico legal. Es fundamental que el perito sea independiente, objetivo y tenga experiencia tanto clínica como en contextos judiciales.
+
+<MainCta modifier="service-page">más información</MainCta>
+
+## Metodología de trabajo
+
+En mi caso, el proceso comienza con el estudio detallado de la documentación médica aportada por el paciente o el abogado. Si es necesario, se realiza una exploración física. A continuación, elaboro el informe conforme a criterios técnico-legales, y si el caso lo requiere, ofrezco acompañamiento durante la ratificación judicial.
+
+## Preguntas frecuentes
+
+<FAQ faqs={FAQ_INFORME_MEDICO_PERICIAL} />

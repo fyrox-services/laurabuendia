@@ -1,26 +1,71 @@
 ---
 metaTitle: hola
 metaDescription: mundo
-h1: informes viabilidad
+h1: Informe de viabilidad médica
 description: soy la description
 category: deporte
 image: /ruta
 ---
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+import { ServiceForm } from "@/components/preact/ServiceForm";
+import CtaLinks from "@/components/CtaLinks.astro";
+import { FAQ_INFORMES_DE_VIABILIDAD } from "@/data/faqs";
+import FAQ from "@/components/FAQ.astro";
+import { Image } from "astro:assets";
+import MainCta from "@/components/MainCta.astro";
 
-## encabezado 2
+El informe de viabilidad, también conocido como **informe de orientación**, es el primer paso para determinar si un caso tiene fundamento médico y legal suficiente como para ser defendido. Está especialmente indicado en situaciones en las que hay dudas sobre si ha existido una mala praxis médica o si procede iniciar una reclamación.
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+<ServiceForm heading="contacta conmigo" />
 
-## encabezado 2
+## ¿En qué consiste un informe de viabilidad?
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+Este informe consiste en el análisis preliminar de toda la documentación médica disponible con el objetivo de ofrecer una **opinión técnica fundamentada** sobre la viabilidad del caso desde el punto de vista pericial. No es un informe pericial completo, sino una evaluación inicial que permite al paciente o al abogado tomar decisiones informadas.
 
-### subheading 3
+<CtaLinks modifier="service-page" />
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+## ¿Para qué sirve?
 
-### subheading 3
+- Detectar indicios de negligencia médica.
+- Determinar si el caso es defendible en juicio.
+- Decidir si merece la pena elaborar un informe pericial completo.
+- Ahorrar costes en casos sin base técnica suficiente.
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quaerat sint nemo, corporis numquam ipsum inventore iure laboriosam nam, vero dolores corrupti dolorem eum aliquid eos recusandae doloremque ipsam.
+<Image
+  src="/img/services/informe-medico-pericial.jpeg"
+  alt="informe"
+  height={1200}
+  width={750}
+/>
+
+## Especialidades más frecuentes
+
+Este tipo de informes es habitual en áreas médicas como:
+
+- Atención Primaria
+- Servicios de Urgencias
+- Cuidados Paliativos
+- Medicina Estética
+
+También puede aplicarse a cualquier otra especialidad médica en la que se haya producido un posible perjuicio.
+
+## ¿Quién solicita estos informes?
+
+- **Abogados** que necesitan una valoración técnica antes de iniciar acciones legales.
+
+- **Particulares** que sospechan de una mala praxis pero no tienen conocimientos médicos para valorarlo.
+
+- **Compañías aseguradoras** o instituciones que desean conocer si existe base técnica para asumir o rechazar una reclamación.
+
+<MainCta modifier="service-page">más información</MainCta>
+
+## ¿Qué incluye?
+
+- Revisión de la historia clínica y pruebas aportadas.
+- Evaluación de la actuación médica realizada.
+- Conclusión clara sobre la viabilidad o no del caso.
+- En caso afirmativo, posibilidad de continuar con un informe pericial completo.
+
+## Preguntas frecuentes
+
+<FAQ faqs={FAQ_INFORMES_DE_VIABILIDAD} />

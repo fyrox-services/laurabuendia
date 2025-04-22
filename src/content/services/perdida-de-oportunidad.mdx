@@ -1,0 +1,67 @@
+---
+metaTitle: hola
+metaDescription: mundo
+h1: Pérdida de oportunidad en el ámbito médico
+description: soy la description
+category: deporte
+image: /ruta
+---
+
+import { ServiceForm } from "@/components/preact/ServiceForm";
+import CtaLinks from "@/components/CtaLinks.astro";
+import { FAQ_PERDIDA_DE_OPORTUNIDAD } from "@/data/faqs";
+import FAQ from "@/components/FAQ.astro";
+import { Image } from "astro:assets";
+import MainCta from "@/components/MainCta.astro";
+
+La **pérdida de oportunidad** es un concepto médico-legal que se aplica cuando un retraso en el diagnóstico o tratamiento de una enfermedad ha impedido a un paciente beneficiarse de un mejor pronóstico, un tratamiento menos invasivo o una recuperación más favorable.
+
+No se trata necesariamente de un error médico evidente, sino de una actuación que, aun siendo técnicamente correcta en parte, **llegó tarde o de forma insuficiente**, privando al paciente de una posibilidad real de mejora.
+
+<ServiceForm heading="contacta conmigo" />
+
+## ¿Cuándo se considera pérdida de oportunidad?
+
+Este tipo de situación puede reconocerse cuando:
+
+- Ha existido un **retraso en el diagnóstico** de una enfermedad grave (cáncer, infecciones, etc.).
+- No se han solicitado las pruebas necesarias en el momento oportuno.
+- La derivación a un especialista se ha producido demasiado tarde.
+- No se ha iniciado el tratamiento adecuado con la celeridad debida.
+- La falta de actuación temprana ha dado lugar a un empeoramiento evidente, secuelas o tratamientos más agresivos.
+
+<CtaLinks modifier="service-page" />
+
+## Ejemplos frecuentes
+
+- Retraso en el diagnóstico de un tumor que podría haberse tratado de forma menos agresiva en fases iniciales.
+- Falta de derivación urgente en un paciente con síntomas neurológicos.
+- Infravaloración de signos clínicos que desencadenan un desenlace más grave.
+
+## ¿Qué demuestra un informe pericial en estos casos?
+
+Un informe médico pericial en situaciones de pérdida de oportunidad no tiene que probar que el resultado habría sido distinto con seguridad, sino que **existía una probabilidad razonable de haber alcanzado un mejor desenlace** si se hubiese actuado correctamente.
+
+<Image
+  src="/img/services/informe-medico-pericial.jpeg"
+  alt="informe"
+  height={1200}
+  width={750}
+/>
+
+El perito médico debe:
+
+- Analizar toda la documentación médica y el curso clínico del paciente.
+- Estudiar si hubo una desviación de la lex artis médica.
+- Estimar la probabilidad de que una actuación temprana hubiera evitado el daño final.
+- Cuantificar, si procede, las secuelas o perjuicios derivados de esa pérdida de oportunidad.
+
+<MainCta modifier="service-page">más información</MainCta>
+
+## ¿Por qué es relevante en el ámbito legal?
+
+Este concepto es frecuentemente utilizado en procedimientos judiciales por **negligencia médica**, especialmente en casos complejos donde el error no es evidente, pero sí se puede demostrar que el paciente fue privado de una posibilidad real de mejora.
+
+## Preguntas frecuentes
+
+<FAQ faqs={FAQ_PERDIDA_DE_OPORTUNIDAD} />

@@ -1,0 +1,62 @@
+---
+metaTitle: hola
+metaDescription: mundo
+h1: Informes periciales en accidentes de tráfico y del hogar
+description: soy la description
+category: deporte
+image: /ruta
+---
+
+import { ServiceForm } from "@/components/preact/ServiceForm";
+import CtaLinks from "@/components/CtaLinks.astro";
+import { FAQ_ACCIDENTES_DE_TRAFICO_Y_HOGAR } from "@/data/faqs";
+import FAQ from "@/components/FAQ.astro";
+import { Image } from "astro:assets";
+import MainCta from "@/components/MainCta.astro";
+
+Se trata de un documento técnico elaborado por un médico perito, tras la **exploración del lesionado** y el análisis detallado de toda la documentación clínica relacionada con el accidente. Su objetivo es determinar la existencia de daños, valorar su gravedad y cuantificar las posibles secuelas conforme a criterios médicos y legales.
+
+<ServiceForm heading="contacta conmigo" />
+
+## ¿Cuándo se necesita?
+
+Este tipo de informe es especialmente útil en situaciones como:
+
+- Accidentes de tráfico con lesiones físicas.
+- Caídas o siniestros en el domicilio o comunidades.
+- Reclamaciones a aseguradoras que discuten la gravedad del daño.
+- Procesos judiciales o negociaciones extrajudiciales.
+
+<CtaLinks modifier="service-page" />
+
+## ¿Qué incluye el informe?
+
+- Revisión de informes de urgencias, rehabilitación y seguimiento médico.
+- Exploración física del paciente.
+- Valoración del daño corporal (días de baja, secuelas, tratamientos necesarios).
+- Cuantificación económica del daño según el Baremo de la Ley 35/2015.
+- Conclusiones claras, estructuradas y listas para ser presentadas ante aseguradoras o juzgados.
+
+<Image
+  src="/img/services/informe-medico-pericial.jpeg"
+  alt="informe"
+  height={1200}
+  width={750}
+/>
+
+## ¿Por qué es importante contar con un informe independiente?
+
+Las compañías aseguradoras suelen realizar valoraciones internas que no siempre reflejan con exactitud el daño real. Un informe elaborado por un perito médico externo garantiza la **objetividad** y ofrece **respaldo técnico** en caso de desacuerdo o litigio.
+
+<MainCta modifier="service-page">más información</MainCta>
+
+## Metodología de trabajo
+
+- Revisión inicial de la documentación aportada.
+- Exploración médica si procede.
+- Elaboración del informe pericial completo.
+- Acompañamiento en fase judicial si se requiere ratificación.
+
+## Preguntas frecuentes
+
+<FAQ faqs={FAQ_ACCIDENTES_DE_TRAFICO_Y_HOGAR} />
