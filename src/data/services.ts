@@ -50,12 +50,12 @@ export const services: Service[] = [
     ilustration: informesViabilidad,
   },
   {
-    name: "Reuniones con abogados",
+    name: "asesoramiento a letrados",
     phrase:
       "¿Necesita preparar su estrategia con respaldo médico riguroso?",
     description:
       "Colaboro con letrados en la preparación del caso, aportando criterio médico en la elaboración de preguntas clave para la ratificación judicial. Estas reuniones permiten al abogado anticipar escenarios y reforzar la solidez del testimonio pericial.",
-    link: "/servicios/reuniones-con-abogados",
+    link: "/servicios/asesoramiento-a-letrados",
     ilustration: informesViabilidad,
   },
   {
