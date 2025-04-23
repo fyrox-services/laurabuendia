@@ -16,12 +16,6 @@ export function PostForm({ heading }: Props) {
       </div>
       <div class={css.Field}>
         <label class={css.Label} htmlFor="">
-          email
-        </label>
-        <input class={css.Input} type="text" />
-      </div>
-      <div class={css.Field}>
-        <label class={css.Label} htmlFor="">
           teléfono
         </label>
         <input class={css.Input} type="text" />
@@ -31,6 +25,12 @@ export function PostForm({ heading }: Props) {
           mensaje
         </label>
         <textarea class={css.Textarea} name="" id=""></textarea>
+      </div>
+      <div>
+        <label class={`${css.Label} ${css.LabelLegal}`} htmlFor="">
+          <input type="checkbox" />
+          <span>Acepto la política de privacidad</span>
+        </label>
       </div>
       <button class={`${css.Submit} btn`}>enviar</button>
     </form>

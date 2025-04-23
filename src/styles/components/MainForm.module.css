@@ -44,6 +44,12 @@
   resize: none;
 }
 
+.LabelLegal {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .Submit {
   font-size: var(--fs-md);
 }

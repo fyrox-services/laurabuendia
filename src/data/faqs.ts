@@ -103,3 +103,18 @@ export const FAQ_PERDIDA_DE_OPORTUNIDAD: FAQ[] = [
     text: "A través de un informe pericial elaborado por un médico experto en valoración del daño corporal y análisis clínico, que analice todo el recorrido asistencial y sus consecuencias.",
   },
 ];
+
+export const FAQ_CALCULAR_INDEMNIZACION: FAQ[] = [
+  {
+    heading: "¿Cuánto tiempo tengo para reclamar una indemnización por accidente de tráfico?",
+    text: "El plazo general es de un año desde que se estabilizan las lesiones o se obtiene el alta médica. No obstante, pueden existir excepciones, por lo que es recomendable consultar con un abogado o perito especializado cuanto antes.",
+  },
+  {
+    heading: "¿Puedo reclamar aunque no haya parte policial?",
+    text: "Sí, pero es fundamental contar con pruebas suficientes: informes médicos, testigos, fotografías del accidente y cualquier documento que acredite lo ocurrido. Cuanto más inmediata sea la atención médica tras el accidente, más sólida será la reclamación.",
+  },
+  {
+    heading: "¿Qué pasa si la aseguradora ofrece una cantidad que considero baja?",
+    text: "En ese caso, es muy recomendable solicitar un informe médico pericial independiente, que valore objetivamente el alcance de tus lesiones y secuelas. Este informe puede ayudarte a negociar una compensación más justa o iniciar acciones legales si es necesario.",
+  },
+];

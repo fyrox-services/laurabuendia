@@ -2,7 +2,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem 1rem;
+  padding: 1rem;
   border-radius: var(--radius-m);
   gap: 1rem;
   max-height: 85dvh;
@@ -58,6 +58,12 @@
 
 .Textarea {
   resize: none;
+}
+
+.LabelLegal {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .Submit {

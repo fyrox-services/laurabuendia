@@ -8,7 +8,7 @@ const posts = defineCollection({
     readingTime: z.number(),
     datePublished: z.date(),
     dateModified: z.date(),
-    category: z.enum(["deporte"]),
+    category: z.enum(["accidentes de tráfico", "peritaje médico", "negligencia médica"]),
     image: z.string(),
     wordCount: z.number(),
     description: z.string(),

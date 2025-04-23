@@ -45,6 +45,12 @@ export function MainForm({ modifier = "" }: Props) {
         </label>
         <textarea class={css.Textarea} name="" id=""></textarea>
       </div>
+      <div>
+        <label class={`${css.Label} ${css.LabelLegal}`} htmlFor="">
+          <input type="checkbox" />
+          <span>Acepto la política de privacidad</span>
+        </label>
+      </div>
       <button class={`${css.Submit} btn`}>enviar</button>
     </form>
   );

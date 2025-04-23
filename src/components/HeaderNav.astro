@@ -1,6 +1,7 @@
 ---
 import ContactWays from "@/components/ContactWays.astro";
 import ShortArrow from "@/components/icons/ShortArrow.astro";
+import Phone from "@/components/icons/Phone.astro";
 ---
 
 <nav id="header-nav">
@@ -96,6 +97,13 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
 
     <li class="li">
       <a class="a" href="/contacto">contacto</a>
+    </li>
+
+    <li class="phone-cta-header">
+      <a class="a" href="tel:66332211">
+        <Phone width={20} height={20} />
+        <span> 661 028 369 </span>
+      </a>
     </li>
   </ul>
   <ContactWays />
@@ -200,6 +208,10 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
       animation-delay: 0.5s;
     }
 
+    .phone-cta-header {
+      display: none;
+    }
+
     @keyframes rise-up {
       100% {
         transform: translateY(0);
@@ -215,6 +227,7 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
       gap: 2rem;
     }
 
+    .li,
     .li-with-submenu {
       position: relative;
       display: flex;
@@ -287,6 +300,22 @@ import ShortArrow from "@/components/icons/ShortArrow.astro";
 
     .a:hover {
       color: var(--primary);
+    }
+
+    .phone-cta-header a {
+      display: flex;
+      align-items: center;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.5rem 1.5rem;
+      gap: 0.5rem;
+      font-size: var(--fs-xs);
+      border-radius: var(--radius-l);
+      transition: background-color 0.3s ease;
+    }
+
+    .phone-cta-header a:hover {
+      background-color: var(--primary-dark);
     }
   }
 </style>

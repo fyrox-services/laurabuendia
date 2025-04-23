@@ -9,7 +9,7 @@ interface Props {
 const { faqs } = Astro.props;
 ---
 
-<ul class="itemscope" itemtype="https://schema.org/FAQPage">
+<ul class="faq" itemtype="https://schema.org/FAQPage">
   {
     faqs.map(({ heading, text }, index) => {
       return (

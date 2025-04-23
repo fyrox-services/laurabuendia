@@ -23,11 +23,16 @@ const headings = buildHeadings(body);
       <Close />
     </button>
   </header>
-  <ul>
+  <ul class="toc">
     {
       headings.map(({ text }, i) => {
         const splitedText = text.split(" ");
-        const createSlug = splitedText.join("-");
+
+        const cleanedText = splitedText.map((word) => {
+          return word.toLocaleLowerCase().replaceAll(/[¿?!]/g, "");
+        });
+
+        const createSlug = cleanedText.join("-");
         return (
           <li class="item">
             <a href={`/${slug}#${createSlug}`} itemprop="url">
