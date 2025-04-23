@@ -13,24 +13,65 @@ author: "Laura Buendía"
 topPick: true
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro rerum vitae accusantium sunt tempora! Accusamus delectus doloremque aliquid facere, accusantium ipsa dolorem consequuntur quas praesentium, doloribus earum amet quo eaque non dignissimos incidunt quod harum ipsam saepe laborum voluptatum voluptatibus molestiae tempora animi! Dolor optio officiis reiciendis assumenda iure asperiores ipsa, error aperiam illum numquam animi impedit voluptatem rem est libero, earum harum. Vero illo, odio laborum adipisci quasi sequi aliquam, quo, vel totam eveniet quisquam excepturi et porro asperiores nisi officia explicabo ipsum molestiae voluptates voluptatum voluptatibus reiciendis. Esse soluta delectus maiores necessitatibus excepturi, harum doloribus quam totam.
+import CtaLinks from "@/components/CtaLinks.astro";
+import { FAQ_CALCULAR_INDEMNIZACION } from "@/data/faqs";
+import FAQ from "@/components/FAQ.astro";
+import { Image } from "astro:assets";
+import MainCta from "@/components/MainCta.astro";
 
-## encabezado 2
+Cuando una persona sufre una lesión por accidente, negligencia médica o agresión, es fundamental contar con una valoración objetiva y profesional de las secuelas que dicha lesión ha provocado. En estos casos, el papel del **perito médico especialista en valoración del daño corporal** resulta clave para reclamar una indemnización justa o defender los intereses en un procedimiento judicial.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro rerum vitae accusantium sunt tempora! Accusamus delectus doloremque aliquid facere, accusantium ipsa dolorem consequuntur quas praesentium, doloribus earum amet quo eaque non dignissimos incidunt quod harum ipsam saepe laborum voluptatum voluptatibus molestiae tempora animi! Dolor optio officiis reiciendis assumenda iure asperiores ipsa, error aperiam illum numquam animi impedit voluptatem rem est libero, earum harum. Vero illo, odio laborum adipisci quasi sequi aliquam, quo, vel totam eveniet quisquam excepturi et porro asperiores nisi officia explicabo ipsum molestiae voluptates voluptatum voluptatibus reiciendis. Esse soluta delectus maiores necessitatibus excepturi, harum doloribus quam totam.
+## ¿Qué es un perito médico en valoración del daño corporal?
 
-### encabezado 3
+Es un médico con formación específica en medicina legal y valoración del daño, cuya función principal es **evaluar el alcance físico, funcional, estético o psicológico** de una lesión o enfermedad derivada de un hecho traumático. Su trabajo se centra en traducir las secuelas médicas en términos económicos y legales.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro rerum vitae accusantium sunt tempora! Accusamus delectus doloremque aliquid facere, accusantium ipsa dolorem consequuntur quas praesentium, doloribus earum amet quo eaque non dignissimos incidunt quod harum ipsam saepe laborum voluptatum voluptatibus molestiae tempora animi! Dolor optio officiis reiciendis assumenda iure asperiores ipsa, error aperiam illum numquam animi impedit voluptatem rem est libero, earum harum. Vero illo, odio laborum adipisci quasi sequi aliquam, quo, vel totam eveniet quisquam excepturi et porro asperiores nisi officia explicabo ipsum molestiae voluptates voluptatum voluptatibus reiciendis. Esse soluta delectus maiores necessitatibus excepturi, harum doloribus quam totam.
+## ¿Qué hace exactamente este profesional?
 
-#### encabezado 4
+- Revisa la documentación médica aportada por el paciente o su abogado.
+- Explora físicamente al lesionado si es necesario.
+- Determina los días de perjuicio temporal (baja médica, hospitalización, etc.).
+- Valora las secuelas permanentes según el baremo legal.
+- Emite un informe técnico con validez legal.
+- En caso necesario, acude a juicio para **ratificar el informe** y defender sus conclusiones.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro rerum vitae accusantium sunt tempora! Accusamus delectus doloremque aliquid facere, accusantium ipsa dolorem consequuntur quas praesentium, doloribus earum amet quo eaque non dignissimos incidunt quod harum ipsam saepe laborum voluptatum voluptatibus molestiae tempora animi! Dolor optio officiis reiciendis assumenda iure asperiores ipsa, error aperiam illum numquam animi impedit voluptatem rem est libero, earum harum. Vero illo, odio laborum adipisci quasi sequi aliquam, quo, vel totam eveniet quisquam excepturi et porro asperiores nisi officia explicabo ipsum molestiae voluptates voluptatum voluptatibus reiciendis. Esse soluta delectus maiores necessitatibus excepturi, harum doloribus quam totam.
+<CtaLinks modifier="service-page" />
 
-#### encabezado 4
+## ¿Cuándo se necesita un perito médico valorador?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro rerum vitae accusantium sunt tempora! Accusamus delectus doloremque aliquid facere, accusantium ipsa dolorem consequuntur quas praesentium, doloribus earum amet quo eaque non dignissimos incidunt quod harum ipsam saepe laborum voluptatum voluptatibus molestiae tempora animi! Dolor optio officiis reiciendis assumenda iure asperiores ipsa, error aperiam illum numquam animi impedit voluptatem rem est libero, earum harum. Vero illo, odio laborum adipisci quasi sequi aliquam, quo, vel totam eveniet quisquam excepturi et porro asperiores nisi officia explicabo ipsum molestiae voluptates voluptatum voluptatibus reiciendis. Esse soluta delectus maiores necessitatibus excepturi, harum doloribus quam totam.
+- En reclamaciones por **accidentes de tráfico o laborales**.
+- En procedimientos por **negligencia médica**.
+- En casos de **agresiones o daños estéticos**.
+- En procesos de **incapacidad laboral o seguros de vida**.
 
-##### encabezado 5
+## ¿Qué baremo se utiliza para calcular el daño?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro rerum vitae accusantium sunt tempora! Accusamus delectus doloremque aliquid facere, accusantium ipsa dolorem consequuntur quas praesentium, doloribus earum amet quo eaque non dignissimos incidunt quod harum ipsam saepe laborum voluptatum voluptatibus molestiae tempora animi! Dolor optio officiis reiciendis assumenda iure asperiores ipsa, error aperiam illum numquam animi impedit voluptatem rem est libero, earum harum. Vero illo, odio laborum adipisci quasi sequi aliquam, quo, vel totam eveniet quisquam excepturi et porro asperiores nisi officia explicabo ipsum molestiae voluptates voluptatum voluptatibus reiciendis. Esse soluta delectus maiores necessitatibus excepturi, harum doloribus quam totam.
+En España se aplica la **Ley 35/2015**, que establece un sistema de valoración para determinar la compensación económica por días de baja, secuelas, pérdida de calidad de vida, cirugía, o necesidad de ayuda de terceros.
+
+<Image
+  src="/img/services/informe-medico-pericial.jpeg"
+  alt="informe"
+  height={1200}
+  width={750}
+/>
+
+## ¿Qué diferencia hay con otros médicos?
+
+Aunque cualquier médico puede conocer las consecuencias de una lesión, solo el **médico perito** con experiencia legal está capacitado para:
+
+- Traducir el lenguaje clínico a términos comprensibles para abogados, jueces y aseguradoras.
+- Calcular económicamente el impacto del daño.
+- Emitir informes válidos para procesos judiciales o extrajudiciales.
+
+<MainCta modifier="service-page">más información</MainCta>
+
+## ¿Por qué es importante la independencia?
+
+Un perito médico independiente garantiza una valoración objetiva, sin presiones externas ni conflicto de intereses. Esto es especialmente relevante en litigios o reclamaciones frente a aseguradoras.
+
+## Conclusión
+
+El perito médico especialista en valoración del daño corporal es una figura imprescindible para garantizar que las lesiones sufridas se reconozcan y se indemnicen de forma justa. Su intervención permite respaldar una reclamación con argumentos sólidos, técnicos y conforme a derecho.
+
+## Preguntas frecuentes
+
+<FAQ faqs={FAQ_CALCULAR_INDEMNIZACION} />
