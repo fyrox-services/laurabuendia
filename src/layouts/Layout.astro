@@ -7,6 +7,12 @@ import "@/styles/utils.css";
 import { ClientRouter } from "astro:transitions";
 import logo from "@/assets/mark/logo.png";
 import FloatMobileBtn from "@/components/FloatMobileBtn.astro";
+
+interface Props {
+  bodyClass?: string;
+}
+
+const { bodyClass } = Astro.props;
 ---
 
 <!doctype html>
@@ -33,7 +39,7 @@ import FloatMobileBtn from "@/components/FloatMobileBtn.astro";
     <ClientRouter />
     <title>Astro Basics</title>
   </head>
-  <body>
+  <body class={bodyClass}>
     <Header />
     <main>
       <slot />
@@ -43,3 +49,11 @@ import FloatMobileBtn from "@/components/FloatMobileBtn.astro";
     <Footer />
   </body>
 </html>
+
+<script>
+  import { disableBodyScroll } from "@/helpers/disableBodyScroll";
+
+  document.addEventListener("astro:page-load", () => {
+    disableBodyScroll();
+  });
+</script>

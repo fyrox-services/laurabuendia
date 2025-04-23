@@ -4,6 +4,10 @@
   margin-inline: auto;
 }
 
+.not-scrollable {
+  overflow: hidden;
+}
+
 /* BUTTONS */
 
 .btn {

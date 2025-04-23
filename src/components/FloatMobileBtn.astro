@@ -43,7 +43,7 @@ import Phone from "@/components/icons/Phone.astro";
   .float-mobile-btn {
     position: fixed;
     bottom: 5%;
-    right: 5%;
+    right: 3%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -117,6 +117,10 @@ import Phone from "@/components/icons/Phone.astro";
 
   .form-btn.active {
     transform: translateY(calc(var(--distance)));
+  }
+
+  body.post .float-mobile-btn {
+    bottom: 100px;
   }
 
   @media (min-width: 1024px) {
