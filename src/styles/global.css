@@ -1,15 +1,15 @@
 /* Reset CSS Universal */
 @font-face {
-  font-family: "Outfit";
-  src: url("/fonts/Poppins-Regular.ttf");
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Outfit SemiBold";
-  src: url("/fonts/Poppins-SemiBold.ttf");
+  font-family: "Poppins SemiBold";
+  src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -43,8 +43,8 @@
   --fs-5xl: 56px;
   --fs-6xl: 66px;
 
-  --base: "Outfit";
-  --base-bold: "Outfit SemiBold";
+  --base: "Poppins", system-ui, sans-serif;
+  --base-bold: "Poppins SemiBold", system-ui, sans-serif;
 
   --radius: 8px;
   --radius-m: 14px;
