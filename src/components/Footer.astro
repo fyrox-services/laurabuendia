@@ -12,82 +12,75 @@ import Location from "@/components/icons/Location.astro";
       <h2>servicios</h2>
       <ul>
         <li>
-          <a href="">
-            <span> servicio 1 </span>
+          <a href="/servicios/valoracion-dano-corporal">
+            <span> valoración del daño corporal </span>
           </a>
         </li>
         <li>
-          <a href="">
-            <span> servicio 1 </span>
+          <a href="/servicios/informes-periciales"> informes periciales </a>
+        </li>
+        <li>
+          <a href="/servicios/accidentes-de-trafico-y-hogar">
+            <span> accidentes de tráfico y hogar </span>
           </a>
         </li>
         <li>
-          <a href="">
-            <span> servicio 1 </span>
+          <a href="/servicios/informes-viabilidad">
+            <span> informes de viabilidad </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/servicios/perdida-de-oportunidad">
+            <span> perdida de oportunidad </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/servicios/asesoramiento-a-letrados">
+            <span> asesoramiento a letrados </span>
+          </a>
+        </li>
+        <li>
+          <a href="/servicios/mediacion">
+            <span> mediación </span>
+          </a>
+        </li>
+        <li>
+          <a href="/servicios/ratificaciones-judiciales">
+            <span> ratificaciones judiciales </span>
           </a>
         </li>
       </ul>
     </nav>
     <nav>
-      <h2>peritaje médico</h2>
+      <h2>Blog</h2>
       <ul>
         <li>
-          <a href="">
-            <span> art 1 </span>
+          <a href="/peritaje-medico/que-es-un-peritaje-medico">
+            <span> ¿Qué es un peritaje médico? </span>
           </a>
         </li>
         <li>
-          <a href="">
-            <span> art 1 </span>
+          <a
+            href="/peritaje-medico/perito-medico-especialista-en-valoracion-de-danos-corporales"
+          >
+            <span> Especialista en valoración de daños corporales </span>
           </a>
         </li>
         <li>
-          <a href="">
-            <span> art 1 </span>
+          <a href="/accidentes-de-trafico/calcular-indemnizacion">
+            <span> calcular indemnización </span>
+          </a>
+        </li>
+        <li>
+          <a href="/accidentes-de-trafico/indemnizacion-por-latigazo-cervical">
+            <span> indemnización por latigazo cervical </span>
           </a>
         </li>
       </ul>
     </nav>
-    <nav>
-      <h2>negligencias médicas</h2>
-      <ul>
-        <li>
-          <a href="">
-            <span> art 1 </span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span> art 1 </span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span> art 1 </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <nav>
-      <h2>mala praxis</h2>
-      <ul>
-        <li>
-          <a href="">
-            <span> art 1 </span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span> art 1 </span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span> art 1 </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+
     <nav class="contact-nav">
       <h2>contacto</h2>
       <ul>
@@ -204,7 +197,8 @@ import Location from "@/components/icons/Location.astro";
 
   @media (min-width: 1024px) {
     .footer-wrap {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 800px;
     }
 
     .nav-legal ul {
