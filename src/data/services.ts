@@ -7,45 +7,45 @@ export const services: Service[] = [
   {
     name: "Valoración del daño corporal",
     phrase:
-      "¿Has sufrido lesiones tras una intervención médica o un accidente?",
+      "¿Ha sufrido lesiones tras una intervención médica o un accidente?",
     description:
-      "Elaboro informes médicos que cuantifican de forma objetiva tus lesiones, secuelas o perjuicios según el baremo legal vigente. Este documento puede ser clave para reclamaciones, negociaciones o procesos judiciales.",
+      "Se elaboran informes médico-periciales que cuantifican de forma objetiva las lesiones, secuelas o perjuicios según el baremo vigente; la Ley 35/2015 de accidentes de tráfico. Este documento es clave para reclamaciones, negociaciones o procesos judiciales.",
     link: "/servicios/valoracion-dano-corporal",
     ilustration: informesViabilidad,
   },
   {
     name: "Informes periciales",
     phrase:
-      "¿Necesitás demostrar que hubo una mala actuación médica?",
+      "¿Necesita demostrar que hubo una mala actuación médica?",
     description:
-      "Elaboro informes periciales objetivos y detallados que analizan si las actuaciones médicas se ajustaron a la lex artis. Estos documentos pueden ser determinantes en juicios, reclamaciones o acuerdos extrajudiciales.",
+      "Se elaboran informes periciales objetivos y detallados que analizan si las actuaciones médicas se ajustaron a la lex artis ad hoc. Estos documentos pueden ser determinantes en juicios, reclamaciones o acuerdos extrajudiciales.",
     link: "/servicios/informes-periciales",
     ilustration: informesPericiales,
   },
   {
     name: "Accidentes de tráfico y del hogar",
     phrase:
-      "¿Has sufrido un accidente y necesitás reclamar por tus lesiones?",
+      "¿Ha sufrido un accidente y necesita reclamar por sus lesiones?",
     description:
-      "Elaboro informes periciales tras la exploración médica del lesionado y el análisis de toda la documentación del caso. Estos informes son clave para obtener una indemnización justa en procesos legales o negociaciones con aseguradoras.",
+      "Se elaboran informes de valoración del daño corporal tras la exploración médica del lesionado y el análisis de toda la documentación del caso. Estos informes son clave para obtener una indemnización justa en procesos legales o negociaciones con aseguradoras.",
     link: "/servicios/accidentes-de-trafico-y-hogar",
     ilustration: valorationDanoCorporal,
   },
   {
     name: "Informes de viabilidad",
     phrase:
-      "¿No sabés si tu caso tiene fundamento legal o médico?",
+      "¿No sabe si su caso tiene fundamento médico-legal?",
     description:
-      "Analizo tu caso de forma preliminar y te doy una respuesta clara sobre si es viable iniciar una reclamación. Este informe ahorra tiempo, evita costes innecesarios y permite tomar decisiones con criterio profesional.",
+      "Se analiza su caso de forma preliminar mediante el estudio del historial médico y se elabora un breve informe donde se da una respuesta clara sobre si es viable iniciar una reclamación. Este informe ahorra tiempo, evita costes innecesarios y permite tomar decisiones con criterio profesional.",
     link: "/servicios/informes-viabilidad",
     ilustration: informesViabilidad,
   },
   {
     name: "Perdida de oportunidad",
     phrase:
-      "¿Creés que un diagnóstico tardío empeoró tu salud?",
+      "¿Cree usted que un diagnóstico tardío empeoró su estado de salud?",
     description:
-      "Cuando un retraso médico evita un tratamiento oportuno y agrava tu estado, puedes reclamar por pérdida de oportunidad. Elaboro informes que demuestran ese daño invisible, con base clínica y argumentos claros para tu defensa.",
+      "En los infortunados casos en los que un retraso diagnóstico evita un tratamiento oportuno y agrava el estado de salud, se puede reclamar por pérdida de oportunidad. Se elaboran informes que demuestran ese retraso diagnóstico y terapéutico que deriva en la pérdida de oportunidad de curación con base científica que apoyar la defensa del caso.",
     link: "/servicios/perdida-de-oportunidad",
     ilustration: informesViabilidad,
   },
@@ -54,7 +54,7 @@ export const services: Service[] = [
     phrase:
       "¿Necesita preparar su estrategia con respaldo médico riguroso?",
     description:
-      "Colaboro con letrados en la preparación del caso, aportando criterio médico en la elaboración de preguntas clave para la ratificación judicial. Estas reuniones permiten al abogado anticipar escenarios y reforzar la solidez del testimonio pericial.",
+      "Colaboro con letrados en la preparación del caso, aportando criterio médico para la elaboración de preguntas clave para la ratificación judicial. Estas reuniones permiten al abogado anticipar escenarios y reforzar la solidez del testimonio pericial.",
     link: "/servicios/asesoramiento-a-letrados",
     ilustration: informesViabilidad,
   },
@@ -63,16 +63,16 @@ export const services: Service[] = [
     phrase:
       "¿Busca resolver el conflicto sin llegar a juicio?",
     description:
-      "Acompaño a los letrados en reuniones de mediación entre las partes, explicando con precisión los actos médicos implicados y su repercusión económica. Mi intervención permite facilitar acuerdos fundados en criterios técnicos y comprensibles para todos los implicados.",
+      "Tras la elaboración de un estudio del caso e informe preliminar acompaño a los letrados en reuniones de mediación entre las partes, explicando con precisión los actos médicos implicados y su repercusión económica. Mi intervención permite facilitar acuerdos fundados en criterios técnicos y comprensibles para todos los implicados.",
     link: "/servicios/mediacion",
     ilustration: informesViabilidad,
   },
   {
     name: "Ratificaciones judiciales",
     phrase:
-      "¿Necesita respaldo médico en juicio para defender su informe?",
+      "¿Necesita un perito médico que defienda sus informes periciales en sala?",
     description:
-      "Asisto a juicios para ratificar los informes periciales elaborados previamente y responder a las preguntas de las partes. Mi intervención ayuda a que el juez comprenda con precisión los hechos médicos y sus implicaciones en el caso.",
+      "Asisto a juicios para ratificar los informes periciales elaborados previamente y responder a las preguntas de las partes. Mi intervención facilita que su señoría comprenda los hechos médicos acontecidos y sus implicaciones en el caso.",
     link: "/servicios/ratificaciones-judiciales",
     ilustration: informesViabilidad,
   },

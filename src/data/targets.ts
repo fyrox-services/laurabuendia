@@ -8,13 +8,13 @@ export const targets: Target[] = [
   {
     title: "particulares",
     description:
-      "Si has sufrido una negligencia médica, un accidente o necesitas reclamar daños, te ayudo a valorar tu caso, elaborar el informe necesario y acompañarte durante todo el proceso.",
+      "Si ha sufrido una negligencia médica, un accidente o necesita reclamar daños, le ayudo a valorar su caso, elaborar el informe necesario y acompañarle durante todo el proceso.",
     icon: particular,
   },
   {
-    title: "abogados",
+    title: "letrados",
     description:
-      "Facilito la defensa jurídica mediante informes claros, fundamentados y redactados con criterios médico-legales, además de ofrecer apoyo en la preparación del juicio y la ratificación pericil.",
+      "Facilito la defensa jurídica mediante informes claros, fundamentados y redactados con criterios médico-legales actuales, además de ofrecer apoyo y asesoramiento en la preparación del juicio y la ratificación pericial.",
     icon: abogado,
   },
   {
