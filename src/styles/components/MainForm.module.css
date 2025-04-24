@@ -87,3 +87,12 @@
   max-width: 800px;
   max-height: none;
 }
+
+@media (min-width: 1024px) {
+  .Form.about-me {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    box-shadow: var(--shadow);
+  }
+}

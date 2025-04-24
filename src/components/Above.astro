@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import abovePhoto from "@/assets/mark/laura.jpg";
+import abovePhoto from "@/assets/mark/laura_above.webp";
 import MainCta from "@/components/MainCta.astro";
 ---
 
@@ -22,7 +22,7 @@ import MainCta from "@/components/MainCta.astro";
 
     <div class="photo">
       <picture class="image-mask">
-        <Image src={abovePhoto} alt="foto de Laura Buendía" />
+        <Image loading="eager" src={abovePhoto} alt="foto de Laura Buendía" />
       </picture>
     </div>
   </div>

@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { FeedbackMessage } from "@/components/preact/FeedbackMessage";
 import type { AllFormFields } from "@/types";
 import { FEEDBACK_MESSAGES } from "@/data/feedbackMessages";
-// import { mainFormSchema, type MainForm } from "@/schemas";
 
 interface Props {
   modifier?: string;
@@ -109,7 +108,7 @@ export function MainForm({ modifier = "" }: Props) {
             required: FEEDBACK_MESSAGES.ERROR.SUBJECT,
           })}
         >
-          <option selected disabled value="">
+          <option defaultValue={""} disabled value="">
             -- Selccione --
           </option>
           {services.map((service) => (

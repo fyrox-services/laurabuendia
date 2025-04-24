@@ -7,7 +7,6 @@ import Heading from "@/components/Heading.astro";
 import HighlightPosts from "@/components/HighlightPosts.astro";
 import HowWorkingCards from "@/components/HowWorkingCards.astro";
 import MainCta from "@/components/MainCta.astro";
-import { MainForm } from "@/components/preact/MainForm";
 import Section from "@/components/Section.astro";
 import ServicesCards from "@/components/ServicesCards.astro";
 import ShortDescription from "@/components/ShortDescription.astro";
@@ -45,19 +44,14 @@ import Layout from "@/layouts/Layout.astro";
     </p>
     <TargetCards />
   </Section>
+  <section class="bg-gradient-circle">
+    <Section>
+      <Heading> sobre mi </Heading>
+      <AboutMe />
+    </Section>
+  </section>
   <Section>
-    <Heading> sobre mi </Heading>
-    <p class="mt-1 delimit-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsam quod
-      quo blanditiis, voluptate molestiae asperiores eaque, nemo magnam autem
-      sapiente delectus incidunt deleniti quasi in facere labore. Excepturi,
-      eum.
-    </p>
-    <AboutMe />
-    <MainForm modifier="about-me" />
-  </Section>
-  <Section>
-    <CenterContent modifier="how-working-section">
+    <CenterContent modifier="faq-section">
       <Heading> preguntas frecuentes </Heading>
 
       <FAQ faqs={FAQ_HOME} />
@@ -68,3 +62,9 @@ import Layout from "@/layouts/Layout.astro";
     <HighlightPosts />
   </Section>
 </Layout>
+
+<!-- <style>
+  section {
+    background-image: linear-gradient(45deg, var(--primary), var(--white));
+  }
+</style> -->

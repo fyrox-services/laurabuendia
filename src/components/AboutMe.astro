@@ -1,34 +1,64 @@
 ---
 import { Image } from "astro:assets";
-import LauraRbg from "@/assets/mark/laura-rbg.webp";
-import { getElapsedTime } from "@/helpers/getElapsedTime";
-import { works } from "@/data/works";
+import laura from "@/assets/mark/test-2.webp";
+import { MainForm } from "@/components/preact/MainForm";
+import Phone from "./icons/Phone.astro";
+import WhatsApp from "./icons/WhatsApp.astro";
+import Email from "./icons/Email.astro";
+import Linkedin from "./icons/Linkedin.astro";
 ---
 
 <div class="about-me">
-  <div class="photo-wrap">
-    <Image class="photo" src={LauraRbg} alt="foto de laura" />
-  </div>
   <div>
-    <ul>
-      {
-        works.map(({ company, date, description, logo, job }) => {
-          return (
-            <li>
-              <picture>
-                <Image src={logo} alt={`logo de ${company}`} />
-              </picture>
-              <div class="info">
-                <h3>{company}</h3>
-                <h4>{job}</h4>
-                <span>{getElapsedTime(date.month, date.year)}</span>
-              </div>
-            </li>
-          );
-        })
-      }
+    <p>
+      Soy Laura Buendía, <span class="strong">tengo más de 10 años </span> de experiencia
+      médica asistencial tanto en <span class="strong">
+        Atención Primaria, Urgencias, Cuidados Paliativos y Medicina Estética.</span
+      > Especialista en Medicina Familiar y Comunitaria vía MIR. <br />
+      <span class="strong"
+        >Máster en Cuidados Paliativos, Máster en Medicina Estética y Máster en
+        Valoración del Daño Corporal,</span
+      >
+      Pericia Médica y Resolución Extrajudicial de Conflictos... <a
+        class="read-more"
+        href="/sobre-mi">Leer más</a
+      >
+    </p>
+    <ul class="contact-links">
+      <li>
+        <a href="">
+          <Phone />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <WhatsApp />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <Email />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <Linkedin width={40} height={40} />
+        </a>
+      </li>
     </ul>
   </div>
+
+  <div class="photo-wrap">
+    <Image
+      width={500}
+      height={25}
+      class="photo"
+      src={laura}
+      alt="foto de laura"
+    />
+  </div>
+
+  <MainForm client:visible modifier="about-me" />
 </div>
 
 <style>
@@ -37,74 +67,32 @@ import { works } from "@/data/works";
     flex-direction: column;
     margin: 3rem 0 0;
     gap: 5rem;
+    position: relative;
+  }
+
+  .about-me p {
+    line-height: 1.75;
+  }
+
+  .read-more {
+    color: var(--primary);
+    font-family: var(--base-bold);
+  }
+
+  .contact-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem 0 0;
+  }
+
+  .contact-links a {
+    color: var(--primary);
   }
 
   .photo {
     max-width: 20rem;
     mask-image: linear-gradient(var(--light) 40%, transparent 100%);
-  }
-
-  li {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
-    position: relative;
-  }
-
-  picture {
-    max-width: 3rem;
-    max-height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--radius-full);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-  }
-
-  li::before {
-    content: "";
-    height: 60%;
-    width: 2px;
-    background-color: var(--gray);
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 24px;
-    border-radius: var(--radius-l);
-  }
-
-  li img {
-    object-fit: cover;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    background-color: var(--white);
-    padding: 1rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-  }
-
-  .info h3 {
-    color: var(--dark-500);
-    font-size: var(--fs-sm);
-  }
-
-  .info h4 {
-    font-size: var(--fs-md);
-    max-width: 35ch;
-  }
-
-  .info span {
-    font-size: var(--fs-sm);
-  }
-
-  ul {
-    display: grid;
-    gap: 3rem;
   }
 
   /* DESKTOP */
@@ -114,8 +102,6 @@ import { works } from "@/data/works";
       flex-direction: row;
       justify-content: space-evenly;
       gap: 0;
-
-      /* align-items: center; */
     }
   }
 </style>
