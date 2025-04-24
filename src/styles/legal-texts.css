@@ -1,0 +1,8 @@
+.legal-texts * {
+  margin: 1rem 0;
+  font-size: var(--fs-md);
+}
+
+.legal-texts p {
+  line-height: 1.75;
+}

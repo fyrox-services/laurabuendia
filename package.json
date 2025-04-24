@@ -9,10 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.2.4",
-    "@astrojs/preact": "^4.0.9",
+    "@astrojs/mdx": "4.2.4",
+    "@astrojs/preact": "4.0.9",
+    "@modular-forms/preact": "0.12.1",
     "@nanostores/preact": "0.5.2",
-    "astro": "^5.7.4",
+    "astro": "5.7.4",
     "nanostores": "0.11.4",
     "preact": "10.26.5"
   }

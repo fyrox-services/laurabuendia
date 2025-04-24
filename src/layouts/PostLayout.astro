@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import PostMeta from "@/components/PostMeta.astro";
 import { PostForm } from "@/components/preact/PostForm";
 import BottomKeypad from "@/components/BottomKeypad.astro";
+import { Image } from "astro:assets";
 
 interface Props {
   body: string;
@@ -20,7 +21,7 @@ const { data, slug } = post;
   <div class="above">
     <picture class="mask-1">
       <h1>{data.h1}</h1>
-      <img src={data.image} alt={data.h1} />
+      <Image width={600} height={400} src={data.image} alt={data.h1} />
     </picture>
     <header>
       <Breadcrumbs slug={slug} h1={data.h1} />
@@ -129,7 +130,9 @@ const { data, slug } = post;
   }
 
   picture {
-    max-height: 250px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px;
     overflow: hidden;
     display: flex;
     align-items: center;

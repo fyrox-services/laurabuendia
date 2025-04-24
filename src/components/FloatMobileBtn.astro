@@ -10,7 +10,7 @@ import Phone from "@/components/icons/Phone.astro";
     <Chat />
   </button>
 
-  <button class="form-btn">
+  <button id="form-btn" class="form-btn">
     <Form width={40} height={40} />
   </button>
 
@@ -24,7 +24,13 @@ import Phone from "@/components/icons/Phone.astro";
 </div>
 
 <script>
+  import { handleMainModalForm } from "@/stores";
+
   document.addEventListener("astro:page-load", () => {
+    const $btn = document.getElementById("form-btn");
+
+    $btn?.addEventListener("click", handleMainModalForm.open);
+
     const chatBtn = document.querySelector(".chat-btn");
     const formBtn = document.querySelector(".form-btn");
     const wsBtn = document.querySelector(".ws-btn");
@@ -38,6 +44,8 @@ import Phone from "@/components/icons/Phone.astro";
     });
   });
 </script>
+
+<script></script>
 
 <style>
   .float-mobile-btn {

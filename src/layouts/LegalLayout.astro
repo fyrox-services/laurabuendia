@@ -1,0 +1,17 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import "@/styles/legal-texts.css";
+---
+
+<Layout>
+  <section class="legal-texts wrapper">
+    <slot />
+  </section>
+</Layout>
+
+<style>
+  section {
+    min-height: 100dvh;
+    margin-top: 8rem;
+  }
+</style>
