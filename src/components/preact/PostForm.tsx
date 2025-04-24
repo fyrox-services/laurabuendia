@@ -6,33 +6,33 @@ interface Props {
 
 export function PostForm({ heading }: Props) {
   return (
-    <form class={css.Form}>
-      <h2 class="text-gradient-primary">{heading}</h2>
-      <div class={css.Field}>
-        <label class={css.Label} htmlFor="">
+    <form className={css.Form}>
+      <h2 className="text-gradient-primary">{heading}</h2>
+      <div className={css.Field}>
+        <label className={css.Label} htmlFor="">
           nombre
         </label>
-        <input class={css.Input} type="text" />
+        <input className={css.Input} type="text" />
       </div>
-      <div class={css.Field}>
-        <label class={css.Label} htmlFor="">
+      <div className={css.Field}>
+        <label className={css.Label} htmlFor="">
           teléfono
         </label>
-        <input class={css.Input} type="text" />
+        <input className={css.Input} type="text" />
       </div>
-      <div class={`${css.Field} ${css.TextareaField}`}>
-        <label class={css.Label} htmlFor="">
+      <div className={`${css.Field} ${css.TextareaField}`}>
+        <label className={css.Label} htmlFor="">
           mensaje
         </label>
-        <textarea class={css.Textarea} name="" id=""></textarea>
+        <textarea className={css.Textarea} name="" id=""></textarea>
       </div>
       <div>
-        <label class={`${css.Label} ${css.LabelLegal}`} htmlFor="">
+        <label className={`${css.Label} ${css.LabelLegal}`} htmlFor="">
           <input type="checkbox" />
           <span>Acepto la política de privacidad</span>
         </label>
       </div>
-      <button class={`${css.Submit} btn`}>enviar</button>
+      <button className={`${css.Submit} btn`}>enviar</button>
     </form>
   );
 }
