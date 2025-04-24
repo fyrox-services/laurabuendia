@@ -24,8 +24,8 @@
 }
 
 .Label {
-  font-size: var(--fs-sm);
-  color: var(--dark-900);
+  font-size: var(--fs-xs);
+  color: var(--dark-500);
 }
 
 .Input,
@@ -36,7 +36,7 @@
   border-radius: var(--radius);
   border: 1px solid var(--gray);
   padding: 0.3rem 0.5rem;
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   color: var(--dark-300);
 }
 
@@ -48,6 +48,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.LabelLegal a {
+  color: var(--link);
 }
 
 .Submit {

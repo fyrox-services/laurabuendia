@@ -39,3 +39,12 @@ export interface FAQ {
   heading: string;
   text: string;
 }
+
+export interface AllFormFields {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  msg: string;
+  legal: boolean
+}
