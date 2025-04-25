@@ -2,6 +2,7 @@
 import ContactWays from "@/components/ContactWays.astro";
 import ShortArrow from "@/components/icons/ShortArrow.astro";
 import Phone from "@/components/icons/Phone.astro";
+import { GLOBAL_DATA } from "@/data/global";
 ---
 
 <nav id="header-nav">
@@ -118,9 +119,9 @@ import Phone from "@/components/icons/Phone.astro";
     </li>
 
     <li class="phone-cta-header">
-      <a class="a" href="tel:66332211">
+      <a class="a" href={GLOBAL_DATA.CALL_LINK}>
         <Phone width={20} height={20} />
-        <span> 661 028 369 </span>
+        <span>{GLOBAL_DATA.PHONE_MASK}</span>
       </a>
     </li>
   </ul>

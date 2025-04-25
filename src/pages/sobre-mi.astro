@@ -6,19 +6,25 @@ import ShortDescription from "@/components/ShortDescription.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 import laura from "@/assets/mark/laura_sobre_mi.webp";
+import MinimalArrow from "@/components/icons/MinimalArrow.astro";
+import MainCta from "@/components/MainCta.astro";
 ---
 
 <Layout>
   <PageSection>
-    <H1Heading modifier="contact-page"> acerca de mí </H1Heading>
+    <H1Heading modifier="contact-page"> sobre mí </H1Heading>
     <CenterContent>
       <ShortDescription class="mt-1">
-        Soy Laura Buendía, médico especialista en Medicina Familiar y
-        Comunitaria, con más de 10 años de experiencia clínica en Atención
-        Primaria, Urgencias, Cuidados Paliativos y Medicina Estética. En los
-        últimos años he centrado mi carrera en la valoración del daño corporal y
-        la pericia médica, acompañando a pacientes, abogados y aseguradoras en
-        procesos legales complejos, con un enfoque riguroso y humano.
+        Soy Laura Buendía, <span class="strong"
+          >médico especialista en Medicina Familiar y Comunitaria,</span
+        > con más de 10 años de experiencia clínica en Atención Primaria, Urgencias,
+        Cuidados Paliativos y Medicina Estética.
+      </ShortDescription>
+      <ShortDescription>
+        En los últimos años he centrado mi carrera en la <span class="strong"
+          >valoración del daño corporal y la pericia médica,</span
+        > acompañando a pacientes, abogados y aseguradoras en procesos legales complejos,
+        con un enfoque riguroso y humano.
       </ShortDescription>
       <picture class="image-mask">
         <Image
@@ -29,6 +35,64 @@ import laura from "@/assets/mark/laura_sobre_mi.webp";
           height={1181}
         />
       </picture>
+
+      <h2>formación académica</h2>
+
+      <ul>
+        <li>
+          <MinimalArrow width={25} height={25} />
+          Especialidad MIR en Medicina Familiar y Comunitaria
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Máster en Cuidados Paliativos
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Máster en Medicina Estética
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Máster en Valoración del Daño Corporal,
+          Pericia Médica y Resolución Extrajudicial de Conflictos
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Experta en Resolución Extrajudicial
+          de Conflictos Médico-Sanitarios
+        </li>
+      </ul>
+
+      <h2>Enfoque y filosofía profesional</h2>
+
+      <ShortDescription>
+        Me reconforta <span class="strong"
+          >encontrar soluciones justas y claras en la relación médico-paciente,</span
+        > especialmente en contextos donde ha habido malentendidos, negligencias
+        o consecuencias médicas no deseadas. <span class="strong">
+          Mi trabajo se guía por la honestidad, la transparencia y la
+          rigurosidad técnica,</span
+        > tanto al redactar informes como al defenderlos ante un tribunal.
+      </ShortDescription>
+
+      <h2>Qué me apasiona de mi trabajo</h2>
+
+      <ul>
+        <li>
+          <MinimalArrow width={25} height={25} />
+          Analizar la evolución de cada caso clínico desde una perspectiva legal
+          y médica.
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Detectar fallos o aciertos en los
+          procesos asistenciales.
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Redactar informes médico-legales
+          claros, completos y comprensibles.
+        </li>
+        <li>
+          <MinimalArrow width={25} height={25} /> Exponer y explicar los casos en
+          sala judicial para ayudar a la toma de decisiones fundamentadas.
+        </li>
+      </ul>
+      <MainCta>Contacta conmigo</MainCta>
     </CenterContent>
   </PageSection>
 </Layout>
@@ -49,5 +113,25 @@ import laura from "@/assets/mark/laura_sobre_mi.webp";
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  h2 {
+    font-size: var(--fs-3xl);
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 60ch;
+  }
+
+  li {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: var(--primary);
   }
 </style>
