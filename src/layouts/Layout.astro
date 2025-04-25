@@ -44,7 +44,7 @@ const { bodyClass } = Astro.props;
     <main>
       <slot />
     </main>
-    <MainModalForm client:load />
+    <MainModalForm client:only />
     <FloatMobileBtn />
     <Footer />
   </body>

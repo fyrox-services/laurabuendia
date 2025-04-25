@@ -56,6 +56,22 @@
 
 .Submit {
   font-size: var(--fs-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+}
+
+.Submit:disabled {
+  cursor: not-allowed;
+}
+
+.Submit.Error {
+  background: darkred;
+}
+
+.Submit.Success {
+  background: darkgreen;
 }
 
 /* DESKTOP */
@@ -77,6 +93,20 @@
   .TextareaField,
   .Submit {
     grid-column: 1/3;
+  }
+
+  .Form::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .Form::-webkit-scrollbar-track {
+    background: var(--gray); /* Color de fondo de la barra */
+    border-radius: 10px;
+  }
+
+  .Form::-webkit-scrollbar-thumb {
+    background: var(--dark-900); /* Color del pnavgar (thumb) */
+    border-radius: 10px;
   }
 }
 

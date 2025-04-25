@@ -1,8 +1,13 @@
+import { useState } from "react";
 import css from "@/styles/components/MainForm.module.css";
 import { useForm } from "react-hook-form";
 import { FeedbackMessage } from "@/components/preact/FeedbackMessage";
 import type { AllFormFields } from "@/types";
 import { FEEDBACK_MESSAGES } from "@/data/feedbackMessages";
+import { analysisData } from "@/helpers/analysisData";
+import { PUBLIC_API_URL } from "@/env";
+import { Loader } from "@/components/preact/Loader";
+import { handleMainModalForm } from "@/stores";
 
 interface Props {
   modifier?: string;
@@ -19,7 +24,11 @@ const services = [
   { text: "Ratificaciones judiciales" },
 ];
 
+type SendState = "off" | "sending" | "error" | "success";
+
 export function MainForm({ modifier = "" }: Props) {
+  const [loading, setLoading] = useState<SendState>("off");
+
   const defaultValues: AllFormFields = {
     name: "",
     email: "",
@@ -34,9 +43,60 @@ export function MainForm({ modifier = "" }: Props) {
     handleSubmit,
   } = useForm({ defaultValues });
 
-  function onSubmit(values: AllFormFields) {
-    console.log(values);
+  async function onSubmit(values: AllFormFields) {
+    try {
+      setLoading("sending");
+      const url = `${PUBLIC_API_URL}/forms/main-form`;
+
+      const dataToSend = {
+        ...values,
+        "analysis-data": analysisData(),
+      };
+
+      const result = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+      });
+
+      const data = await result.json();
+
+      if (data.details) throw new Error(FEEDBACK_MESSAGES.ERROR.FIELDS_INVALID);
+
+      if (!result.ok) throw new Error(FEEDBACK_MESSAGES.ERROR.GENERAL);
+
+      setLoading("success");
+
+      setTimeout(() => {
+        handleMainModalForm.close();
+      }, 3000);
+    } catch (error) {
+      console.log(`el error al enviar el formulario es: ${error}`);
+      setLoading("error");
+    }
   }
+
+  const submitState =
+    loading === "error" ? (
+      FEEDBACK_MESSAGES.ERROR.GENERAL
+    ) : loading === "sending" ? (
+      <Loader />
+    ) : loading === "success" ? (
+      FEEDBACK_MESSAGES.SUCCESS.SUCCESS_SENDING
+    ) : (
+      "Enviar"
+    );
+
+  const cssState =
+    loading === "error"
+      ? css.Error
+      : loading === "sending"
+      ? css.Load
+      : loading === "success"
+      ? css.Success
+      : "";
 
   return (
     <form
@@ -116,6 +176,7 @@ export function MainForm({ modifier = "" }: Props) {
               {service.text}
             </option>
           ))}
+          <option value="otro">otro</option>
         </select>
         <FeedbackMessage>{errors.subject?.message}</FeedbackMessage>
       </div>
@@ -127,7 +188,11 @@ export function MainForm({ modifier = "" }: Props) {
           className={css.Textarea}
           id="msg"
           {...register("msg", {
-            required: FEEDBACK_MESSAGES.ERROR.SUBJECT,
+            minLength: {
+              message: FEEDBACK_MESSAGES.ERROR.MSG_TOO_SHORT,
+              value: 5,
+            },
+            required: FEEDBACK_MESSAGES.ERROR.MSG,
           })}
         ></textarea>
         <FeedbackMessage>{errors.msg?.message}</FeedbackMessage>
@@ -147,7 +212,12 @@ export function MainForm({ modifier = "" }: Props) {
         </label>
         <FeedbackMessage>{errors.legal?.message}</FeedbackMessage>
       </div>
-      <button className={`${css.Submit} btn`}>enviar</button>
+      <button
+        disabled={loading !== "off"}
+        className={`${css.Submit} btn ${cssState}`}
+      >
+        {submitState}
+      </button>
     </form>
   );
 }
