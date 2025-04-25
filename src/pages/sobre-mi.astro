@@ -1,11 +1,53 @@
 ---
+import CenterContent from "@/components/CenterContent.astro";
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
+import ShortDescription from "@/components/ShortDescription.astro";
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import laura from "@/assets/mark/laura_sobre_mi.webp";
 ---
 
 <Layout>
   <PageSection>
-    <H1Heading> sobre mi </H1Heading>
+    <H1Heading modifier="contact-page"> acerca de mí </H1Heading>
+    <CenterContent>
+      <ShortDescription class="mt-1">
+        Soy Laura Buendía, médico especialista en Medicina Familiar y
+        Comunitaria, con más de 10 años de experiencia clínica en Atención
+        Primaria, Urgencias, Cuidados Paliativos y Medicina Estética. En los
+        últimos años he centrado mi carrera en la valoración del daño corporal y
+        la pericia médica, acompañando a pacientes, abogados y aseguradoras en
+        procesos legales complejos, con un enfoque riguroso y humano.
+      </ShortDescription>
+      <picture class="image-mask">
+        <Image
+          loading="eager"
+          src={laura}
+          alt="foto de Laura Buendía"
+          width={1772}
+          height={1181}
+        />
+      </picture>
+    </CenterContent>
   </PageSection>
 </Layout>
+
+<style>
+  .image-mask {
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    mask-image: linear-gradient(var(--light) 50%, transparent 100%);
+  }
+
+  .image-mask img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+</style>
