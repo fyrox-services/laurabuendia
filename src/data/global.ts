@@ -1,0 +1,5 @@
+export const GLOBAL_DATA = {
+    PHONE_NUMBER: '658217820',
+    CALL_LINK: 'tel:658217820',
+    PHONE_MASK: '658 217 820'
+}
