@@ -4,6 +4,7 @@ import WhatsApp from "@/components/icons/WhatsApp.astro";
 import Email from "@/components/icons/Email.astro";
 import Phone from "@/components/icons/Phone.astro";
 import Location from "@/components/icons/Location.astro";
+import { GLOBAL_DATA } from "@/data/global";
 ---
 
 <footer>
@@ -17,7 +18,9 @@ import Location from "@/components/icons/Location.astro";
           </a>
         </li>
         <li>
-          <a href="/servicios/informes-periciales"> informes periciales </a>
+          <a href="/servicios/informes-periciales">
+            <span> informes periciales </span>
+          </a>
         </li>
         <li>
           <a href="/servicios/accidentes-de-trafico-y-hogar">
@@ -85,9 +88,9 @@ import Location from "@/components/icons/Location.astro";
       <h2>contacto</h2>
       <ul>
         <li>
-          <a href="">
+          <a href={GLOBAL_DATA.CALL_LINK}>
             <Phone width={20} height={20} />
-            <span> 658 147 228 </span>
+            <span> {GLOBAL_DATA.PHONE_MASK} </span>
           </a>
         </li>
         <li>
