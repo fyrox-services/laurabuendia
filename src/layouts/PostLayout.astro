@@ -45,7 +45,7 @@ const { data, slug } = post;
     </div>
 
     <aside class="form-aside">
-      <PostForm heading="solicita información" />
+      <PostForm client:only heading="solicita información" />
     </aside>
   </div>
   <BottomKeypad />
@@ -208,6 +208,7 @@ const { data, slug } = post;
     .form-aside {
       display: initial;
       flex: 1;
+      min-width: calc(300px - 1rem);
     }
   }
 </style>

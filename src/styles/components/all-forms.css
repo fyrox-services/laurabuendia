@@ -1,0 +1,11 @@
+.Submit:disabled {
+  cursor: not-allowed;
+}
+
+.Submit.Error {
+  background: linear-gradient(45deg, darkred, var(--black));
+}
+
+.Submit.Success {
+  background: linear-gradient(45deg, darkgreen, var(--black));
+}

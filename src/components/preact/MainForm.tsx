@@ -1,13 +1,11 @@
-import { useState } from "react";
 import css from "@/styles/components/MainForm.module.css";
 import { useForm } from "react-hook-form";
 import { FeedbackMessage } from "@/components/preact/FeedbackMessage";
 import type { AllFormFields } from "@/types";
 import { FEEDBACK_MESSAGES } from "@/data/feedbackMessages";
-import { analysisData } from "@/helpers/analysisData";
-import { PUBLIC_API_URL } from "@/env";
-import { Loader } from "@/components/preact/Loader";
 import { handleMainModalForm } from "@/stores";
+import "@/styles/components/all-forms.css";
+import { useHandleForm } from "@/hooks/useHandleForm";
 
 interface Props {
   modifier?: string;
@@ -24,79 +22,35 @@ const services = [
   { text: "Ratificaciones judiciales" },
 ];
 
-type SendState = "off" | "sending" | "error" | "success";
-
 export function MainForm({ modifier = "" }: Props) {
-  const [loading, setLoading] = useState<SendState>("off");
+  const {
+    cssStateSubmit,
+    defaultValues,
+    loading,
+    onSubmit,
+    submitStateContent,
+  } = useHandleForm<AllFormFields>(
+    {
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      msg: "",
+      legal: false,
+    },
+    "/forms/main-form",
+    close
+  );
 
-  const defaultValues: AllFormFields = {
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    msg: "",
-    legal: false,
-  };
+  function close() {
+    setTimeout(handleMainModalForm.close, 3000);
+  }
+
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm({ defaultValues });
-
-  async function onSubmit(values: AllFormFields) {
-    try {
-      setLoading("sending");
-      const url = `${PUBLIC_API_URL}/forms/main-form`;
-
-      const dataToSend = {
-        ...values,
-        "analysis-data": analysisData(),
-      };
-
-      const result = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dataToSend),
-      });
-
-      const data = await result.json();
-
-      if (data.details) throw new Error(FEEDBACK_MESSAGES.ERROR.FIELDS_INVALID);
-
-      if (!result.ok) throw new Error(FEEDBACK_MESSAGES.ERROR.GENERAL);
-
-      setLoading("success");
-
-      setTimeout(() => {
-        handleMainModalForm.close();
-      }, 3000);
-    } catch (error) {
-      console.log(`el error al enviar el formulario es: ${error}`);
-      setLoading("error");
-    }
-  }
-
-  const submitState =
-    loading === "error" ? (
-      FEEDBACK_MESSAGES.ERROR.GENERAL
-    ) : loading === "sending" ? (
-      <Loader />
-    ) : loading === "success" ? (
-      FEEDBACK_MESSAGES.SUCCESS.SUCCESS_SENDING
-    ) : (
-      "Enviar"
-    );
-
-  const cssState =
-    loading === "error"
-      ? css.Error
-      : loading === "sending"
-      ? css.Load
-      : loading === "success"
-      ? css.Success
-      : "";
 
   return (
     <form
@@ -181,7 +135,7 @@ export function MainForm({ modifier = "" }: Props) {
         <FeedbackMessage>{errors.subject?.message}</FeedbackMessage>
       </div>
       <div className={`${css.Field} ${css.TextareaField}`}>
-        <label className={css.Label} htmlFor="">
+        <label className={css.Label} htmlFor="msg">
           mensaje
         </label>
         <textarea
@@ -198,7 +152,7 @@ export function MainForm({ modifier = "" }: Props) {
         <FeedbackMessage>{errors.msg?.message}</FeedbackMessage>
       </div>
       <div className={`${css.Field} ${css.LabelLegalField}`}>
-        <label className={`${css.Label} ${css.LabelLegal}`} htmlFor="">
+        <label className={`${css.Label} ${css.LabelLegal}`} htmlFor="legal">
           <input
             type="checkbox"
             {...register("legal", {
@@ -214,9 +168,9 @@ export function MainForm({ modifier = "" }: Props) {
       </div>
       <button
         disabled={loading !== "off"}
-        className={`${css.Submit} btn ${cssState}`}
+        className={`${css.Submit} Submit btn ${cssStateSubmit()}`}
       >
-        {submitState}
+        {submitStateContent()}
       </button>
     </form>
   );

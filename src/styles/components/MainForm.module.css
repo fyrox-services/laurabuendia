@@ -62,18 +62,6 @@
   min-height: 45px;
 }
 
-.Submit:disabled {
-  cursor: not-allowed;
-}
-
-.Submit.Error {
-  background: darkred;
-}
-
-.Submit.Success {
-  background: darkgreen;
-}
-
 /* DESKTOP */
 
 @media (min-width: 1024px) {

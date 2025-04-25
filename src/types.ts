@@ -40,6 +40,9 @@ export interface FAQ {
   text: string;
 }
 
+export type SendState = "off" | "sending" | "error" | "success";
+
+
 export interface AllFormFields {
   name: string;
   email: string;
@@ -48,3 +51,5 @@ export interface AllFormFields {
   msg: string;
   legal: boolean
 }
+
+export type PostFormFields = Pick<AllFormFields, 'name' | 'msg' | 'phone' | 'legal'>;
