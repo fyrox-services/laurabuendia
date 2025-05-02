@@ -10,9 +10,17 @@ import FloatMobileBtn from "@/components/FloatMobileBtn.astro";
 
 interface Props {
   bodyClass?: string;
+  metaTitle: string;
+  metaDescription: string;
 }
 
-const { bodyClass } = Astro.props;
+const {
+  bodyClass,
+  metaDescription,
+  metaTitle = "Add Meta Title",
+} = Astro.props;
+
+console.log(Astro.url);
 ---
 
 <!doctype html>
@@ -22,6 +30,14 @@ const { bodyClass } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href={logo.src} />
     <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={metaDescription} />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:type" content="website" />
+    <!-- TODO: Logica para poner website o article -->
+    <meta property="og:site_name" content="Laura Buendía Perito Médico" />
+    <link rel="canonical" href={Astro.url} />
     <link
       rel="preload"
       href="/fonts/Poppins-Regular.woff2"
@@ -37,7 +53,7 @@ const { bodyClass } = Astro.props;
       crossorigin="anonymous"
     />
     <ClientRouter />
-    <title>Astro Basics</title>
+    <title>{metaTitle}</title>
   </head>
   <body class={bodyClass}>
     <Header />
