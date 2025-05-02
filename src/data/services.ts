@@ -51,12 +51,12 @@ export const services: Service[] = [
     link: "/servicios/asesoramiento-a-letrados",
   },
   {
-    name: "Mediación",
+    name: "Mediación sanitaria",
     phrase:
       "¿Busca resolver el conflicto sin llegar a juicio?",
     description:
       "Tras la elaboración de un estudio del caso e informe preliminar acompaño a los letrados en reuniones de mediación entre las partes, explicando con precisión los actos médicos implicados y su repercusión económica. Mi intervención permite facilitar acuerdos fundados en criterios técnicos y comprensibles para todos los implicados.",
-    link: "/servicios/mediacion",
+    link: "/servicios/mediacion-sanitaria",
   },
   {
     name: "Ratificaciones judiciales",
