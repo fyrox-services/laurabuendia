@@ -39,10 +39,10 @@ export function MainForm({ modifier = "" }: Props) {
       legal: false,
     },
     "/forms/main-form",
-    close
+    closeModal
   );
 
-  function close() {
+  function closeModal() {
     setTimeout(handleMainModalForm.close, 3000);
   }
 

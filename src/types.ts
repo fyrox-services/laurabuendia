@@ -3,7 +3,6 @@ export interface Service {
   phrase: string;
   description: string;
   link: string;
-  ilustration: ImageMetadata;
 }
 
 export interface Step {
