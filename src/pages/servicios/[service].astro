@@ -34,7 +34,7 @@ const structuredData = {
   "@type": "Service",
   "@id": Astro.url,
   name: data.h1,
-  description: data.description,
+  description: data.metaDescription,
   provider: {
     "@type": "Organization",
     name: "Laura Buendía - Perito Médico",
@@ -44,12 +44,16 @@ const structuredData = {
     "@type": "Country",
     name: "España",
   },
-  serviceType: "Peritaje médico legal",
+  serviceType: data.serviceType,
   url: Astro.url,
 };
 ---
 
-<Layout metaTitle={data.metaTitle} metaDescription={data.metaDescription}>
+<Layout
+  metaTitle={data.metaTitle}
+  metaDescription={data.metaDescription}
+  ogImage={`/img/services/${data.image}`}
+>
   <ServiceLayout service={service} body={body}>
     <Content />
   </ServiceLayout>

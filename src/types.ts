@@ -41,14 +41,27 @@ export interface FAQ {
 
 export type SendState = "off" | "sending" | "error" | "success";
 
-
 export interface AllFormFields {
   name: string;
   email: string;
   phone: string;
+  kind: string;
   subject: string;
   msg: string;
-  legal: boolean
+  legal: boolean;
 }
 
-export type PostFormFields = Pick<AllFormFields, 'name' | 'msg' | 'phone' | 'legal'>;
+export type MainFormFields = Pick<
+  AllFormFields,
+  "name" | "msg" | "phone" | "legal" | "email" | "subject"
+>;
+
+export type PostFormFields = Pick<
+  AllFormFields,
+  "name" | "msg" | "phone" | "legal"
+>;
+
+export type ServiceFormFields = Pick<
+  AllFormFields,
+  "name" | "msg" | "phone" | "legal" | "email" | "kind"
+>;

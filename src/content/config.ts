@@ -22,8 +22,7 @@ const services = defineCollection({
     metaTitle: z.string(),
     metaDescription: z.string(),
     h1: z.string(),
-    description: z.string(),
-    category: z.enum(["deporte"]),
+    serviceType: z.string(),
     image: z.string(),
   }),
 });

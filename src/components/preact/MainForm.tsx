@@ -1,7 +1,7 @@
 import css from "@/styles/components/MainForm.module.css";
 import { useForm } from "react-hook-form";
 import { FeedbackMessage } from "@/components/preact/FeedbackMessage";
-import type { AllFormFields } from "@/types";
+import type { AllFormFields, MainFormFields } from "@/types";
 import { FEEDBACK_MESSAGES } from "@/data/feedbackMessages";
 import { handleMainModalForm } from "@/stores";
 import "@/styles/components/all-forms.css";
@@ -29,7 +29,7 @@ export function MainForm({ modifier = "" }: Props) {
     loading,
     onSubmit,
     submitStateContent,
-  } = useHandleForm<AllFormFields>(
+  } = useHandleForm<MainFormFields>(
     {
       name: "",
       email: "",

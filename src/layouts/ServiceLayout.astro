@@ -2,79 +2,23 @@
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
 import type { CollectionEntry } from "astro:content";
+import "@/styles/content.css";
 
 interface Props {
   body: string;
   service: CollectionEntry<"services">;
 }
 
-const { body, service } = Astro.props;
-const { data, slug } = service;
+const { service } = Astro.props;
+const { data } = service;
 ---
 
 <PageSection modifier="service-page">
   <H1Heading modifier="service-page"> {data.h1} </H1Heading>
-  <div class="body-content">
+  <article class="body-content">
     <slot />
-  </div>
+  </article>
 </PageSection>
-
-<style is:global>
-  section.service-page {
-    --fs-base: 16px;
-    --fs-h2: 32px;
-    --fs-h3: 26px;
-    --fs-h4: 20px;
-  }
-
-  section.service-page img {
-    border-radius: var(--radius);
-    margin: 2rem 0;
-  }
-
-  section.service-page h2 {
-    font-size: var(--fs-h2);
-  }
-
-  section.service-page h3 {
-    font-size: var(--fs-h3);
-  }
-
-  section.service-page h4 {
-    font-size: var(--fs-h4);
-  }
-
-  section.service-page strong {
-    font-family: var(--base-bold);
-  }
-
-  section.service-page ul:not(.contact-links) {
-    padding-left: 1rem;
-  }
-
-  section.service-page p,
-  section.service-page li {
-    font-size: var(--fs-base);
-    line-height: 1.75;
-  }
-
-  section.service-page ol:first-of-type {
-    margin-top: 1rem;
-  }
-
-  section.service-page li:not(ul.contact-links li) {
-    list-style: disc;
-  }
-
-  p:first-child {
-    margin: 0 0 1rem;
-  }
-
-  p:not(p:first-child),
-  section.service-page ul {
-    margin: 1rem 0;
-  }
-</style>
 
 <style>
   .body-content {

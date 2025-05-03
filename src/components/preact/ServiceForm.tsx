@@ -1,12 +1,48 @@
+import { FEEDBACK_MESSAGES } from "@/data/feedbackMessages";
+import { useHandleForm } from "@/hooks/useHandleForm";
 import css from "@/styles/components/ServiceForm.module.css";
+import type { ServiceFormFields } from "@/types";
+import { useForm } from "react-hook-form";
+import { FeedbackMessage } from "./FeedbackMessage";
 
 interface Props {
   heading: string;
 }
 
+const kinds = [
+  { text: "Particular" },
+  { text: "Letrado" },
+  { text: "Aseguradora" },
+  { text: "Administración pública" },
+];
+
 export function ServiceForm({ heading = "" }: Props) {
+  const {
+    cssStateSubmit,
+    defaultValues,
+    loading,
+    onSubmit,
+    submitStateContent,
+  } = useHandleForm<ServiceFormFields>(
+    {
+      name: "",
+      email: "",
+      phone: "",
+      msg: "",
+      kind: "",
+      legal: false,
+    },
+    "/forms/main-form"
+  );
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm({ defaultValues });
+
   return (
-    <form className={css.Form}>
+    <form onSubmit={handleSubmit(onSubmit)} className={css.Form}>
       <h2 className="text-gradient-primary">{heading}</h2>
       <div className={css.Field}>
         <label className={css.Label} htmlFor="">
@@ -27,15 +63,26 @@ export function ServiceForm({ heading = "" }: Props) {
         <input className={css.Input} type="text" />
       </div>
       <div className={css.Field}>
-        <label className={css.Label} htmlFor="">
-          asunto
+        <label className={css.Label} htmlFor="subject">
+          tipo
         </label>
-        <select className={css.Select} name="" id="">
-          <option value="">informe pericial</option>
-          <option value="">valoración de daño corporal</option>
-          <option value="">informe de orientación</option>
-          <option value="">asistencia</option>
+        <select
+          className={css.Select}
+          id="subject"
+          {...register("kind", {
+            required: FEEDBACK_MESSAGES.ERROR.SUBJECT,
+          })}
+        >
+          <option defaultValue={""} disabled value="">
+            -- Selccione --
+          </option>
+          {kinds.map((service) => (
+            <option key={service.text} value={service.text}>
+              {service.text}
+            </option>
+          ))}
         </select>
+        <FeedbackMessage>{errors.kind?.message}</FeedbackMessage>
       </div>
       <div className={`${css.Field} ${css.TextareaField}`}>
         <label className={css.Label} htmlFor="">

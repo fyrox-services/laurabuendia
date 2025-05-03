@@ -27,6 +27,7 @@ export async function getStaticPaths() {
 }
 
 const { category } = Astro.props;
+const { data } = category;
 const [getCategory] = category.id.split(".");
 
 const posts = await getCollection("posts", ({ slug }) => {
@@ -34,7 +35,11 @@ const posts = await getCollection("posts", ({ slug }) => {
 });
 ---
 
-<Layout>
+<Layout
+  metaTitle={data.metaTitle}
+  metaDescription={data.metaTitle}
+  ogImage="TODO"
+>
   <PageSection>
     <H1Heading> {category.data.h1} </H1Heading>
     <WrapperPosts posts={posts} />

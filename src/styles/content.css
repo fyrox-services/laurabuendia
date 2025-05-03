@@ -1,0 +1,62 @@
+.body-content {
+  --fs-base: 18px;
+  --fs-h2: 32px;
+  --fs-h3: 26px;
+  --fs-h4: 20px;
+}
+
+/* PÁRRAFOS */
+
+.body-content > p {
+  margin: 1rem 0;
+  font-size: var(--fs-base);
+  line-height: 1.75;
+}
+
+/* ENCABEZADOS */
+
+.body-content > h2,
+.body-content > h3,
+.body-content > h4 {
+  margin: 2rem 0;
+}
+
+.body-content > h2 {
+  font-size: var(--fs-h2);
+}
+
+.body-content > h3 {
+  font-size: var(--fs-h3);
+}
+
+.body-content > h4 {
+  font-size: var(--fs-h4);
+}
+
+/* LISTAS */
+.body-content > ul:not(.contact-links),
+.body-content > ol {
+  padding-left: 1rem;
+}
+
+.body-content > ul:not(.contact-links) li,
+.body-content > ol li {
+  font-size: var(--fs-base);
+}
+
+.body-content > ul:not(.contact-links) li {
+  list-style: initial;
+  margin: 1rem 0;
+}
+
+.body-content > ol li {
+  list-style: decimal;
+  margin: 1rem 0;
+}
+
+/* IMÁGENES */
+.body-content > img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 3rem 0;
+}
