@@ -41,8 +41,9 @@ const ogType = pathname === "/" ? "website" : "article";
     <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:type" content={ogType} />
-    <meta property="og:site_name" content="Laura Buendía - Perito Médico" />
+    <meta property="og:site_name" content="Laura Buendía" />
     <meta property="og:image" content={`${Astro.url.origin}${ogImage}`} />
+    <meta name="site:name" content="Laura Buendía - Perito Médico" />
 
     <link rel="canonical" href={Astro.url} />
     <link
