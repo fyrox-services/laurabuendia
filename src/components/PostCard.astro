@@ -11,17 +11,19 @@ const { data, slug } = post;
 ---
 
 <li>
-  <a href={`/${slug}`}>
-    <picture class="mask-1">
-      <h3>{data.h1}</h3>
-      <img src={data.image} alt={`imagen de ${data.h1}`} />
-    </picture>
-    <p>{data.description}</p>
-    <footer>
-      <span>{transformDate(data.datePublished)}</span>
-      <span>{data.readingTime} min de lectura</span>
-    </footer>
-  </a>
+  <article>
+    <a href={`/${slug}`}>
+      <picture class="mask-1">
+        <h3>{data.h1}</h3>
+        <img src={data.image} alt={`imagen de ${data.h1}`} />
+      </picture>
+      <p>{data.description}</p>
+      <footer>
+        <span>{transformDate(data.datePublished)}</span>
+        <span>{data.readingTime} min de lectura</span>
+      </footer>
+    </a>
+  </article>
 </li>
 
 <style>

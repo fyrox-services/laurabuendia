@@ -2,35 +2,35 @@ import type { FAQ } from "@/types";
 
 export const FAQ_HOME: FAQ[] = [
   {
-    heading: "Pregunta 1",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi officia laborum debitis, est fugiat! Vel error debitis laborum deleniti labore, enim ullam nihil aperiam ad fuga unde sit repellat.",
+    heading: "Definición de perito médico",
+    text: "Es un médico que elabora informes técnicos con validez legal para valorar daños, negligencias o incapacidades en procesos judiciales o extrajudiciales.",
   },
   {
-    heading: "Pregunta 2",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi officia laborum debitis, est fugiat! Vel error debitis laborum deleniti labore, enim ullam nihil aperiam ad fuga unde sit repellat.",
+    heading: "¿Qué es un peritaje médico y en qué consiste?",
+    text: "Es un informe realizado por un perito médico que analiza un caso clínico para determinar si hubo mala praxis, daño o secuelas, con base médica y legal.",
   },
   {
-    heading: "Pregunta 3",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi officia laborum debitis, est fugiat! Vel error debitis laborum deleniti labore, enim ullam nihil aperiam ad fuga unde sit repellat.",
+    heading: "¿Cuándo se necesita un perito médico?",
+    text: "Se necesita cuando hay que demostrar daños médicos en un juicio, reclamar por negligencia, valorar una incapacidad o participar en una mediación sanitaria.",
   },
 ];
 
 export const FAQ_VALORACION_DANO_CORPORAL: FAQ[] = [
   {
-    heading: "¿Qué es exactamente la valoración del daño corporal?",
+    heading: "¿Qué es la valoración del daño corporal?",
     text: "Es un proceso médico-legal que permite cuantificar las lesiones, secuelas y perjuicios sufridos por una persona tras un accidente, negligencia médica o agresión. Su objetivo es establecer de forma objetiva el alcance del daño y su posible compensación económica.",
+  },
+  {
+    heading: "¿Qué se evalúa en la valoración de un daño corporal?",
+    text: "Se analizan las lesiones sufridas, sus secuelas físicas o psicológicas, la relación con el hecho causante y el impacto en la vida diaria o laboral del paciente.",
   },
   {
     heading: "¿Es lo mismo que un informe pericial?",
     text: "No exactamente. La valoración del daño corporal es una parte concreta de un informe pericial, centrada en cuantificar lesiones y secuelas. Un informe pericial puede incluir, además, el análisis de la actuación médica, la adecuación a la lex artis y otras cuestiones técnicas.",
   },
   {
-    heading: "¿Quién puede realizar este tipo de valoración?",
-    text: "Solo un médico con formación específica en valoración del daño corporal y experiencia pericial. Es importante que sea un profesional independiente, para asegurar la objetividad del informe.",
-  },
-  {
     heading: "¿Es válida esta valoración para un juicio?",
-    text: "Sí. Si el informe está firmado por un médico perito cualificado, puede utilizarse en procesos judiciales o como base para reclamaciones extrajudiciales. En muchos casos, se acompaña también de la **ratificación en sede judicial** si el procedimiento lo requiere.",
+    text: "Sí. Si el informe está firmado por un médico perito cualificado, puede utilizarse en procesos judiciales o como base para reclamaciones extrajudiciales. En muchos casos, se acompaña también de la ratificación en sede judicial si el procedimiento lo requiere.",
   },
 ];
 

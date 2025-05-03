@@ -17,7 +17,7 @@ const { body, post } = Astro.props;
 const { data, slug } = post;
 ---
 
-<section class="post wrapper">
+<article class="post wrapper">
   <div class="above">
     <picture class="mask-1">
       <h1>{data.h1}</h1>
@@ -49,71 +49,71 @@ const { data, slug } = post;
     </aside>
   </div>
   <BottomKeypad />
-</section>
+</article>
 
 <style is:global>
-  section.post {
+  article.post {
     --fs-base: 16px;
     --fs-h2: 32px;
     --fs-h3: 26px;
     --fs-h4: 20px;
   }
 
-  section.post .body-content img {
+  article.post .body-content img {
     border-radius: var(--radius);
     margin: 2rem 0;
   }
 
-  section.post .body-content h2 {
+  article.post .body-content h2 {
     font-size: var(--fs-h2);
   }
 
-  section.post .body-content h3 {
+  article.post .body-content h3 {
     font-size: var(--fs-h3);
   }
 
-  section.post .body-content h4 {
+  article.post .body-content h4 {
     font-size: var(--fs-h4);
   }
 
-  section.post .body-content strong {
+  article.post .body-content strong {
     font-family: var(--base-bold);
   }
 
-  section.post .body-content ul:not(.contact-links),
-  section.post .body-content ol {
+  article.post .body-content ul:not(.contact-links),
+  article.post .body-content ol {
     padding-left: 1rem;
   }
 
-  section.post .body-content p,
-  section.post .body-content li {
+  article.post .body-content p,
+  article.post .body-content li {
     font-size: var(--fs-base);
     line-height: 1.75;
   }
 
-  section.post .body-content ul li:not(ul.faq li):not(ul.contact-links li) {
+  article.post .body-content ul li:not(ul.faq li):not(ul.contact-links li) {
     list-style: disc;
     margin: 1rem 0;
   }
 
-  section.post .body-content ol li {
+  article.post .body-content ol li {
     list-style: decimal;
     margin: 1rem 0;
   }
 
-  section.post .body-content p:first-child {
+  article.post .body-content p:first-child {
     margin: 0 0 1rem;
   }
 
-  section.post .body-content p:not(p:first-child),
-  section.post .body-content ul,
-  section.post .body-content ol {
+  article.post .body-content p:not(p:first-child),
+  article.post .body-content ul,
+  article.post .body-content ol {
     margin: 1rem 0;
   }
 </style>
 
 <style>
-  section {
+  article {
     display: grid;
     gap: 1rem;
     --fs-base: 18px;
@@ -176,7 +176,7 @@ const { data, slug } = post;
   /* DESKTOP */
 
   @media (min-width: 1024px) {
-    section {
+    article {
       --fs-h1: 40px;
       --content-wrap: 600px;
     }
