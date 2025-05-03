@@ -54,6 +54,11 @@
   margin: 1rem 0;
 }
 
+/* LINKS */
+.body-content > p a {
+  color: var(--link);
+}
+
 /* IMÁGENES */
 .body-content > img {
   border-radius: var(--radius);

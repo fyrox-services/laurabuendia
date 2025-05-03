@@ -64,7 +64,7 @@ export function ServiceForm({ heading = "" }: Props) {
       </div>
       <div className={css.Field}>
         <label className={css.Label} htmlFor="subject">
-          tipo
+          perfil
         </label>
         <select
           className={css.Select}

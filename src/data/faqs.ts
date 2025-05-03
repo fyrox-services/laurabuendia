@@ -22,7 +22,7 @@ export const FAQ_VALORACION_DANO_CORPORAL: FAQ[] = [
   },
   {
     heading: "¿Qué se evalúa en la valoración de un daño corporal?",
-    text: "Se analizan las lesiones sufridas, sus secuelas físicas o psicológicas, la relación con el hecho causante y el impacto en la vida diaria o laboral del paciente.",
+    text: "Se analizan las lesiones sufridas, su gravedad, duración y posibles secuelas. También se valora el impacto físico, psicológico, social y laboral que han causado, así como la necesidad de asistencia médica futura. Todo ello se refleja en un informe pericial que sirve para determinar la indemnización correspondiente.",
   },
   {
     heading: "¿Es lo mismo que un informe pericial?",
