@@ -14,9 +14,31 @@ import SubHeading from "@/components/SubHeading.astro";
 import TargetCards from "@/components/TargetCards.astro";
 import { FAQ_HOME } from "@/data/faqs";
 import Layout from "@/layouts/Layout.astro";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": Astro.url,
+  url: Astro.url,
+  name: "Laura Buendía - Perito Médico",
+  description:
+    "Médico con más de 10 años de experiencia en informes periciales, valoración del daño corporal, pérdida de oportunidad y asesoramiento a letrados. Especializada en ofrecer opinión experta y claridad en temas médico-legales.",
+  inLanguage: "es",
+  publisher: {
+    "@type": "Organization",
+    name: "Laura Buendía - Perito Médico",
+    logo: {
+      "@type": "ImageObject",
+      url: `${Astro.url.origin}/logo.png`,
+    },
+  },
+};
 ---
 
-<Layout>
+<Layout
+  metaTitle="➤ Laura Buendía - Perito Médico"
+  metaDescription="Hola, soy Laura Buendía, Médico con más de 10 años de experiencia en informes periciales, valoración del daño corporal, pérdida de oportunidad y asesoramiento a letrados. "
+>
   <Above />
   <Section>
     <Heading> mis servicios </Heading>
@@ -61,4 +83,10 @@ import Layout from "@/layouts/Layout.astro";
     <Heading> artículos destacados </Heading>
     <HighlightPosts />
   </Section>
+
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify(structuredData)}
+  />
 </Layout>

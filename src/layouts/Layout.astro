@@ -5,7 +5,7 @@ import { MainModalForm } from "@/components/preact/MainModalForm";
 import "@/styles/global.css";
 import "@/styles/utils.css";
 import { ClientRouter } from "astro:transitions";
-import logo from "@/assets/mark/logo.png";
+import logo from "@/assets/mark/favicon.png";
 import FloatMobileBtn from "@/components/FloatMobileBtn.astro";
 
 interface Props {
@@ -20,7 +20,8 @@ const {
   metaTitle = "Add Meta Title",
 } = Astro.props;
 
-console.log(Astro.url);
+const { pathname } = Astro.url;
+const ogType = pathname === "/" ? "website" : "article";
 ---
 
 <!doctype html>
@@ -28,15 +29,19 @@ console.log(Astro.url);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href={logo.src} />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content={metaDescription} />
     <meta property="og:title" content={metaTitle} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:type" content="website" />
-    <!-- TODO: Logica para poner website o article -->
-    <meta property="og:site_name" content="Laura Buendía Perito Médico" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="Laura Buendía - Perito Médico" />
+
     <link rel="canonical" href={Astro.url} />
     <link
       rel="preload"

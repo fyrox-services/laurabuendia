@@ -54,7 +54,11 @@ const structuredData = {
 };
 ---
 
-<Layout bodyClass="post">
+<Layout
+  bodyClass="post"
+  metaTitle={data.metaTitle}
+  metaDescription={data.metaDescription}
+>
   <PostLayout body={body} post={post}>
     <Content />
   </PostLayout>
