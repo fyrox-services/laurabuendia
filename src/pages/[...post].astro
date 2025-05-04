@@ -33,7 +33,14 @@ const structuredData = {
   "@type": "BlogPosting",
   "@id": Astro.url,
   headline: data.h1,
-  author: { "@type": "Person", name: data.author },
+  author: {
+    "@type": "Person",
+    name: data.author,
+    sameAs: [
+      "https://www.linkedin.com/in/laura-buend%C3%ADa-8a1b86197/",
+      "https://lauraperitomedico.com/sobre-mi/",
+    ],
+  },
   datePublished: data.datePublished.toISOString(),
   dateModified: data.dateModified.toISOString(),
   potentialAction: [
