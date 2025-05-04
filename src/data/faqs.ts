@@ -81,7 +81,7 @@ export const FAQ_INFORMES_DE_VIABILIDAD: FAQ[] = [
   },
   {
     heading: "¿Este informe puede presentarse en un juicio?",
-    text: "No. El informe de viabilidad no está pensado para ser utilizado como prueba judicial, sino como herramienta interna de análisis. En caso de que el caso sea viable, se elaborará un **informe pericial médico** con validez legal.",
+    text: "No. El informe de viabilidad no está pensado para ser utilizado como prueba judicial, sino como herramienta interna de análisis. En caso de que el caso sea viable, se elaborará un informe pericial médico con validez legal.",
   },
   {
     heading: "¿Y si el informe dice que el caso no es viable?",
