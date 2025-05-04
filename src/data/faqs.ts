@@ -36,13 +36,13 @@ export const FAQ_VALORACION_DANO_CORPORAL: FAQ[] = [
 
 export const FAQ_INFORME_MEDICO_PERICIAL: FAQ[] = [
   {
-    heading: "¿Tiene validez legal un informe pericial médico?",
-    text: "Sí. Es un documento oficial que puede ser presentado ante un juez, una aseguradora o en cualquier procedimiento legal. Cuando está redactado por un perito cualificado, tiene un gran peso probatorio.",
+    heading: "¿Qué es un informe médico pericial?",
+    text: "Es un documento técnico elaborado por un perito médico que analiza de forma objetiva una lesión, enfermedad o actuación clínica para determinar su causa, consecuencias y posible responsabilidad. Se utiliza como prueba en procesos judiciales, reclamaciones o valoraciones de incapacidad.",
   },
   {
     heading:
-      "¿Puedo solicitar un informe aunque no tenga claro si ha habido negligencia?",
-    text: "Por supuesto. En muchos casos, se empieza con un informe de viabilidad para determinar si hay base médica y legal suficiente para elaborar un informe pericial completo.",
+      "¿Quién hace un informe pericial médico?",
+    text: "Lo realiza un perito médico, un profesional de la medicina con formación en valoración del daño corporal y conocimientos médico-legales, capacitado para emitir dictámenes técnicos con validez jurídica.",
   },
   {
     heading: "¿Quién suele encargar estos informes?",

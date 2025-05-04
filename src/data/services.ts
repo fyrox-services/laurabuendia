@@ -16,7 +16,7 @@ export const services: Service[] = [
       "¿Necesita demostrar que hubo una mala actuación médica?",
     description:
       "Se elaboran informes periciales objetivos y detallados que analizan si las actuaciones médicas se ajustaron a la lex artis ad hoc. Estos documentos pueden ser determinantes en juicios, reclamaciones o acuerdos extrajudiciales.",
-    link: "/servicios/informes-periciales",
+    link: "/servicios/informes-medicos-periciales",
   },
   {
     name: "Accidentes de tráfico y del hogar",
