@@ -22,7 +22,12 @@ const { data, slug } = post;
   <div class="above">
     <picture class="mask-1">
       <h1>{data.h1}</h1>
-      <Image width={600} height={400} src={data.image} alt={data.h1} />
+      <Image
+        width={600}
+        height={400}
+        src={`/img/blog/${data.image}`}
+        alt={data.h1}
+      />
     </picture>
     <header>
       <Breadcrumbs slug={slug} h1={data.h1} />

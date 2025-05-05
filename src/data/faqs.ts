@@ -118,3 +118,18 @@ export const FAQ_CALCULAR_INDEMNIZACION: FAQ[] = [
     text: "En ese caso, es muy recomendable solicitar un informe médico pericial independiente, que valore objetivamente el alcance de tus lesiones y secuelas. Este informe puede ayudarte a negociar una compensación más justa o iniciar acciones legales si es necesario.",
   },
 ];
+
+export const FAQ_QUE_ES_UN_PERITAJE_MEDICO: FAQ[] = [
+  {
+    heading: "¿Qué es el peritaje médico legal?",
+    text: "Es un análisis técnico realizado por un perito médico para evaluar hechos clínicos con implicaciones legales. Sirve para determinar si hubo una actuación correcta, valorar daños o secuelas, y aportar pruebas objetivas en juicios, reclamaciones o procesos de incapacidad.",
+  },
+  {
+    heading: "¿Qué es lo que hace un perito médico?",
+    text: "Un perito médico analiza casos clínicos con criterios técnico-legales, emite informes objetivos sobre lesiones, daños o actuaciones médicas, y puede declarar en juicio para defender sus conclusiones.",
+  },
+  {
+    heading: "¿Cómo se hace un peritaje médico?",
+    text: "El peritaje médico comienza con la revisión detallada de la documentación clínica, seguida de una exploración del paciente si es necesario. A partir de ahí, el perito analiza los hechos desde un enfoque médico-legal y redacta un informe técnico que puede utilizarse en un proceso judicial o reclamación.",
+  },
+];
