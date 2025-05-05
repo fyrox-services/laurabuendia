@@ -2,21 +2,26 @@
 import Email from "@/components/icons/Email.astro";
 import WhatsApp from "@/components/icons/WhatsApp.astro";
 import Phone from "@/components/icons/Phone.astro";
+import { GLOBAL_DATA, WHATSAPP_MSG } from "@/data/global";
 ---
 
 <ul class="wrapper">
   <li>
-    <a href="tel:661082338">
+    <a aria-label="Llamar por teléfono" href={GLOBAL_DATA.CALL_LINK}>
       <Phone />
     </a>
   </li>
   <li>
-    <a href="">
+    <a
+      aria-label="Enviar un WhatsApp"
+      target="_blank"
+      href={WHATSAPP_MSG.GENERAL}
+    >
       <WhatsApp />
     </a>
   </li>
   <li>
-    <a href="mailto:">
+    <a aria-label="Enviar un correo electrónico" href={GLOBAL_DATA.MAIL_TO}>
       <Email />
     </a>
   </li>

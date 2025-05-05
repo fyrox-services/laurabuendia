@@ -6,6 +6,7 @@ import Phone from "@/components/icons/Phone.astro";
 import WhatsApp from "@/components/icons/WhatsApp.astro";
 import Email from "@/components/icons/Email.astro";
 import Linkedin from "@/components/icons/Linkedin.astro";
+import { GLOBAL_DATA, WHATSAPP_MSG } from "@/data/global";
 ---
 
 <div class="about-me">
@@ -26,22 +27,30 @@ import Linkedin from "@/components/icons/Linkedin.astro";
     </p>
     <ul class="contact-links">
       <li>
-        <a href="">
+        <a aria-label="llamar por teléfono" href={GLOBAL_DATA.CALL_LINK}>
           <Phone />
         </a>
       </li>
       <li>
-        <a href="">
+        <a
+          aria-label="Enviar un WhatsApp"
+          target="_blank"
+          href={WHATSAPP_MSG.GENERAL}
+        >
           <WhatsApp />
         </a>
       </li>
       <li>
-        <a href="">
+        <a aria-label="Enviar un correo electrónico" href={GLOBAL_DATA.MAIL_TO}>
           <Email />
         </a>
       </li>
       <li>
-        <a href="">
+        <a
+          aria-label="Visitar perfil de Linkedin"
+          target="_blank"
+          href={GLOBAL_DATA.LINKEDIN}
+        >
           <Linkedin width={40} height={40} />
         </a>
       </li>

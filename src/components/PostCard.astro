@@ -1,5 +1,6 @@
 ---
 import { transformDate } from "@/helpers/transformDate";
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
@@ -12,10 +13,15 @@ const { data, slug } = post;
 
 <li>
   <article>
-    <a href={`/${slug}`}>
+    <a aria-label={`Ir a la página de ${data.h1}`} href={`/${slug}`}>
       <picture class="mask-1">
         <h3>{data.h1}</h3>
-        <img src={`/img/blog/${data.image}`} alt={data.h1} />
+        <Image
+          width={1536}
+          height={1024}
+          src={`/img/blog/${data.image}`}
+          alt={data.h1}
+        />
       </picture>
       <p>{data.description}</p>
       <footer>

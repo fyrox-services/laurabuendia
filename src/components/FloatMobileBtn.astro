@@ -3,22 +3,32 @@ import Chat from "@/components/icons/Chat.astro";
 import Form from "@/components/icons/Form.astro";
 import OriginalWhatsApp from "@/components/icons/OriginalWhatsApp.astro";
 import Phone from "@/components/icons/Phone.astro";
+import { GLOBAL_DATA, WHATSAPP_MSG } from "@/data/global";
 ---
 
 <div class="float-mobile-btn">
-  <button class="chat-btn">
+  <button aria-label="Ver opciones de contacto" class="chat-btn">
     <Chat />
   </button>
 
-  <button id="form-btn" class="form-btn">
+  <button aria-label="Abrir formulario" id="form-btn" class="form-btn">
     <Form width={40} height={40} />
   </button>
 
-  <a class="ws-btn" href="">
+  <a
+    aria-label="Enviar WhatsApp"
+    class="ws-btn"
+    target="_blank"
+    href={WHATSAPP_MSG.GENERAL}
+  >
     <OriginalWhatsApp />
   </a>
 
-  <a class="phone-btn" href="">
+  <a
+    aria-label="Llamar por teléfono"
+    class="phone-btn"
+    href={GLOBAL_DATA.CALL_LINK}
+  >
     <Phone width={30} width={30} />
   </a>
 </div>

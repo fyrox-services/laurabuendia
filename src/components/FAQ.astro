@@ -18,7 +18,7 @@ const { faqs } = Astro.props;
           itemprop="mainEntity"
           itemtype="https://schema.org/Question"
         >
-          <details aria-expanded={index === 0} open={index === 0}>
+          <details open={index === 0}>
             <summary class={index === 0 ? "active" : ""} itemprop="name">
               <h3>
                 {heading} <MinimalArrow width={25} height={25} />

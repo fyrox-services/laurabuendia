@@ -71,7 +71,7 @@ export function PostForm({ heading }: Props) {
         <FeedbackMessage>{errors.phone?.message}</FeedbackMessage>
       </div>
       <div className={`${css.Field} ${css.TextareaField}`}>
-        <label className={css.Label} htmlFor="">
+        <label className={css.Label} htmlFor="msg">
           mensaje
         </label>
         <textarea
@@ -88,8 +88,9 @@ export function PostForm({ heading }: Props) {
         <FeedbackMessage>{errors.msg?.message}</FeedbackMessage>
       </div>
       <div className={`${css.Field} ${css.LabelLegalField}`}>
-        <label className={`${css.Label} ${css.LabelLegal}`} htmlFor="">
+        <label className={`${css.Label} ${css.LabelLegal}`} htmlFor="legal">
           <input
+            id="legal"
             type="checkbox"
             {...register("legal", {
               required: FEEDBACK_MESSAGES.ERROR.LEGAL,
