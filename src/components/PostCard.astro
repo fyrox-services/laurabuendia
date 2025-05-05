@@ -5,9 +5,10 @@ import type { CollectionEntry } from "astro:content";
 
 interface Props {
   post: CollectionEntry<"posts">;
+  first: boolean;
 }
 
-const { post } = Astro.props;
+const { post, first } = Astro.props;
 const { data, slug } = post;
 ---
 
@@ -17,6 +18,7 @@ const { data, slug } = post;
       <picture class="mask-1">
         <h3>{data.h1}</h3>
         <Image
+          loading={first ? "eager" : "lazy"}
           width={1536}
           height={1024}
           src={`/img/blog/${data.image}`}

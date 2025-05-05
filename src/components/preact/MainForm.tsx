@@ -154,6 +154,7 @@ export function MainForm({ modifier = "" }: Props) {
       <div className={`${css.Field} ${css.LabelLegalField}`}>
         <label className={`${css.Label} ${css.LabelLegal}`} htmlFor="legal">
           <input
+            id="legal"
             type="checkbox"
             {...register("legal", {
               required: FEEDBACK_MESSAGES.ERROR.LEGAL,

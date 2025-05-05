@@ -23,8 +23,9 @@ const { data, slug } = post;
     <picture class="mask-1">
       <h1>{data.h1}</h1>
       <Image
-        width={600}
-        height={400}
+        loading="eager"
+        width={1536}
+        height={1024}
         src={`/img/blog/${data.image}`}
         alt={data.h1}
       />

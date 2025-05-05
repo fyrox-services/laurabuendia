@@ -1,0 +1,24 @@
+---
+import CenterContent from "@/components/CenterContent.astro";
+import H1Heading from "@/components/H1Heading.astro";
+import PageSection from "@/components/PageSection.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout metaTitle="404" metaDescription="" ogImage="">
+  <PageSection>
+    <CenterContent>
+      <H1Heading modifier="service-page"> 404 Página no encontrada </H1Heading>
+      <a href="/">volver al inicio</a>
+    </CenterContent>
+  </PageSection>
+</Layout>
+
+<style>
+  a {
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+  }
+</style>

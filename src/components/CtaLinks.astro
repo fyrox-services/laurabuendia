@@ -2,7 +2,7 @@
 import WhatsApp from "@/components/icons/WhatsApp.astro";
 import Phone from "@/components/icons/Phone.astro";
 import Email from "@/components/icons/Email.astro";
-import { GLOBAL_DATA } from "@/data/global";
+import { GLOBAL_DATA, WHATSAPP_MSG } from "@/data/global";
 
 interface Props {
   modifier?: string;
@@ -19,7 +19,7 @@ const { modifier = "" } = Astro.props;
     </a>
   </li>
   <li>
-    <a href="">
+    <a href={WHATSAPP_MSG.GENERAL}>
       <WhatsApp width={25} height={25} />
       <span> whatsApp </span>
     </a>

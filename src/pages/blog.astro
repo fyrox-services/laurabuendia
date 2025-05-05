@@ -8,7 +8,11 @@ import { getCollection } from "astro:content";
 const posts = await getCollection("posts");
 ---
 
-<Layout>
+<Layout
+  metaTitle="Blog"
+  metaDescription="Artículos sobre el peritaje médico"
+  ogImage=""
+>
   <PageSection>
     <H1Heading> blog </H1Heading>
     <WrapperPosts posts={posts} />
