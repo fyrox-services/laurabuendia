@@ -1,7 +1,7 @@
-import particular from "@/assets/ilustrations/particular.png";
-import abogado from "@/assets/ilustrations/abogado.png";
-import aseguradora from "@/assets/ilustrations/aseguradora.png";
-import gobierno from "@/assets/ilustrations/gobierno.png";
+import particular from "@/assets/ilustrations/particular.webp";
+import abogado from "@/assets/ilustrations/abogado.webp";
+import aseguradora from "@/assets/ilustrations/aseguradora.webp";
+import gobierno from "@/assets/ilustrations/gobierno.webp";
 import type { Target } from "@/types";
 
 export const targets: Target[] = [
