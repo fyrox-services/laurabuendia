@@ -153,20 +153,3 @@ blockquote {
 [hidden] {
   display: none !important;
 }
-
-/* 
-      
-      para parrafos en movil 18px y 20 para desktop
-      
-      Móvil:
-      ➤
-      h1: 24px - 28px
-      h2: 20px - 24px
-      h3: 18px - 20px
-      
-      Desktop:
-      
-      h1: 32px - 36px (o más, según diseño)
-      h2: 28px - 32px
-      h3: 24px
-  */

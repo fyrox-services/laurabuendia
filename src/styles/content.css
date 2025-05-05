@@ -55,7 +55,8 @@
 }
 
 /* LINKS */
-.body-content > p a {
+.body-content > p a,
+.body-content > ul a {
   color: var(--link);
 }
 

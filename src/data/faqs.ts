@@ -133,3 +133,18 @@ export const FAQ_QUE_ES_UN_PERITAJE_MEDICO: FAQ[] = [
     text: "El peritaje médico comienza con la revisión detallada de la documentación clínica, seguida de una exploración del paciente si es necesario. A partir de ahí, el perito analiza los hechos desde un enfoque médico-legal y redacta un informe técnico que puede utilizarse en un proceso judicial o reclamación.",
   },
 ];
+
+export const FAQ_PERITO_ESPECIALISTA_VALORACION_DANO_CORPORAL: FAQ[] = [
+  {
+    heading: "¿Qué es una pericia médica y la valoración del daño corporal?",
+    text: "La pericia médica es un informe técnico elaborado por un perito médico para analizar una situación clínica con criterios médico-legales. Su objetivo es aportar objetividad en un proceso judicial, extrajudicial o asegurador.",
+  },
+  {
+    heading: "¿Cuánto puede costar un perito médico?",
+    text: "El precio de un peritaje médico varía en función del tipo de caso, la complejidad del informe, la documentación a revisar, si es necesaria la exploración del paciente o la ratificación en juicio. Por eso, lo más recomendable es que contactes conmigo directamente para evaluar el caso de forma personalizada.",
+  },
+  {
+    heading: "¿Qué es la valoración del daño corporal?",
+    text: "Es el proceso médico-legal mediante el cual se analizan las lesiones y secuelas de una persona para determinar su gravedad, duración e impacto en la vida cotidiana o laboral. Esta valoración es fundamental para calcular indemnizaciones, justificar incapacidades o reclamar por negligencia médica.",
+  },
+];
