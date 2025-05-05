@@ -148,3 +148,18 @@ export const FAQ_PERITO_ESPECIALISTA_VALORACION_DANO_CORPORAL: FAQ[] = [
     text: "Es el proceso médico-legal mediante el cual se analizan las lesiones y secuelas de una persona para determinar su gravedad, duración e impacto en la vida cotidiana o laboral. Esta valoración es fundamental para calcular indemnizaciones, justificar incapacidades o reclamar por negligencia médica.",
   },
 ];
+
+export const FAQ_INDEMNIZACION_LATIGAZO_CERVICAL: FAQ[] = [
+  {
+    heading: "¿Cuánto se cobra por un latigazo cervical en un accidente de tráfico?",
+    text: "La indemnización por un latigazo cervical depende de la gravedad, los días de baja o molestias y si quedan secuelas. En casos leves sin secuelas, la cantidad suele oscilar entre 1.000 € y 3.000 €. Si hay secuelas o baja laboral, la cifra puede superar los 5.000 €, según el baremo legal vigente y el informe pericial médico.",
+  },
+  {
+    heading: "¿Cuánto te pagan por día de rehabilitación por accidente de tráfico?",
+    text: "El baremo de tráfico no paga por sesión de rehabilitación como tal, sino por los días de perjuicio que reflejan el impacto del accidente. Si estás en tratamiento y con limitaciones funcionales, se considera perjuicio moderado (64,24 €/día en 2025). Una vez recuperado parcialmente, puede considerarse perjuicio básico (37,07 €/día).",
+  },
+  {
+    heading: "¿Cómo saber el grado de latigazo cervical?",
+    text: "El grado se determina mediante exploración médica, evolución clínica y, si es necesario, pruebas complementarias. Los síntomas, duración y respuesta al tratamiento son claves. Un perito médico puede valorar objetivamente si existen secuelas y qué puntuación corresponde según el baremo legal.",
+  },
+];
