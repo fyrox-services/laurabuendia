@@ -14,7 +14,8 @@
 }
 
 .body-content > p strong,
-.body-content > ul li strong .body-content > ol li strong {
+.body-content > ul li strong,
+.body-content > ol li strong {
   font-family: var(--base-bold);
 }
 
