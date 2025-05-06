@@ -32,7 +32,7 @@ export function useHandleForm<T>(
 
       const dataToSend = {
         ...values,
-        "analysis-data": analysisData(),
+        analysisData: analysisData(),
       };
 
       const result = await fetch(url, {
@@ -44,6 +44,8 @@ export function useHandleForm<T>(
       });
 
       const data = await result.json();
+
+      console.log(data);
 
       if (data.details) throw new Error(FEEDBACK_MESSAGES.ERROR.FIELDS_INVALID);
       if (!result.ok) throw new Error(FEEDBACK_MESSAGES.ERROR.GENERAL);

@@ -45,7 +45,7 @@ export interface AllFormFields {
   name: string;
   email: string;
   phone: string;
-  kind: string;
+  profile: string;
   subject: string;
   msg: string;
   legal: boolean;
@@ -63,5 +63,12 @@ export type PostFormFields = Pick<
 
 export type ServiceFormFields = Pick<
   AllFormFields,
-  "name" | "msg" | "phone" | "legal" | "email" | "kind"
+  "name" | "msg" | "phone" | "legal" | "email" | "profile"
+> & {
+  service: string;
+};
+
+export type ContactFormFields = Pick<
+  AllFormFields,
+  "name" | "msg" | "phone" | "legal" | "email"
 >;

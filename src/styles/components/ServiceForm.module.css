@@ -50,8 +50,16 @@
   gap: 0.5rem;
 }
 
+.LabelLegal a {
+  color: var(--link);
+}
+
 .Submit {
   font-size: var(--fs-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
 }
 
 /* DESKTOP */

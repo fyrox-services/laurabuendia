@@ -1,7 +1,7 @@
 import css from "@/styles/components/MainForm.module.css";
 import { useForm } from "react-hook-form";
 import { FeedbackMessage } from "@/components/preact/FeedbackMessage";
-import type { AllFormFields, MainFormFields } from "@/types";
+import type { MainFormFields } from "@/types";
 import { FEEDBACK_MESSAGES } from "@/data/feedbackMessages";
 import { handleMainModalForm } from "@/stores";
 import "@/styles/components/all-forms.css";
@@ -12,14 +12,15 @@ interface Props {
 }
 
 const services = [
-  { text: "Valoración del daño corporal" },
-  { text: "Informes periciales" },
-  { text: "Accidentes de tráfico y hogar" },
-  { text: "Informes de viabilidad" },
-  { text: "Perdida de oportunidad" },
-  { text: "Asesoramiento a letrados" },
-  { text: "Mediación" },
-  { text: "Ratificaciones judiciales" },
+  { text: "valoración del daño corporal" },
+  { text: "informes periciales" },
+  { text: "accidentes de tráfico y hogar" },
+  { text: "informes de viabilidad" },
+  { text: "perdida de oportunidad" },
+  { text: "asesoramiento a letrados" },
+  { text: "mediación" },
+  { text: "ratificaciones judiciales" },
+  { text: "otro" },
 ];
 
 export function MainForm({ modifier = "" }: Props) {
@@ -130,7 +131,6 @@ export function MainForm({ modifier = "" }: Props) {
               {service.text}
             </option>
           ))}
-          <option value="otro">otro</option>
         </select>
         <FeedbackMessage>{errors.subject?.message}</FeedbackMessage>
       </div>

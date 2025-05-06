@@ -40,6 +40,10 @@
   color: var(--dark-300);
 }
 
+.Select {
+  text-transform: capitalize;
+}
+
 .Textarea {
   resize: none;
 }
