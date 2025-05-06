@@ -13,6 +13,7 @@ interface Props {
   metaTitle: string;
   metaDescription: string;
   ogImage: string;
+  noIndex?: boolean;
 }
 
 const {
@@ -20,6 +21,7 @@ const {
   metaDescription,
   metaTitle = "Add Meta Title",
   ogImage,
+  noIndex = false,
 } = Astro.props;
 
 const { pathname } = Astro.url;
@@ -52,6 +54,10 @@ const ogType = pathname === "/" ? "website" : "article";
 
     <link rel="canonical" href={Astro.url} />
     <meta name="description" content={metaDescription} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {noIndex && <meta name="robots" content="noindex" />}
+
+    <!-- Fuentes -->
     <link
       rel="preload"
       href="/fonts/Poppins-Regular.woff2"

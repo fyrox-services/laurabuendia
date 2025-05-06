@@ -7,3 +7,5 @@ Disallow: /blog/
 Disallow: /contacto/
 Disallow: /sobre-mi/
 Disallow: /img/
+
+Sitemap: https://lauraperitomedico.com/sitemap-index.xml
