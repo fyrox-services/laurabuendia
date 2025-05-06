@@ -1,2 +1,9 @@
 User-agent: *
-Disallow: /
+
+Disallow: /legal/politica-cookies/
+Disallow: /legal/politica-privacidad/
+Disallow: /legal/aviso-legal/
+Disallow: /blog/
+Disallow: /contacto/
+Disallow: /sobre-mi/
+Disallow: /img/
