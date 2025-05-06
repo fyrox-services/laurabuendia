@@ -28,7 +28,6 @@
   text-align: center;
   max-width: 30ch;
   margin: 0 auto;
-  font-size: var(--fs-md);
 }
 
 .Field {
