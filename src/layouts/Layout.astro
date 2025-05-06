@@ -74,7 +74,7 @@ const ogType = pathname === "/" ? "website" : "article";
     <main>
       <slot />
     </main>
-    <MainModalForm client:only />
+    <MainModalForm client:idle />
     <FloatMobileBtn />
     <Footer />
   </body>
