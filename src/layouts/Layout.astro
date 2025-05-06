@@ -31,12 +31,13 @@ const ogType = pathname === "/" ? "website" : "article";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="description" content={metaDescription} />
+
+    <!-- og -->
     <meta property="og:title" content={metaTitle} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={Astro.url} />
@@ -47,7 +48,10 @@ const ogType = pathname === "/" ? "website" : "article";
     <meta name="author" content="Laura Buendía" />
     <meta name="publisher" content={siteName} />
 
+    <!-- seo -->
+
     <link rel="canonical" href={Astro.url} />
+    <meta name="description" content={metaDescription} />
     <link
       rel="preload"
       href="/fonts/Poppins-Regular.woff2"

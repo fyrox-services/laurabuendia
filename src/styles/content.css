@@ -13,6 +13,11 @@
   line-height: 1.75;
 }
 
+.body-content > p strong,
+.body-content > ul li strong .body-content > ol li strong {
+  font-family: var(--base-bold);
+}
+
 /* ENCABEZADOS */
 
 .body-content > h2,
