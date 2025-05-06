@@ -29,10 +29,7 @@ const services = defineCollection({
 
 const categories = defineCollection({
   schema: z.object({
-    metaTitle: z.string(),
-    metaDescription: z.string(),
-    h1: z.string(),
-    image: z.string(),
+    title: z.string(),
   }),
 });
 

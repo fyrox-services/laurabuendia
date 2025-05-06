@@ -36,12 +36,12 @@ const posts = await getCollection("posts", ({ slug }) => {
 ---
 
 <Layout
-  metaTitle={data.metaTitle}
-  metaDescription={data.metaTitle}
-  ogImage="TODO"
+  metaTitle={data.title}
+  metaDescription={`Posts sobre ${data.title}`}
+  ogImage=""
 >
   <PageSection>
-    <H1Heading> {category.data.h1} </H1Heading>
+    <H1Heading> {category.data.title} </H1Heading>
     <WrapperPosts posts={posts} />
   </PageSection>
 </Layout>
