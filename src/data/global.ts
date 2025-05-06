@@ -9,6 +9,7 @@ export const GLOBAL_DATA = {
   CALL_LINK: "tel:658217820",
   PHONE_MASK: "658 217 820",
   MAIL_TO: "mailto:info@lauraperitomedico.com",
+  MAIL_TEXT: "info@lauraperitomedico.com",
   LINKEDIN: "https://www.linkedin.com/in/laura-buend%C3%ADa-8a1b86197/",
 };
 

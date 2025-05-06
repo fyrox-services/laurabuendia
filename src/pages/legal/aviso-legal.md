@@ -8,11 +8,10 @@ layout: "@/layouts/LegalLayout.astro"
 
 En cumplimiento con el deber de información establecido en la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, se informa que el presente sitio web es titularidad de:
 
-- **Titular**: Laura Buendía Pérez
-- **Actividad profesional**: Perito Médico Especialista en Valoración del Daño Corporal
-- **NIF**: [NIF de la profesional]
-- **Domicilio profesional**: [Dirección física]
-- **Correo electrónico de contacto**: [Email de contacto]
+- **Titular**: Laura Buendía
+- **Actividad profesional**: Perito Médico
+- **Domicilio profesional**: Hospital Beata María Ana, C. del Dr. Esquerdo, 83, Retiro, 28007 Madrid
+- **Correo electrónico de contacto**: info@lauraperitomedico.com
 
 ## Objeto
 
@@ -46,4 +45,4 @@ Este aviso legal se rige por la legislación española. Para la resolución de c
 
 ---
 
-**Última actualización**: [Fecha actual]
+**Última actualización**: 06 - 05 - 2025

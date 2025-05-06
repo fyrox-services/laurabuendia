@@ -6,11 +6,10 @@ layout: "@/layouts/LegalLayout.astro"
 
 ## Responsable del tratamiento
 
-- **Titular**: Laura Buendía Pérez
-- **Actividad profesional**: Perito Médico Especialista en Valoración del Daño Corporal
-- **NIF**: [NIF de la profesional]
-- **Domicilio profesional**: [Dirección física]
-- **Correo electrónico de contacto**: [Email de contacto]
+- **Titular**: Laura Buendía
+- **Actividad profesional**: Perito Médico
+- **Domicilio profesional**: Hospital Beata María Ana, C. del Dr. Esquerdo, 83, Retiro, 28007 Madrid
+- **Correo electrónico de contacto**: info@lauraperitomedico.com
 
 ## Finalidad del tratamiento de datos
 

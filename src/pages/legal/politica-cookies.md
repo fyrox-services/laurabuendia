@@ -40,4 +40,4 @@ Esta política puede actualizarse en cualquier momento para adaptarse a cambios 
 
 ---
 
-**Última actualización**: [Fecha actual]
+**Última actualización**: 06 - 05 - 2025
