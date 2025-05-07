@@ -14,16 +14,18 @@
 <script>
   import { isTocOpen } from "@/stores";
 
-  const $btn = document.getElementById("toc-btn");
+  document.addEventListener("astro:page-load", () => {
+    const $btn = document.getElementById("toc-btn");
 
-  if ($btn !== null) {
-    $btn.addEventListener("click", () => {
-      isTocOpen.set(!isTocOpen.get());
+    if ($btn !== null) {
+      $btn.addEventListener("click", () => {
+        isTocOpen.set(!isTocOpen.get());
+      });
+    }
+
+    isTocOpen.subscribe((visible) => {
+      $btn?.classList.toggle("active", visible);
     });
-  }
-
-  isTocOpen.subscribe((visible) => {
-    $btn?.classList.toggle("active", visible);
   });
 </script>
 

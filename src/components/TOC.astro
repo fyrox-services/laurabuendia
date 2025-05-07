@@ -51,17 +51,27 @@ const headings = buildHeadings(body);
 <script>
   import { isTocOpen } from "@/stores";
 
-  const $toc = document.getElementById("toc");
-  const $close = document.getElementById("close");
+  document.addEventListener("astro:page-load", () => {
+    const $toc = document.getElementById("toc");
+    const $close = document.getElementById("close");
 
-  if ($close !== null) {
-    $close.addEventListener("click", () => {
-      isTocOpen.set(false);
+    if ($close !== null) {
+      $close.addEventListener("click", () => {
+        isTocOpen.set(false);
+      });
+    }
+
+    const links = $toc?.querySelectorAll("a");
+
+    links?.forEach((link) => {
+      link.addEventListener("click", () => {
+        isTocOpen.set(false);
+      });
     });
-  }
 
-  isTocOpen.subscribe((visible) => {
-    $toc?.classList.toggle("active", visible);
+    isTocOpen.subscribe((visible) => {
+      $toc?.classList.toggle("active", visible);
+    });
   });
 </script>
 
