@@ -42,7 +42,7 @@
 /* LISTAS */
 .body-content > ul:not(.contact-links),
 .body-content > ol {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .body-content > ul:not(.contact-links) li,

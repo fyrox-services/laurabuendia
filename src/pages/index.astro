@@ -13,6 +13,7 @@ import ShortDescription from "@/components/ShortDescription.astro";
 import SubHeading from "@/components/SubHeading.astro";
 import TargetCards from "@/components/TargetCards.astro";
 import { FAQ_HOME } from "@/data/faqs";
+import { GLOBAL_DATA } from "@/data/global";
 import Layout from "@/layouts/Layout.astro";
 
 const structuredData = {
@@ -32,6 +33,30 @@ const structuredData = {
       url: `${Astro.url.origin}/laura_buendia.webp`,
     },
   },
+};
+
+const localData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Laura Buendía - Perito Médico",
+  image: `${Astro.url}/laura_buendia.webp`,
+  url: Astro.url,
+  description:
+    "Perito médico especializada en valoración del daño corporal, informes periciales y asesoramiento legal en toda España.",
+  telephone: "+34 658 217 820",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "C. del Dr. Esquerdo, 83, Retiro, 28007 Madrid",
+    addressLocality: "Madrid",
+    postalCode: "28007",
+    addressCountry: "ES",
+  },
+  openingHours: "Mo-Fr 09:00-18:00",
+  areaServed: {
+    "@type": "Country",
+    name: "España",
+  },
+  sameAs: ["https://www.linkedin.com/in/laura-buend%C3%ADa-8a1b86197/"],
 };
 ---
 
@@ -89,5 +114,11 @@ const structuredData = {
     is:inline
     type="application/ld+json"
     set:html={JSON.stringify(structuredData)}
+  />
+
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify(localData)}
   />
 </Layout>

@@ -5,35 +5,40 @@ import MinimalArrow from "@/components/icons/MinimalArrow.astro";
 interface Props {
   faqs: FAQ[];
 }
-
 const { faqs } = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ heading, text }) => {
+    return {
+      "@type": "Question",
+      name: heading,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text,
+      },
+    };
+  }),
+};
 ---
 
-<ul class="faq" itemtype="https://schema.org/FAQPage">
+<ul class="faq">
   {
     faqs.map(({ heading, text }, index) => {
       return (
-        <li
-          itemscope
-          itemprop="mainEntity"
-          itemtype="https://schema.org/Question"
-        >
+        <li>
           <details open={index === 0}>
             <summary class={index === 0 ? "active" : ""} itemprop="name">
               <h3>
                 {heading} <MinimalArrow width={25} height={25} />
               </h3>
             </summary>
-            <div
-              class="answer-content"
-              itemscope
-              itemprop="acceptedAnswer"
-              itemtype="https://schema.org/Answer"
-            >
-              <p itemprop="text">{text}</p>
+            <div class="answer-content">
+              <p>{text}</p>
             </div>
           </details>
-          <meta itemprop="position" content={(index + 1).toString()} />
+          <meta content={(index + 1).toString()} />
         </li>
       );
     })
@@ -90,6 +95,12 @@ const { faqs } = Astro.props;
     });
   });
 </script>
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+/>
 
 <style is:global>
   summary svg {
