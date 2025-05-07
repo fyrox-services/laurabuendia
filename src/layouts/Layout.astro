@@ -33,6 +33,24 @@ const ogType = pathname === "/" ? "website" : "article";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <title>{metaTitle}</title>
+
+    <!-- Fuentes -->
+    <link
+      rel="preload"
+      href="/fonts/Poppins-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Poppins-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <!-- favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -56,24 +74,6 @@ const ogType = pathname === "/" ? "website" : "article";
     <meta name="description" content={metaDescription} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {noIndex && <meta name="robots" content="noindex" />}
-
-    <!-- Fuentes -->
-    <link
-      rel="preload"
-      href="/fonts/Poppins-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/fonts/Poppins-SemiBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <ClientRouter />
-    <title>{metaTitle}</title>
   </head>
   <body class={bodyClass}>
     <Header />
@@ -83,6 +83,7 @@ const ogType = pathname === "/" ? "website" : "article";
     <MainModalForm client:idle />
     <FloatMobileBtn />
     <Footer />
+    <ClientRouter />
   </body>
 </html>
 
