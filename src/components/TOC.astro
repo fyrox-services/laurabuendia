@@ -35,7 +35,7 @@ const headings = buildHeadings(body);
         const createSlug = cleanedText.join("-");
         return (
           <li class="item">
-            <a href={`/${slug}#${createSlug}`} itemprop="url">
+            <a href={`#${createSlug}`} itemprop="url">
               <span class="index">{i + 1}.</span>
               <span class="text" itemprop="name">
                 {text}
