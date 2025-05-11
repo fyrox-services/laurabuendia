@@ -62,7 +62,7 @@ export const FAQ_ACCIDENTES_DE_TRAFICO_Y_HOGAR: FAQ[] = [
   },
   {
     heading: "¿Qué baremo se utiliza para calcular la indemnización?",
-    text: "Se aplica el Baremo de la Ley 35/2015, que establece los criterios para valorar días de perjuicio, secuelas y otros daños derivados del accidente.",
+    text: "Se aplica el Baremo de la Ley 35/2015 con la actualización de la fecha del accidente, que establece los criterios para valorar días de perjuicio, secuelas y otros daños derivados del accidente.",
   },
   {
     heading: "¿Este informe es válido en un juicio?",
@@ -96,7 +96,7 @@ export const FAQ_PERDIDA_DE_OPORTUNIDAD: FAQ[] = [
   },
   {
     heading: "¿Qué diferencia hay con una negligencia médica?",
-    text: "La pérdida de oportunidad no exige que el daño haya sido causado directamente por la actuación médica, sino por la omisión o retraso que impidió que se actuara a tiempo. Es un concepto más matizado.",
+    text: "La pérdida de oportunidad describe una posible pérdida de curación que no tiene porqué ser derivada de una actuación médica negligente, sino que puede haberse producido por otras causas como retrasos administrativos o problemas técnicos en determinados hospitales o centros. No toda pérdida de oportunidad es derivada de una negligencia médica.",
   },
   {
     heading: "¿Cómo se demuestra?",
@@ -137,11 +137,11 @@ export const FAQ_QUE_ES_UN_PERITAJE_MEDICO: FAQ[] = [
 export const FAQ_PERITO_ESPECIALISTA_VALORACION_DANO_CORPORAL: FAQ[] = [
   {
     heading: "¿Qué es una pericia médica y la valoración del daño corporal?",
-    text: "La pericia médica es un informe técnico elaborado por un perito médico para analizar una situación clínica con criterios médico-legales. Su objetivo es aportar objetividad en un proceso judicial, extrajudicial o asegurador.",
+    text: "la valoración del daño corporal permite cuantificar económicamente las lesiones derivadas de dicha situación clínica.",
   },
   {
     heading: "¿Cuánto puede costar un perito médico?",
-    text: "El precio de un peritaje médico varía en función del tipo de caso, la complejidad del informe, la documentación a revisar, si es necesaria la exploración del paciente o la ratificación en juicio. Por eso, lo más recomendable es que contactes conmigo directamente para evaluar el caso de forma personalizada.",
+    text: "El precio de un peritaje médico varía en función del tipo de caso, la complejidad del informe, la documentación a revisar, si es necesaria la exploración del paciente o la ratificación en juicio. Por eso, lo más recomendable es que contacte conmigo directamente para evaluar el caso de forma personalizada.",
   },
   {
     heading: "¿Qué es la valoración del daño corporal?",
