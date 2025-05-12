@@ -1,11 +1,3 @@
 User-agent: *
 
-Disallow: /legal/politica-cookies/
-Disallow: /legal/politica-privacidad/
-Disallow: /legal/aviso-legal/
-Disallow: /blog/
-Disallow: /contacto/
-Disallow: /sobre-mi/
-Disallow: /img/
-
 Sitemap: https://lauraperitomedico.com/sitemap-index.xml
