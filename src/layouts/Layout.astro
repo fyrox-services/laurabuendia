@@ -73,6 +73,12 @@ const ogType = pathname === "/" ? "website" : "article";
     <link rel="canonical" href={Astro.url} />
     <meta name="description" content={metaDescription} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Google -->
+    <meta
+      name="google-site-verification"
+      content="FrXtP6tdWjHEOxPNPy1DioLkdjtk_YuJx0aRvp6A4r8"
+    />
     {noIndex && <meta name="robots" content="noindex" />}
     <ClientRouter />
   </head>
