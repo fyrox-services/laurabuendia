@@ -16,7 +16,6 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const excludedPages = [
-          "https://lauraperitomedico.com/blog/",
           "https://lauraperitomedico.com/contacto/",
           "https://lauraperitomedico.com/legal/aviso-legal/",
           "https://lauraperitomedico.com/legal/politica-cookies/",
