@@ -5,6 +5,7 @@ import Email from "@/components/icons/Email.astro";
 import Phone from "@/components/icons/Phone.astro";
 import Location from "@/components/icons/Location.astro";
 import { GLOBAL_DATA } from "@/data/global";
+import SiteDev from "@/components/SiteDev.astro";
 ---
 
 <footer>
@@ -149,6 +150,8 @@ import { GLOBAL_DATA } from "@/data/global";
           </a>
         </li>
       </ul>
+
+      <SiteDev />
     </nav>
   </div>
 </footer>
@@ -157,7 +160,7 @@ import { GLOBAL_DATA } from "@/data/global";
   footer {
     margin: 10rem 0 0;
     background-color: var(--white);
-    padding: 2rem 0;
+    padding: 2rem 0 8rem;
   }
 
   .footer-wrap {
@@ -207,6 +210,10 @@ import { GLOBAL_DATA } from "@/data/global";
   }
 
   @media (min-width: 1024px) {
+    footer {
+      padding: 2rem 0 5rem;
+    }
+
     .footer-wrap {
       grid-template-columns: repeat(3, 1fr);
       max-width: 800px;

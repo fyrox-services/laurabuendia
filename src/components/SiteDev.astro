@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import logoMike from "@/assets/mark/logo_mike.png";
+---
+
+<a href="https://mikecode.net/" target="_blank" rel="noopener noreferrer">
+  <span> Sitio desarrollado por mikecode </span>
+  <Image
+    width={32}
+    sizes="32px"
+    src={logoMike}
+    alt="logotipo de mikecode"
+    format="webp"
+  />
+</a>
+
+<style>
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-sm);
+  }
+</style>
