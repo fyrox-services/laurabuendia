@@ -35,7 +35,7 @@ const textFixes: Record<string, string> = {
       urlsWithoutLast.map((item, i) => {
         const cleanText = textFixes[item] || item.split("-").join(" ");
 
-        const path = "/" + urlSections.slice(0, i + 1).join("/");
+        const path = "/" + urlSections.slice(0, i + 1).join("/") + "/";
 
         return (
           <li
