@@ -163,3 +163,27 @@ export const FAQ_INDEMNIZACION_LATIGAZO_CERVICAL: FAQ[] = [
     text: "El grado se determina mediante exploración médica, evolución clínica y, si es necesario, pruebas complementarias. Los síntomas, duración y respuesta al tratamiento son claves. Un perito médico puede valorar objetivamente si existen secuelas y qué puntuación corresponde según el baremo legal.",
   },
 ];
+
+export const FAQ_QUE_VALORA_UN_PERITO_MEDICO: FAQ[] = [
+  {
+    heading: "¿Cuánto tarda un perito médico en hacer un informe?",
+    text: "El plazo medio de elaboración de un informe pericial varía según la complejidad del caso y la disponibilidad de la documentación clínica. En términos generales, puede oscilar entre una y tres semanas, aunque en situaciones urgentes o con documentación muy clara, el plazo puede acortarse. En casos complejos que requieran exploración médica y análisis detallado, el tiempo puede ser mayor.",
+  },
+  {
+    heading: "¿Qué revisa un perito?",
+    text: "El perito médico analiza toda la documentación clínica relevante: informes hospitalarios, partes de urgencias, pruebas diagnósticas, tratamientos prescritos y evolución del paciente. Además, si el caso lo requiere, puede realizar una exploración física directa para valorar secuelas o limitaciones funcionales. Todo este análisis se traduce en un dictamen objetivo y fundamentado.",
+  },
+  {
+    heading: "¿Qué valora un perito médico en un juicio?",
+    text: "En un procedimiento judicial, el perito médico aporta un informe técnico que ayuda al juez a entender la situación médica del caso. Valora si existió una lesión, su gravedad, duración, secuelas, y si existe una relación de causalidad con los hechos en cuestión. También puede defender oralmente sus conclusiones durante la vista.",
+  },
+  {
+    heading: "¿Es obligatorio acudir a juicio si se encarga un informe pericial?",
+    text: "No necesariamente. Muchos informes periciales se utilizan para resolver conflictos de forma extrajudicial, como en reclamaciones a aseguradoras o en procedimientos de mediación. Solo si el caso llega a juicio y el juez lo solicita, el perito deberá ratificar su informe en sede judicial.",
+  },
+  {
+    heading: "¿El perito médico debe ser especialista en el tipo de daño a valorar?",
+    text: "Sí, siempre es recomendable que el perito tenga formación específica en la materia relacionada con el caso. Por ejemplo, en valoraciones de incapacidad, daños corporales o secuelas funcionales, es habitual recurrir a médicos especialistas en valoración del daño corporal o en la especialidad médica directamente vinculada con el hecho a analizar.",
+  },
+
+];

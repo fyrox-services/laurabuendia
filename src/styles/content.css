@@ -21,6 +21,10 @@
 
 /* ENCABEZADOS */
 
+.body-content > h2 {
+  color: var(--primary);
+}
+
 .body-content > h2,
 .body-content > h3,
 .body-content > h4 {
