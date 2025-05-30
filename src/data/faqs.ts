@@ -40,8 +40,7 @@ export const FAQ_INFORME_MEDICO_PERICIAL: FAQ[] = [
     text: "Es un documento técnico elaborado por un perito médico que analiza de forma objetiva una lesión, enfermedad o actuación clínica para determinar su causa, consecuencias y posible responsabilidad. Se utiliza como prueba en procesos judiciales, reclamaciones o valoraciones de incapacidad.",
   },
   {
-    heading:
-      "¿Quién hace un informe pericial médico?",
+    heading: "¿Quién hace un informe pericial médico?",
     text: "Lo realiza un perito médico, un profesional de la medicina con formación en valoración del daño corporal y conocimientos médico-legales, capacitado para emitir dictámenes técnicos con validez jurídica.",
   },
   {
@@ -106,7 +105,8 @@ export const FAQ_PERDIDA_DE_OPORTUNIDAD: FAQ[] = [
 
 export const FAQ_CALCULAR_INDEMNIZACION: FAQ[] = [
   {
-    heading: "¿Cuánto tiempo tengo para reclamar una indemnización por accidente de tráfico?",
+    heading:
+      "¿Cuánto tiempo tengo para reclamar una indemnización por accidente de tráfico?",
     text: "El plazo general es de un año desde que se estabilizan las lesiones o se obtiene el alta médica. No obstante, pueden existir excepciones, por lo que es recomendable consultar con un abogado o perito especializado cuanto antes.",
   },
   {
@@ -114,7 +114,8 @@ export const FAQ_CALCULAR_INDEMNIZACION: FAQ[] = [
     text: "Sí, pero es fundamental contar con pruebas suficientes: informes médicos, testigos, fotografías del accidente y cualquier documento que acredite lo ocurrido. Cuanto más inmediata sea la atención médica tras el accidente, más sólida será la reclamación.",
   },
   {
-    heading: "¿Qué pasa si la aseguradora ofrece una cantidad que considero baja?",
+    heading:
+      "¿Qué pasa si la aseguradora ofrece una cantidad que considero baja?",
     text: "En ese caso, es muy recomendable solicitar un informe médico pericial independiente, que valore objetivamente el alcance de tus lesiones y secuelas. Este informe puede ayudarte a negociar una compensación más justa o iniciar acciones legales si es necesario.",
   },
 ];
@@ -151,11 +152,13 @@ export const FAQ_PERITO_ESPECIALISTA_VALORACION_DANO_CORPORAL: FAQ[] = [
 
 export const FAQ_INDEMNIZACION_LATIGAZO_CERVICAL: FAQ[] = [
   {
-    heading: "¿Cuánto se cobra por un latigazo cervical en un accidente de tráfico?",
+    heading:
+      "¿Cuánto se cobra por un latigazo cervical en un accidente de tráfico?",
     text: "La indemnización por un latigazo cervical depende de la gravedad, los días de baja o molestias y si quedan secuelas. En casos leves sin secuelas, la cantidad suele oscilar entre 1.000 € y 3.000 €. Si hay secuelas o baja laboral, la cifra puede superar los 5.000 €, según el baremo legal vigente y el informe pericial médico.",
   },
   {
-    heading: "¿Cuánto te pagan por día de rehabilitación por accidente de tráfico?",
+    heading:
+      "¿Cuánto te pagan por día de rehabilitación por accidente de tráfico?",
     text: "El baremo de tráfico no paga por sesión de rehabilitación como tal, sino por los días de perjuicio que reflejan el impacto del accidente. Si estás en tratamiento y con limitaciones funcionales, se considera perjuicio moderado (64,24 €/día en 2025). Una vez recuperado parcialmente, puede considerarse perjuicio básico (37,07 €/día).",
   },
   {
@@ -178,12 +181,36 @@ export const FAQ_QUE_VALORA_UN_PERITO_MEDICO: FAQ[] = [
     text: "En un procedimiento judicial, el perito médico aporta un informe técnico que ayuda al juez a entender la situación médica del caso. Valora si existió una lesión, su gravedad, duración, secuelas, y si existe una relación de causalidad con los hechos en cuestión. También puede defender oralmente sus conclusiones durante la vista.",
   },
   {
-    heading: "¿Es obligatorio acudir a juicio si se encarga un informe pericial?",
+    heading:
+      "¿Es obligatorio acudir a juicio si se encarga un informe pericial?",
     text: "No necesariamente. Muchos informes periciales se utilizan para resolver conflictos de forma extrajudicial, como en reclamaciones a aseguradoras o en procedimientos de mediación. Solo si el caso llega a juicio y el juez lo solicita, el perito deberá ratificar su informe en sede judicial.",
   },
   {
-    heading: "¿El perito médico debe ser especialista en el tipo de daño a valorar?",
+    heading:
+      "¿El perito médico debe ser especialista en el tipo de daño a valorar?",
     text: "Sí, siempre es recomendable que el perito tenga formación específica en la materia relacionada con el caso. Por ejemplo, en valoraciones de incapacidad, daños corporales o secuelas funcionales, es habitual recurrir a médicos especialistas en valoración del daño corporal o en la especialidad médica directamente vinculada con el hecho a analizar.",
   },
+];
 
+export const FAQ_INFORME_PERICIAL_ACCIDENTE_TRAFICO: FAQ[] = [
+  {
+    heading: "¿Cuánto tarda un perito médico en hacer un informe?",
+    text: "El tiempo de elaboración de un informe pericial médico varía según la complejidad del caso y la disponibilidad de la documentación clínica. En general, puede tardar entre 7 y 15 días hábiles desde la evaluación médica y el análisis de los documentos.",
+  },
+  {
+    heading: "¿Cuánto se cobra por un informe pericial?",
+    text: "El precio de un informe pericial médico depende de factores como el tipo de caso, la necesidad de exploración física o de ratificación judicial, y el volumen de documentación a analizar. Lo más recomendable es solicitar un presupuesto personalizado.",
+  },
+  {
+    heading: "¿Quién hace un informe pericial médico?",
+    text: "Cualquier médico colegiado puede realizarlo, pero lo más adecuado es que lo lleve a cabo un profesional con formación específica en peritaje médico-legal y experiencia en valoración de daños corporales. Esto garantiza mayor rigor técnico y validez jurídica.",
+  },
+  {
+    heading: "¿Qué valor tiene un informe pericial ante una aseguradora?",
+    text: "Un informe pericial independiente aporta una base médica objetiva que puede ser decisiva a la hora de negociar con aseguradoras, especialmente cuando se discrepa con la indemnización ofrecida o se requiere justificar la existencia de secuelas o perjuicios.",
+  },
+  {
+    heading: "¿Es necesario acudir al juicio si se tiene un informe pericial?",
+    text: "No siempre. Muchos casos se resuelven en la fase previa al juicio gracias al contenido técnico del informe. No obstante, si el procedimiento continúa, el perito puede ser citado a ratificar su informe ante el juez y responder a las preguntas de las partes.",
+  },
 ];
