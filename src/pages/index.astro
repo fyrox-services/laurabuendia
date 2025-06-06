@@ -20,7 +20,7 @@ const structuredData = {
   "@type": "WebSite",
   "@id": Astro.url,
   url: Astro.url,
-  name: "Laura Buendía - Perito Médico",
+  name: "Laura Buendía - Perito Médico en Madrid",
   description:
     "Médico con más de 10 años de experiencia en informes periciales, valoración del daño corporal, pérdida de oportunidad y asesoramiento a letrados. Especializada en ofrecer opinión experta y claridad en temas médico-legales.",
   inLanguage: "es",
@@ -37,7 +37,7 @@ const structuredData = {
 const localData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Laura Buendía - Perito Médico",
+  name: "Laura Buendía - Perito Médico en Madrid",
   image: `${Astro.url}/laura_buendia.webp`,
   url: Astro.url,
   description:
@@ -61,7 +61,7 @@ const localData = {
 
 <Layout
   ogImage="/laura_buendia.webp"
-  metaTitle="➤ Laura Buendía - Perito Médico"
+  metaTitle="➤ Dra. Laura Buendía - Perito Médico en Madrid"
   metaDescription="Hola, soy Laura Buendía, Médico con más de 10 años de experiencia en informes periciales, valoración del daño corporal, pérdida de oportunidad y asesoramiento a letrados. "
 >
   <Above />
@@ -77,13 +77,20 @@ const localData = {
       <ShortDescription>
         Estoy aquí para ayudarle. Si necesita orientación sobre su caso, los
         informes o el proceso, puede ponerse en contacto sin ningún tipo de
-        compromiso. Estudiaré tu situación y le daré una respuesta clara.
+        compromiso. Estudiaré su situación con rigor y le daré una respuesta
+        clara y fundamentada.
       </ShortDescription>
-      <MainCta>Más información</MainCta>
+
+      <ShortDescription>
+        Aprovecho para aclarar que, aunque desarrollo mi actividad como perito
+        médico en Madrid, presto servicio en toda España y puedo desplazarme a
+        cualquier provincia si el caso lo requiere.
+      </ShortDescription>
+      <MainCta>Solicitar información</MainCta>
     </CenterContent>
   </Section>
   <Section>
-    <Heading> ¿Qué hace un perito médico? </Heading>
+    <Heading> A quién asesoro como perito médico </Heading>
     <p class="mt-1 delimit-text">
       Como médico perito, colaboro con diferentes perfiles profesionales e
       institucionales, ofreciendo informes rigurosos y asesoramiento experto en

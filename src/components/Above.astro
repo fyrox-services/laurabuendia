@@ -7,8 +7,10 @@ import MainCta from "@/components/MainCta.astro";
 <section class="bg-gradient-circle">
   <div class="wrapper above-wrap">
     <div class="presentation">
-      <span class="name">laura buendía</span>
-      <h1 class="text-gradient-primary">perito médico</h1>
+      <span class="name">Dra. laura buendía</span>
+      <h1 class="text-gradient-primary">
+        perito médico <small>en Madrid </small>
+      </h1>
       <p>
         Soy médico con más de 10 años de experiencia en la elaboración de
         <span class="strong"
@@ -25,7 +27,7 @@ import MainCta from "@/components/MainCta.astro";
         <Image
           loading="eager"
           src={abovePhoto}
-          alt="foto de Laura Buendía perita médica"
+          alt="Laura Buendía, perita médica en Madrid"
           width={800}
           height={533}
         />
@@ -114,6 +116,10 @@ import MainCta from "@/components/MainCta.astro";
 
     h1 {
       font-size: var(--fs-6xl);
+    }
+
+    small {
+      font-size: var(--fs-3xl);
     }
   }
 </style>

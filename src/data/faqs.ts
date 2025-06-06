@@ -2,16 +2,16 @@ import type { FAQ } from "@/types";
 
 export const FAQ_HOME: FAQ[] = [
   {
-    heading: "Definición de perito médico",
-    text: "Es un médico que elabora informes técnicos con validez legal para valorar daños, negligencias o incapacidades en procesos judiciales o extrajudiciales.",
+    heading: "¿Cuánto cuesta hacer un peritaje médico?",
+    text: "El precio de un peritaje médico varía entre 350 € y 2.000 €, dependiendo del tipo de caso, la complejidad clínica, y si será necesaria la ratificación en juicio. Para obtener un presupuesto ajustado a su situación concreta, lo más recomendable es que contactes directamente conmigo.",
   },
   {
-    heading: "¿Qué es un peritaje médico y en qué consiste?",
-    text: "Es un informe realizado por un perito médico que analiza un caso clínico para determinar si hubo mala praxis, daño o secuelas, con base médica y legal.",
+    heading: "¿Se desplaza a otras partes de España?",
+    text: "Sí, aunque estoy en Madrid, trabajo a nivel nacional y puedo desplazarme a otras provincias si el caso lo requiere.",
   },
   {
-    heading: "¿Cuándo se necesita un perito médico?",
-    text: "Se necesita cuando hay que demostrar daños médicos en un juicio, reclamar por negligencia, valorar una incapacidad o participar en una mediación sanitaria.",
+    heading: "¿Acude a juicio para ratificar el informe?",
+    text: "Sí, si el procedimiento lo requiere, puedo acudir al juicio para ratificar el informe pericial y defenderlo ante el juez y las partes implicadas.",
   },
 ];
 
