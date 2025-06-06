@@ -214,3 +214,22 @@ export const FAQ_INFORME_PERICIAL_ACCIDENTE_TRAFICO: FAQ[] = [
     text: "No siempre. Muchos casos se resuelven en la fase previa al juicio gracias al contenido técnico del informe. No obstante, si el procedimiento continúa, el perito puede ser citado a ratificar su informe ante el juez y responder a las preguntas de las partes.",
   },
 ];
+
+export const FAQ_PERITAJE_MEDICO_PRECIO: FAQ[] = [
+  {
+    heading: "¿Cuánto cuesta un informe pericial médico?",
+    text: "El precio de un informe pericial médico suele oscilar entre 450 € y 1.000 €, dependiendo de la complejidad del caso, la documentación a analizar y si se requiere exploración médica o ratificación en juicio. Para obtener un presupuesto exacto, lo más recomendable es consultar directamente con el perito.",
+  },
+  {
+    heading: "¿Qué se hace en un peritaje médico?",
+    text: "En un peritaje médico se analiza detalladamente la situación clínica del paciente. El perito revisa la documentación médica, puede realizar una exploración física si es necesario y emite un informe técnico que valora el daño, la relación causal con los hechos y sus repercusiones, todo ello con base médico-legal.",
+  },
+  {
+    heading: "¿Cuánto tarda un peritaje médico?",
+    text: "El tiempo puede variar según la complejidad del caso, pero generalmente un peritaje médico se completa en un plazo de 1 a 3 semanas desde la recepción de toda la documentación necesaria y la realización del reconocimiento médico, si procede.",
+  },
+  {
+    heading: "¿Quién paga el peritaje médico?",
+    text: "Por lo general, quien encarga el informe es quien lo abona. En el ámbito privado suele ser el propio paciente o su abogado. En procedimientos judiciales, si el informe es solicitado por el juzgado, el coste puede cubrirlo la administración o ser repercutido a la parte que lo propuso, dependiendo del contexto del proceso.",
+  },
+];
