@@ -233,3 +233,20 @@ export const FAQ_PERITAJE_MEDICO_PRECIO: FAQ[] = [
     text: "Por lo general, quien encarga el informe es quien lo abona. En el ámbito privado suele ser el propio paciente o su abogado. En procedimientos judiciales, si el informe es solicitado por el juzgado, el coste puede cubrirlo la administración o ser repercutido a la parte que lo propuso, dependiendo del contexto del proceso.",
   },
 ];
+
+
+export const FAQ_QUE_HACER_NEGLIGENCIA_MEDICA: FAQ[] = [
+  {
+    heading: "¿Qué se puede hacer en caso de negligencia médica?",
+    text: "Lo primero es no precipitarse ni asumir nada. Si tienes dudas razonables sobre la atención médica que has recibido, lo más importante es recopilar la documentación clínica y buscar asesoramiento especializado. Yo puedo ayudarte a valorar tu caso desde el punto de vista médico y explicarte si hay motivos para iniciar algún tipo de reclamación.",
+  },
+  {
+    heading: "¿Qué tengo que hacer para denunciar una negligencia médica?",
+    text: "Antes de presentar ninguna denuncia, es fundamental contar con un análisis técnico que confirme si realmente hubo una mala praxis.",
+  },
+  {
+    heading: "¿Qué se requiere para demostrar una negligencia médica?",
+    text: "Se necesita, sobre todo, un informe pericial que acredite que la actuación del profesional sanitario se apartó de lo que se considera una atención médica adecuada, y que ese error provocó un daño. Ese es precisamente mi trabajo como perito médico: estudiar el caso con objetividad y determinar si la atención fue correcta según los estándares clínicos.",
+  },
+
+];
