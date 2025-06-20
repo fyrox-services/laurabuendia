@@ -234,7 +234,6 @@ export const FAQ_PERITAJE_MEDICO_PRECIO: FAQ[] = [
   },
 ];
 
-
 export const FAQ_QUE_HACER_NEGLIGENCIA_MEDICA: FAQ[] = [
   {
     heading: "¿Qué se puede hacer en caso de negligencia médica?",
@@ -248,5 +247,19 @@ export const FAQ_QUE_HACER_NEGLIGENCIA_MEDICA: FAQ[] = [
     heading: "¿Qué se requiere para demostrar una negligencia médica?",
     text: "Se necesita, sobre todo, un informe pericial que acredite que la actuación del profesional sanitario se apartó de lo que se considera una atención médica adecuada, y que ese error provocó un daño. Ese es precisamente mi trabajo como perito médico: estudiar el caso con objetividad y determinar si la atención fue correcta según los estándares clínicos.",
   },
+];
 
+export const FAQ_PREGUNTAS_PERITO_MEDICO: FAQ[] = [
+  {
+    heading: "¿Qué se le puede preguntar a un perito?",
+    text: "Puedes preguntarme sobre cualquier aspecto del informe que he elaborado: desde los criterios utilizados para valorar las lesiones o secuelas, hasta la metodología aplicada, el baremo utilizado, o si he tenido en cuenta patologías previas del paciente. Lo importante es que las preguntas tengan un objetivo claro, ya sea para aclarar, reforzar o matizar una valoración.",
+  },
+  {
+    heading: "¿Qué valora un perito médico?",
+    text: "Como perito médico, lo que valoro es el daño corporal derivado de una actuación médica, un accidente o cualquier otra situación lesiva. Evalúo desde los días de curación (lesiones temporales), hasta las secuelas, el perjuicio en la calidad de vida, la posible necesidad de asistencia, o incluso el impacto económico si está justificado. Siempre aplico criterios objetivos y ajustados al baremo legal vigente según el caso.",
+  },
+  {
+    heading: "¿Puede haber desacuerdo entre peritos médicos?",
+    text: "Sí, y es muy frecuente. Dos peritos pueden valorar de forma distinta aspectos como la fecha de estabilización, la puntuación de una secuela o el alcance del perjuicio. Por eso es tan importante justificar cada valoración con base clínica, documental y legal. En juicio, muchas veces el debate técnico entre peritos es lo que acaba inclinando la balanza.",
+  },
 ];
