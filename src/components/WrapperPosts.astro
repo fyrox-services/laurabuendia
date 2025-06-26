@@ -12,9 +12,13 @@ const { posts, loadEager = true } = Astro.props;
 
 <ul>
   {
-    posts.map((post, i) => {
-      return <PostCard first={loadEager && i <= 2} post={post} />;
-    })
+    posts
+      .sort((a, b) => {
+        return Number(b.data.datePublished) - Number(a.data.datePublished);
+      })
+      .map((post, i) => {
+        return <PostCard first={loadEager && i <= 2} post={post} />;
+      })
   }
 </ul>
 

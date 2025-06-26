@@ -263,3 +263,18 @@ export const FAQ_PREGUNTAS_PERITO_MEDICO: FAQ[] = [
     text: "Sí, y es muy frecuente. Dos peritos pueden valorar de forma distinta aspectos como la fecha de estabilización, la puntuación de una secuela o el alcance del perjuicio. Por eso es tan importante justificar cada valoración con base clínica, documental y legal. En juicio, muchas veces el debate técnico entre peritos es lo que acaba inclinando la balanza.",
   },
 ];
+
+export const FAQ_ACCIDENTES_TRAFICO_PERITO: FAQ[] = [
+  {
+    heading: "¿Qué valora un perito médico?",
+    text: "Como perito médico, valoro principalmente el daño corporal derivado de un accidente o actuación médica, desde una perspectiva técnica y legal. Esto incluye los días de curación, la existencia de secuelas, la pérdida de calidad de vida, y cualquier perjuicio personal o económico acreditable. Todo ello lo documento con base en la historia clínica, pruebas médicas y exploración directa, aplicando siempre el baremo legal correspondiente.",
+  },
+  {
+    heading: "¿Quién valora las secuelas de un accidente de tráfico?",
+    text: "Las secuelas las valora un médico especializado en valoración del daño corporal. No basta con que haya un informe clínico: para que esas secuelas tengan validez legal y se traduzcan en una indemnización, deben ser analizadas por un perito médico que conozca el baremo y pueda justificar cada punto con criterios objetivos. Si el caso llega a juicio, ese perito también puede comparecer para defender su valoración.",
+  },
+  {
+    heading: "¿Cuánto cuesta un perito de accidente de tráfico?",
+    text: "El precio puede variar según la complejidad del caso, pero para que te hagas una idea, un informe pericial por accidente de tráfico suele costar entre 400 € y 600 €. Si hay que realizar una exploración física, calcular múltiples secuelas o intervenir en juicio, el coste puede ser algo mayor. Siempre informo del precio de antemano, sin sorpresas, y en muchos casos el coste se puede incluir en la reclamación judicial si se gana el caso.",
+  },
+];
