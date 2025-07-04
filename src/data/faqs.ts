@@ -278,3 +278,20 @@ export const FAQ_ACCIDENTES_TRAFICO_PERITO: FAQ[] = [
     text: "El precio puede variar según la complejidad del caso, pero para que te hagas una idea, un informe pericial por accidente de tráfico suele costar entre 400 € y 600 €. Si hay que realizar una exploración física, calcular múltiples secuelas o intervenir en juicio, el coste puede ser algo mayor. Siempre informo del precio de antemano, sin sorpresas, y en muchos casos el coste se puede incluir en la reclamación judicial si se gana el caso.",
   },
 ];
+
+
+export const FAQ_VALORACION_DANO_CORPORAL_TRAFICO: FAQ[] = [
+  {
+    heading: "¿Qué se evalúa en la valoración de un daño corporal?",
+    text: "En una valoración médica del daño corporal se analizan tanto las lesiones físicas como sus consecuencias a medio y largo plazo. Se tienen en cuenta los días de curación, las secuelas que hayan quedado (físicas o psicológicas), el impacto en tu calidad de vida y cualquier perjuicio económico derivado del accidente, como la pérdida de ingresos o los gastos médicos. Todo ello se recoge en un informe pericial que sirve como base para reclamar una indemnización.",
+  },
+  {
+    heading: "¿Cómo se calculan las secuelas en un accidente de tráfico?",
+    text: "Las secuelas se valoran según el tipo de lesión, su localización, su repercusión funcional y su impacto estético o psicológico. Cada secuela se puntúa siguiendo las tablas del Baremo oficial (Ley 35/2015), y esa puntuación se traduce en una cantidad económica. También se puede valorar el perjuicio moral o la pérdida de calidad de vida derivada de esas secuelas. Es un proceso técnico, por eso es importante que lo realice un perito médico especializado.",
+  },
+  {
+    heading: "¿Cuánto me tienen que indemnizar por un accidente de tráfico?",
+    text: "La cuantía de la indemnización depende de muchos factores: el tiempo de curación, la gravedad de las secuelas, la edad de la víctima, la pérdida de ingresos, los gastos médicos y otros perjuicios personales. No existe una cifra fija para todos los casos. Por eso, lo ideal es hacer una valoración personalizada que permita estimar con precisión a cuánto puedes tener derecho.",
+  },
+
+];
