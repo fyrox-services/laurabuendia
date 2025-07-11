@@ -279,7 +279,6 @@ export const FAQ_ACCIDENTES_TRAFICO_PERITO: FAQ[] = [
   },
 ];
 
-
 export const FAQ_VALORACION_DANO_CORPORAL_TRAFICO: FAQ[] = [
   {
     heading: "¿Qué se evalúa en la valoración de un daño corporal?",
@@ -293,5 +292,19 @@ export const FAQ_VALORACION_DANO_CORPORAL_TRAFICO: FAQ[] = [
     heading: "¿Cuánto me tienen que indemnizar por un accidente de tráfico?",
     text: "La cuantía de la indemnización depende de muchos factores: el tiempo de curación, la gravedad de las secuelas, la edad de la víctima, la pérdida de ingresos, los gastos médicos y otros perjuicios personales. No existe una cifra fija para todos los casos. Por eso, lo ideal es hacer una valoración personalizada que permita estimar con precisión a cuánto puedes tener derecho.",
   },
+];
 
+export const FAQ_INFORME_PERICIAL_NEGLIGENCIA_MEDICA: FAQ[] = [
+  {
+    heading: "¿Cuánto te pueden indemnizar por negligencia médica?",
+    text: "La cuantía de la indemnización depende de muchos factores: el tipo de daño sufrido, el tiempo de recuperación, las secuelas que hayan quedado, los gastos derivados (tratamientos, transporte, etc.) y el perjuicio económico (por ejemplo, si no puedes volver a trabajar como antes). No hay una cifra fija. Cada caso es único, y por eso es tan importante contar con un informe pericial bien fundamentado que refleje con precisión todo lo que has vivido.",
+  },
+  {
+    heading: "¿Qué se requiere para demostrar una negligencia médica?",
+    text: "Lo fundamental para demostrar una negligencia médica es acreditar que hubo un error que se aparta de la buena práctica clínica y que ese fallo provocó un daño real al paciente. Para ello, es necesario contar con toda la documentación médica disponible (informes, pruebas, evolución clínica), una valoración pericial que analice si la actuación fue correcta según los estándares médicos y pruebas que evidencien el perjuicio sufrido. La clave está en exponer de forma clara y objetiva que las cosas no se hicieron bien y que eso tuvo consecuencias.",
+  },
+  {
+    heading: "¿Cómo se redacta un informe pericial?",
+    text: "El informe lo elaboro tras una consulta médica completa, donde el paciente me cuenta lo ocurrido, aporta su documentación y realizo una exploración física si es necesario. En el informe describo los hechos, analizo la actuación médica recibida, valoro las secuelas, los perjuicios personales y económicos, y explico si considero que ha habido una actuación negligente. Todo se presenta con un lenguaje técnico pero claro, para que pueda ser comprendido tanto por abogados como por jueces.",
+  },
 ];
