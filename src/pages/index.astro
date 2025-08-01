@@ -14,6 +14,7 @@ import SubHeading from "@/components/SubHeading.astro";
 import TargetCards from "@/components/TargetCards.astro";
 import { FAQ_HOME } from "@/data/faqs";
 import Layout from "@/layouts/Layout.astro";
+import imgLauraBuendia from "@/assets/mark/laura-buendia.jpg";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -29,7 +30,7 @@ const structuredData = {
     name: "Laura Buendía",
     image: {
       "@type": "ImageObject",
-      url: `${Astro.url.origin}/laura_buendia.webp`,
+      url: `${Astro.url.origin}${imgLauraBuendia.src}`,
     },
   },
 };
@@ -38,7 +39,7 @@ const localData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Laura Buendía - Perito Médico en Madrid",
-  image: `${Astro.url}/laura_buendia.webp`,
+  image: `${Astro.url.origin}${imgLauraBuendia.src}`,
   url: Astro.url,
   description:
     "Perito médico especializada en valoración del daño corporal, informes periciales y asesoramiento legal en toda España.",
