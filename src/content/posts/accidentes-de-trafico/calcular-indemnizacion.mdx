@@ -6,7 +6,7 @@ readingTime: 2
 datePublished: 2025-05-05
 dateModified: 2025-05-05
 category: "accidentes de tráfico"
-image: calcular-indemnizacion-por-accidente-de-trafico.webp
+image: "../img/calcular-indemnizacion-por-accidente-de-trafico.jpg"
 description: Descubre cómo se calcula una indemnización tras un accidente de tráfico y por qué necesitas un informe médico pericial para reclamar con garantías.
 wordCount: 600
 author: Laura Buendía
@@ -17,6 +17,7 @@ import { FAQ_CALCULAR_INDEMNIZACION } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/calcular-indemnizacion-por-accidente-de-trafico.jpg";
 
 Sufrir un accidente de tráfico puede acarrear no solo daños físicos y emocionales, sino también complicaciones legales y económicas. Una de las principales preocupaciones tras el accidente suele ser saber **cuánto corresponde recibir como indemnización**. En este artículo le explicamos qué factores se tienen en cuenta y cómo se realiza el cálculo según la normativa vigente en España.
 
@@ -60,7 +61,7 @@ Además de las secuelas y las lesiones temporales, se valoran una serie de perju
 
 <Image
   loading="lazy"
-  src="/img/blog/calcular-indemnizacion-por-accidente-de-trafico.webp"
+  src={img}
   alt="calcular indemnizacion accidente"
   width={600}
   height={400}

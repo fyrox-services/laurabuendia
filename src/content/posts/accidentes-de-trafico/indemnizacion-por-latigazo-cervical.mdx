@@ -6,7 +6,7 @@ readingTime: 3
 datePublished: 2025-05-05
 dateModified: 2025-05-05
 category: "accidentes de tráfico"
-image: indemnizacion-por-latigazo-cervical.webp
+image: "../img/indemnizacion-por-latigazo-cervical.jpg"
 description: Todo lo que debes saber para reclamar una indemnización por latigazo cervical tras un accidente de tráfico, con apoyo pericial médico.
 wordCount: 800
 author: Laura Buendía
@@ -18,6 +18,7 @@ import { FAQ_INDEMNIZACION_LATIGAZO_CERVICAL } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/indemnizacion-por-latigazo-cervical.jpg";
 
 El latigazo cervical es una de las lesiones más frecuentes tras un accidente de tráfico, especialmente en colisiones por alcance. Aunque a menudo se subestima, **puede tener consecuencias importantes para la salud y la vida cotidiana del lesionado.** En este artículo abordamos cómo se calcula la indemnización por latigazo cervical y qué factores influyen en su cuantía.
 
@@ -73,7 +74,7 @@ Este importe puede variar según el seguimiento médico, la evolución clínica 
 
 <Image
   loading="lazy"
-  src="/img/blog/indemnizacion-por-latigazo-cervical.webp"
+  src={img}
   alt="indemnización por accidente de trafico latigazo cervical"
   width={600}
   height={400}

@@ -18,11 +18,12 @@ const { data, slug } = post;
       <picture class="mask-1">
         <h3>{data.h1}</h3>
         <Image
+          widths={[410, 600]}
+          sizes={`(max-width: 1024px) 410px,  600px`}
           loading={first ? "eager" : "lazy"}
-          width={600}
-          height={400}
-          src={`/img/blog/${data.image}`}
+          src={post.data.image}
           alt={data.h1}
+          format="webp"
         />
       </picture>
       <p>{data.description}</p>

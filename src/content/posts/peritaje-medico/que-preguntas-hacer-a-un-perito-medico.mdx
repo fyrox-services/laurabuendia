@@ -6,7 +6,7 @@ readingTime: 3
 datePublished: 2025-06-20
 dateModified: 2025-06-20
 category: "peritaje médico"
-image: que-preguntas-hacer-a-un-perito-medico.webp
+image: "../img/que-preguntas-hacer-a-un-perito-medico.jpg"
 description: ¿Tienes que interrogar a un perito médico en juicio? Descubre qué preguntas marcarán la diferencia según estés en la parte demandante o demandada. Guía práctica basada en experiencia real.
 wordCount: 800
 author: "Laura Buendía"
@@ -17,6 +17,7 @@ import { FAQ_PREGUNTAS_PERITO_MEDICO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/que-preguntas-hacer-a-un-perito-medico.jpg";
 
 Si eres abogado y estás preparando un juicio relacionado con daño corporal, ya sea como parte demandante o demandada, **es clave que sepas qué preguntarle al perito médico.** No se trata solo de confirmar si hubo daño o negligencia, sino de entrar al detalle técnico: estabilización de lesiones, criterios de secuelas, baremos aplicables, nexo causal, y más.
 
@@ -50,7 +51,7 @@ Si el informe incluye partidas como necesidad de asistencia, reformas en casa o 
 
 <Image
   loading="lazy"
-  src="/img/blog/que-preguntas-hacer-a-un-perito-medico.webp"
+  src={img}
   alt="qué preguntas hacer a un perito médico"
   width={600}
   height={400}

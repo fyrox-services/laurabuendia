@@ -6,7 +6,7 @@ readingTime: 4
 datePublished: 2025-06-26
 dateModified: 2025-06-26
 category: "accidentes de tráfico"
-image: accidentes-de-trafico-perito-medico.webp
+image: "../img/accidentes-de-trafico-perito-medico.jpg"
 description: ¿Has sufrido un accidente de tráfico? Descubre cuándo necesitas un perito médico, qué valora exactamente y cómo puede ayudarte a reclamar una indemnización justa.
 wordCount: 990
 author: Laura Buendía
@@ -17,6 +17,7 @@ import { FAQ_ACCIDENTES_TRAFICO_PERITO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/accidentes-de-trafico-perito-medico.jpg";
 
 Si has sufrido un accidente de tráfico y estás valorando iniciar una reclamación, es muy posible que ya te
 hayan mencionado la necesidad de un [informe pericial médico.](/servicios/informes-medicos-periciales/) En esta guía te explico, paso a paso y desde
@@ -41,7 +42,7 @@ valoración objetiva, detallada y orientada a defender los intereses del lesiona
 
 <Image
   loading="lazy"
-  src="/img/blog/accidentes-de-trafico-perito-medico.webp"
+  src={img}
   alt="perito médico accidente tráfico"
   width={600}
   height={400}

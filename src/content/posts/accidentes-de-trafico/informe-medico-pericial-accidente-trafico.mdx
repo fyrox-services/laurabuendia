@@ -6,7 +6,7 @@ readingTime: 4
 datePublished: 2025-05-30
 dateModified: 2025-05-30
 category: "accidentes de tráfico"
-image: informe-medico-pericial-accidente-trafico.webp
+image: "../img/informe-medico-pericial-accidente-trafico.jpg"
 description: Descubre por qué el informe médico pericial es clave para reclamar una indemnización tras un accidente de tráfico. Qué incluye, quién lo elabora y cuándo solicitarlo.
 wordCount: 1100
 author: Laura Buendía
@@ -17,6 +17,7 @@ import { FAQ_INFORME_PERICIAL_ACCIDENTE_TRAFICO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/informe-medico-pericial-accidente-trafico.jpg";
 
 Cuando una persona sufre un accidente de tráfico y resulta lesionada, el [informe médico pericial](/servicios/informes-medicos-periciales/) se convierte en una pieza clave para acreditar de forma objetiva el alcance de las lesiones, las secuelas resultantes y la relación causal entre el siniestro y los daños sufridos. Este documento es esencial no solo para **fundamentar una reclamación de indemnización,** sino también para guiar al letrado durante todo el proceso legal.
 
@@ -38,7 +39,7 @@ Se trata de un documento técnico elaborado por un médico con formación espec�
 
 <Image
   loading="lazy"
-  src="/img/blog/informe-medico-pericial-accidente-trafico.webp"
+  src={img}
   alt="informe médico pericial en un accidente tráfico"
   width={600}
   height={400}

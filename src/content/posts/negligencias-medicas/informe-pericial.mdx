@@ -6,7 +6,7 @@ readingTime: 4
 datePublished: 2025-07-11
 dateModified: 2025-07-11
 category: "negligencia médica"
-image: informe-pericial-negligencia-medica.webp
+image: "../img/informe-pericial-negligencia-medica.jpg"
 description: ¿Has sufrido un error médico? Te explico en qué casos procede una indemnización y cómo elaboro un informe pericial por negligencia médica para ayudarte a reclamar tus derechos.
 wordCount: 950
 author: "Laura Buendía"
@@ -17,6 +17,7 @@ import { FAQ_INFORME_PERICIAL_NEGLIGENCIA_MEDICA } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/informe-pericial-negligencia-medica.jpg";
 
 Hablar de negligencia médica no es fácil. Como médico, entiendo lo complejo que es valorar el trabajo de otros compañeros, porque la mayoría actuamos con vocación y con la intención sincera de ayudar al paciente.
 
@@ -54,7 +55,7 @@ Si no se entrega adecuadamente —por ejemplo, si se firma justo antes de entrar
 
 <Image
   loading="lazy"
-  src="/img/blog/informe-pericial-negligencia-medica.webp"
+  src={img}
   alt="informe pericial negligencia medica"
   width={600}
   height={400}

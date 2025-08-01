@@ -6,7 +6,7 @@ readingTime: 4
 datePublished: 2025-05-05
 dateModified: 2025-05-05
 category: "peritaje médico"
-image: "que-es-un-peritaje-medico.webp"
+image: "../img/que-es-un-peritaje-medico.jpg"
 description: Descubre qué es un peritaje médico, cuándo se solicita y por qué es fundamental para reclamar una indemnización o defender una actuación clínica.
 wordCount: 1100
 author: "Laura Buendía"
@@ -18,6 +18,7 @@ import { FAQ_QUE_ES_UN_PERITAJE_MEDICO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/que-es-un-peritaje-medico.jpg";
 
 El peritaje médico es una herramienta fundamental dentro del ámbito legal y sanitario, **utilizada para esclarecer hechos médicos controvertidos.** A través de este procedimiento, un profesional especializado —el perito médico— analiza una situación clínica y emite un informe técnico que puede ser utilizado como prueba en procesos judiciales o extrajudiciales.
 
@@ -107,7 +108,7 @@ Sí. El informe resultante puede ser presentado en sala, a aseguradoras o cualqu
 
 <Image
   loading="lazy"
-  src="/img/blog/que-es-un-peritaje-medico.webp"
+  src={img}
   alt="peritaje medico que es"
   width={600}
   height={400}

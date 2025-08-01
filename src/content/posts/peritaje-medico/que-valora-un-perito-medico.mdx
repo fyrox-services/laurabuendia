@@ -6,7 +6,7 @@ readingTime: 5
 datePublished: 2025-05-23
 dateModified: 2025-05-23
 category: "peritaje médico"
-image: que-valora-un-perito-medico.webp
+image: "../img/que-valora-un-perito-medico.jpg"
 description: Descubre qué funciones desempeña un perito médico, qué aspectos valora en un informe y en qué casos se requiere su intervención. Guía completa con ejemplos reales.
 wordCount: 1300
 author: "Laura Buendía"
@@ -17,6 +17,7 @@ import { FAQ_QUE_VALORA_UN_PERITO_MEDICO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/que-valora-un-perito-medico.jpg";
 
 El perito médico es un especialista que actúa como nexo **entre la medicina y el derecho.** Su función principal es analizar una situación clínica con objetividad, evaluar los daños o secuelas sufridos y redactar un informe técnico con validez legal. Este informe **puede ser decisivo en juicios, reclamaciones de seguros o procesos de incapacidad.**
 
@@ -80,7 +81,7 @@ En contextos relacionados con pensiones, reclamaciones laborales o procesos judi
 
 <Image
   loading="lazy"
-  src="/img/blog/que-valora-un-perito-medico.webp"
+  src={img}
   alt="qué valora un perito médico"
   width={600}
   height={400}

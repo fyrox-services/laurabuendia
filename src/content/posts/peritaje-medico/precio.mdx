@@ -6,7 +6,7 @@ readingTime: 4
 datePublished: 2025-06-06
 dateModified: 2025-06-06
 category: "peritaje médico"
-image: peritaje-medico-precio.webp
+image: "../img/peritaje-medico-precio.jpg"
 description: Descubre cuánto cuesta un peritaje médico, qué factores influyen en su precio y por qué es clave solicitar un presupuesto personalizado según tu caso.
 wordCount: 1000
 author: "Laura Buendía"
@@ -17,6 +17,7 @@ import { FAQ_PERITAJE_MEDICO_PRECIO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/peritaje-medico-precio.jpg";
 
 El precio de un [peritaje médico](/peritaje-medico/que-es-un-peritaje-medico/) puede variar significativamente en función de la **complejidad del caso, la especialidad requerida y el tipo de informe que se necesite.** Aunque muchas personas buscan una cifra exacta, lo cierto es que cada peritaje es único y debe valorarse individualmente.
 
@@ -52,7 +53,7 @@ Un informe mal elaborado, sin criterio médico-legal, puede ser rechazado o tene
 
 <Image
   loading="lazy"
-  src="/img/blog/peritaje-medico-precio.webp"
+  src={img}
   alt="perito medico precio"
   width={600}
   height={400}

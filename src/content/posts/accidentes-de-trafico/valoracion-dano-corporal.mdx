@@ -6,7 +6,7 @@ readingTime: 3
 datePublished: 2025-07-04
 dateModified: 2025-07-04
 category: "accidentes de tráfico"
-image: valoracion-dano-corporal-accidente-trafico.webp
+image: "../img/valoracion-dano-corporal-accidente-trafico.jpg"
 description: ¿Has sufrido un accidente de tráfico? Descubre cómo se valora el daño corporal y por qué contar con un perito médico puede marcar la diferencia en tu indemnización.
 wordCount: 800
 author: Laura Buendía
@@ -17,6 +17,7 @@ import { FAQ_VALORACION_DANO_CORPORAL_TRAFICO } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/valoracion-dano-corporal-accidente-trafico.jpg";
 
 Cuando sufres un accidente de tráfico, no basta con ir al médico y guardar el parte. Si quieres reclamar una indemnización justa por los daños que has sufrido, necesitarás algo más: una valoración médica rigurosa, objetiva y respaldada legalmente. Vamos a ver en este artículo en que consiste y cómo te puede ayudar.
 
@@ -52,7 +53,7 @@ Además, el informe que realizo como [perito médico especialista en valoración
 
 <Image
   loading="lazy"
-  src="/img/blog/valoracion-dano-corporal-accidente-trafico.webp"
+  src={img}
   alt="valoracion daño corporal accidente trafico"
   width={600}
   height={400}
