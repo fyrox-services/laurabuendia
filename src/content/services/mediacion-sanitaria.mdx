@@ -3,7 +3,7 @@ metaTitle: "➤ Mediación Sanitaria: Significado y Ventajas"
 metaDescription: La mediación sanitaria es una alternativa al juicio para resolver conflictos médicos de forma rápida, confidencial y sin enfrentamientos. Descubre sus ventajas y cuándo recurrir a ella.
 h1: "Mediación Sanitaria: Qué es y sus ventajas"
 serviceType: mediación sanitaria
-image: mediacion-sanitaria.webp
+image: "@img/mediacion-sanitaria.jpg"
 ---
 
 import { FAQ_VALORACION_DANO_CORPORAL } from "@/data/faqs";
@@ -12,6 +12,7 @@ import { ServiceForm } from "@/components/preact/ServiceForm";
 import CtaLinks from "@/components/CtaLinks.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/mediacion-sanitaria.jpg";
 
 La mediación sanitaria **es un proceso extrajudicial diseñado para resolver conflictos entre pacientes y profesionales** o centros sanitarios de forma voluntaria, confidencial y colaborativa. El objetivo es evitar un proceso judicial largo y costoso, favoreciendo el entendimiento y el acuerdo entre las partes.
 
@@ -61,7 +62,7 @@ El perito médico no solo aporta objetividad al proceso, sino que ayuda a aclara
 
 <Image
   loading="lazy"
-  src="/img/services/mediacion-sanitaria.webp"
+  src={img}
   alt="mediación sanitaria"
   width={600}
   height={400}

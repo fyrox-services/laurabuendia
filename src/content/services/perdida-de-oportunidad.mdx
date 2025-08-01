@@ -3,7 +3,7 @@ metaTitle: ➤ Informes de Perdida de Oportunidad
 metaDescription: Descubre qué es la pérdida de oportunidad en el ámbito médico-legal y cómo un informe pericial puede ayudarte a reclamar si un retraso diagnóstico ha afectado tu recuperación.
 h1: Informes de perdida de oportunidad
 serviceType: informe de perdida de oportunidad
-image: informes-de-perdida-de-oportunidad.webp
+image: "@img/informes-de-perdida-de-oportunidad.jpg"
 ---
 
 import { ServiceForm } from "@/components/preact/ServiceForm";
@@ -12,6 +12,7 @@ import { FAQ_PERDIDA_DE_OPORTUNIDAD } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/informes-de-perdida-de-oportunidad.jpg";
 
 La **pérdida de oportunidad** es un concepto médico-legal que se aplica cuando un retraso en el diagnóstico o tratamiento de una enfermedad ha impedido a un paciente beneficiarse de un mejor pronóstico, un tratamiento menos invasivo o una recuperación más favorable.
 
@@ -51,7 +52,7 @@ Un informe médico pericial en situaciones de pérdida de oportunidad no tiene q
 
 <Image
   loading="lazy"
-  src="/img/services/informes-de-perdida-de-oportunidad.webp"
+  src={img}
   alt="informes de perdida de oportunidad"
   width={600}
   height={400}

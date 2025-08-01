@@ -3,7 +3,7 @@ metaTitle: ➤ Ratificaciones Judiciales
 metaDescription: Descubre en qué consiste una ratificación judicial, qué papel cumple el perito médico en sala y por qué su testimonio puede ser clave en el resultado de un juicio.
 h1: Ratificaciones judiciales
 serviceType: Ratificaciones Judiciales
-image: ratificaciones-judiciales.webp
+image: "@img/ratificaciones-judiciales.jpg"
 ---
 
 import { FAQ_VALORACION_DANO_CORPORAL } from "@/data/faqs";
@@ -12,6 +12,7 @@ import { ServiceForm } from "@/components/preact/ServiceForm";
 import CtaLinks from "@/components/CtaLinks.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/ratificaciones-judiciales.jpg";
 
 La ratificación judicial es el acto en el que el perito médico acude al juzgado para confirmar de forma oral, ante el juez y las partes implicadas, las conclusiones del informe que previamente ha elaborado.
 
@@ -35,7 +36,7 @@ La ratificación se solicita cuando:
 
 <Image
   loading="lazy"
-  src="/img/services/ratificaciones-judiciales.webp"
+  src={img}
   alt="ratificaciones judiciales"
   width={600}
   height={400}

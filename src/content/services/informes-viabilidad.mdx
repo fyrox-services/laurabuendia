@@ -3,7 +3,7 @@ metaTitle: ➤ Informes de Viabilidad
 metaDescription: ¿Tienes dudas sobre si puedes reclamar por una posible negligencia médica? El informe de viabilidad médica te ayuda a saber si tu caso tiene fundamento legal y sanitario.
 h1: Informes de viabilidad
 serviceType: informe de viabilidad
-image: informes-de-viabilidad.webp
+image: "@img/informes-de-viabilidad.jpg"
 ---
 
 import { ServiceForm } from "@/components/preact/ServiceForm";
@@ -12,6 +12,7 @@ import { FAQ_INFORMES_DE_VIABILIDAD } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/informes-de-viabilidad.jpg";
 
 El informe de viabilidad, también conocido como **informe de orientación**, es el primer paso para determinar si un caso tiene fundamento médico y legal suficiente como para ser defendido. Está especialmente indicado en situaciones en las que hay dudas sobre si ha existido una mala praxis médica o si procede iniciar una reclamación.
 
@@ -36,7 +37,7 @@ Este informe consiste en el análisis preliminar de toda la documentación médi
 
 <Image
   loading="lazy"
-  src="/img/services/informes-de-viabilidad.webp"
+  src={img}
   alt="informes de viabilidad"
   width={600}
   height={400}

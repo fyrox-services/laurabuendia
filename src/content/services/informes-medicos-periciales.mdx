@@ -3,7 +3,7 @@ metaTitle: "➤ Informes Médicos Periciales: Concepto y Utilidad"
 metaDescription: Descubre qué es un informe médico pericial, cuándo se necesita y cómo puede ayudarte a defender tus derechos en casos de lesiones, negligencias o reclamaciones legales.
 h1: "Informes médicos periciales: Qué son y para qué sirven"
 serviceType: informe pericial médico
-image: informes-medicos-periciales.webp
+image: "@img/informes-medicos-periciales.jpg"
 ---
 
 import { ServiceForm } from "@/components/preact/ServiceForm";
@@ -12,6 +12,7 @@ import { FAQ_INFORME_MEDICO_PERICIAL } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/informes-medicos-periciales.jpg";
 
 La elaboración de un informe pericial médico es un paso fundamental **cuando se necesita analizar de forma técnica y objetiva una situación clínica que puede tener implicaciones legales.** Este tipo de documento es clave en casos de negligencia médica, accidentes, reclamaciones a aseguradoras o litigios.
 
@@ -62,7 +63,7 @@ Un informe bien elaborado suele incluir:
 
 <Image
   loading="lazy"
-  src="/img/services/informes-medicos-periciales.webp"
+  src={img}
   alt="informe médico pericial"
   width={600}
   height={400}

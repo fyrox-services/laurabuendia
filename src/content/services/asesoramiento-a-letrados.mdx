@@ -3,7 +3,7 @@ metaTitle: ➤ Asesoramiento a Letrados
 metaDescription: Ofrezco asesoramiento médico-legal a abogados en casos sanitarios. Interpreto informes clínicos, valoro la viabilidad médica del caso y ayudo a preparar la estrategia jurídica.
 h1: Asesoramiento a letrados
 serviceType: Asesoramiento a letrados
-image: asesoramiento-a-letrados.webp
+image: "@img/asesoramiento-a-letrados.jpg"
 ---
 
 import { FAQ_VALORACION_DANO_CORPORAL } from "@/data/faqs";
@@ -12,6 +12,7 @@ import { ServiceForm } from "@/components/preact/ServiceForm";
 import CtaLinks from "@/components/CtaLinks.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/asesoramiento-a-letrados.jpg";
 
 Cuando un letrado asume un caso relacionado con la asistencia sanitaria —ya sea por una posible negligencia médica, una secuela grave, o un conflicto sobre la atención recibida— es habitual encontrarse con barreras técnicas: informes complejos, lenguaje clínico y detalles que pueden resultar determinantes en juicio, pero difíciles de interpretar jurídicamente.
 
@@ -37,7 +38,7 @@ Ahí es donde entra el asesoramiento pericial: el apoyo directo de un médico ex
 
 <Image
   loading="lazy"
-  src="/img/services/asesoramiento-a-letrados.webp"
+  src={img}
   alt="Asesoramiento a letrados"
   width={600}
   height={400}

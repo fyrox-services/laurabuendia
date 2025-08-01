@@ -3,7 +3,7 @@ metaTitle: ➤ Informes de Accidentes de Tráfico y Hogar
 metaDescription: Informe médico pericial para accidentes de tráfico y del hogar. Descubre cómo se valoran las lesiones y secuelas tras un siniestro para reclamar una indemnización justa.
 h1: Informes de accidentes de tráfico y hogar
 serviceType: informe pericial para accidentes de tráfico y hogar
-image: accidentes-de-trafico.webp
+image: "@img/accidentes-de-trafico.jpg"
 ---
 
 import { ServiceForm } from "@/components/preact/ServiceForm";
@@ -12,6 +12,8 @@ import { FAQ_ACCIDENTES_DE_TRAFICO_Y_HOGAR } from "@/data/faqs";
 import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import imgTrafic from "@img/accidentes-de-trafico.jpg";
+import imgHouse from "@img/accidentes-de-hogar.jpg";
 
 Se trata de un documento técnico elaborado por un médico perito, tras la **exploración del lesionado** y el análisis detallado de toda la documentación clínica relacionada con el accidente. Su objetivo es determinar la existencia de daños, valorar su gravedad y cuantificar las posibles secuelas conforme a criterios médicos y legales.
 
@@ -42,7 +44,7 @@ Este tipo de informe es especialmente útil en situaciones como:
 
 <Image
   loading="lazy"
-  src="/img/services/accidentes-de-trafico.webp"
+  src={imgTrafic}
   alt="accidentes de tráfico"
   width={600}
   height={400}
@@ -54,7 +56,7 @@ Las compañías aseguradoras suelen realizar valoraciones internas que no siempr
 
 <Image
   loading="lazy"
-  src="/img/services/accidentes-de-hogar.webp"
+  src={imgHouse}
   alt="accidentes de hogar"
   width={600}
   height={400}

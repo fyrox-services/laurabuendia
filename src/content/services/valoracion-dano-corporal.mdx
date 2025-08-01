@@ -3,7 +3,7 @@ metaTitle: ➤ Valoración del Daño Corporal
 metaDescription: Conoce en qué consiste la valoración del daño corporal, qué se evalúa y cómo un perito médico puede ayudarte en reclamaciones legales o procesos de incapacidad.
 h1: Valoración del daño corporal
 serviceType: informe de valoración del daño corporal
-image: valoracion-dano-corporal.webp
+image: "@img/valoracion-dano-corporal.jpg"
 ---
 
 import { FAQ_VALORACION_DANO_CORPORAL } from "@/data/faqs";
@@ -12,6 +12,7 @@ import { ServiceForm } from "@/components/preact/ServiceForm";
 import CtaLinks from "@/components/CtaLinks.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
+import img from "@img/valoracion-dano-corporal.jpg";
 
 La valoración del daño **corporal es un proceso médico-legal fundamental que permite determinar y cuantificar las secuelas físicas,** psíquicas y estéticas que sufre una persona como consecuencia de un accidente, una agresión, una negligencia médica o cualquier otro hecho lesivo.
 
@@ -45,7 +46,7 @@ La valoración médica del daño corporal es una herramienta esencial en context
 
 <Image
   loading="lazy"
-  src="/img/services/valoracion-dano-corporal.webp"
+  src={img}
   alt="valoración del daño corporal"
   width={600}
   height={400}

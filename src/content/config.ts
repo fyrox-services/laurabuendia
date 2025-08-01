@@ -29,7 +29,7 @@ const services = defineCollection({
       metaDescription: z.string(),
       h1: z.string(),
       serviceType: z.string(),
-      image: z.string(),
+      image: image(),
     }),
 });
 
