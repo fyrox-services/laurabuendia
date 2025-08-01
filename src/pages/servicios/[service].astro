@@ -52,7 +52,7 @@ const structuredData = {
 <Layout
   metaTitle={data.metaTitle}
   metaDescription={data.metaDescription}
-  ogImage={`/img/services/${data.image}`}
+  ogImage={data.image.src}
 >
   <ServiceLayout service={service} body={body}>
     <Content />

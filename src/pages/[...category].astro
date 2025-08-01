@@ -35,11 +35,7 @@ const posts = await getCollection("posts", ({ slug }) => {
 });
 ---
 
-<Layout
-  metaTitle={data.title}
-  metaDescription={`Posts sobre ${data.title}`}
-  ogImage=""
->
+<Layout metaTitle={data.title} metaDescription={`Posts sobre ${data.title}`}>
   <PageSection>
     <H1Heading> {category.data.title} </H1Heading>
     <WrapperPosts posts={posts} />
