@@ -308,3 +308,18 @@ export const FAQ_INFORME_PERICIAL_NEGLIGENCIA_MEDICA: FAQ[] = [
     text: "El informe lo elaboro tras una consulta médica completa, donde el paciente me cuenta lo ocurrido, aporta su documentación y realizo una exploración física si es necesario. En el informe describo los hechos, analizo la actuación médica recibida, valoro las secuelas, los perjuicios personales y económicos, y explico si considero que ha habido una actuación negligente. Todo se presenta con un lenguaje técnico pero claro, para que pueda ser comprendido tanto por abogados como por jueces.",
   },
 ];
+
+export const FAQ_VALORACION_DANO_ESTETICO_CICATRICES: FAQ[] = [
+  {
+    heading: "¿Cómo se valora el daño estético por cicatrices?",
+    text: "Se valora teniendo en cuenta varios factores: la localización de la cicatriz, su tamaño, su visibilidad, cómo afecta a la imagen personal y si provoca reacciones emocionales o sociales. También se analiza si interfiere en la actividad profesional del paciente. A partir de ahí, se asigna una puntuación en una escala que va del 1 al 50 según el Baremo oficial, y esa puntuación es la base para calcular la indemnización correspondiente.",
+  },
+  {
+    heading: "¿Qué se considera un perjuicio estético?",
+    text: "El perjuicio estético es cualquier alteración negativa y duradera en el aspecto físico de una persona como consecuencia de una lesión, intervención o tratamiento médico. No se trata solo de cicatrices, sino de cualquier cambio que afecte a la apariencia: deformidades, pérdida de simetría, asimetrías faciales, cambios en la piel, etc. Lo importante es que esa alteración sea visible y tenga un impacto en la vida cotidiana o emocional del paciente.",
+  },
+  {
+    heading: "¿Qué es el daño estético?",
+    text: "El daño estético es un tipo de secuela que afecta a la apariencia física de una persona y que puede generar un impacto psicológico, social o profesional. Puede estar provocado por un accidente, una cirugía, una quemadura, una agresión o incluso por un procedimiento estético mal realizado. Este tipo de daño puede ser indemnizable si cumple los criterios establecidos y está correctamente documentado y valorado por un perito médico.",
+  },
+];
