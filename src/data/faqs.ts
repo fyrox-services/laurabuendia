@@ -323,3 +323,18 @@ export const FAQ_VALORACION_DANO_ESTETICO_CICATRICES: FAQ[] = [
     text: "El daño estético es un tipo de secuela que afecta a la apariencia física de una persona y que puede generar un impacto psicológico, social o profesional. Puede estar provocado por un accidente, una cirugía, una quemadura, una agresión o incluso por un procedimiento estético mal realizado. Este tipo de daño puede ser indemnizable si cumple los criterios establecidos y está correctamente documentado y valorado por un perito médico.",
   },
 ];
+
+export const FAQ_CUANTO_PUNTO_SECUELA: FAQ[] = [
+  {
+    heading: "¿Cuánto dinero es un punto de secuela?",
+    text: "No existe una cifra fija por punto, ya que el valor depende de la edad del lesionado, de la puntuación total de secuelas y del año en curso. Por ejemplo, en 2025 un punto de secuela para una persona joven vale más que para alguien de mayor edad. Las tablas oficiales de la Dirección General de Seguros y Fondos de Pensiones establecen estas cuantías de forma anual, y cuanto mayor es el número de puntos, más se incrementa el valor.",
+  },
+  {
+    heading: "¿Cuánto pagan por secuelas en un accidente de tráfico?",
+    text: "La indemnización por secuelas en un accidente de tráfico se calcula aplicando el Baremo oficial (Ley 35/2015). Se suman los puntos de secuela (usando la fórmula de Baltazar cuando hay varias) y se cruza con la edad del lesionado para obtener la cuantía correspondiente. Además, pueden añadirse otros conceptos como el perjuicio estético, el daño moral complementario o la pérdida de calidad de vida, lo que incrementa la indemnización total.",
+  },
+  {
+    heading: "¿Cuánto pagan por día de rehabilitación en 2025?",
+    text: "En 2025, el Baremo fija las siguientes cantidades diarias por lesiones temporales: Perjuicio básico: 38,10 € al día. Perjuicio moderado (pérdida parcial de calidad de vida, como baja laboral): 66,04 € al día. Perjuicio grave (hospitalización): 95,26 € al día. Perjuicio muy grave (UCI): 127,01 € al día.",
+  },
+];

@@ -1,0 +1,27 @@
+---
+import Download from "./icons/Download.astro";
+
+interface Props {
+  text: string;
+  file: string;
+  name: string;
+}
+
+const { file, text, name } = Astro.props;
+---
+
+<a href={file} download={name} class="btn">
+  {text}
+  <Download size={25} />
+</a>
+
+<style>
+  a {
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+  }
+</style>
