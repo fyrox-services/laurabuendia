@@ -29,7 +29,7 @@ const headings = buildHeadings(body);
         const splitedText = text.split(" ");
 
         const cleanedText = splitedText.map((word) => {
-          return word.toLocaleLowerCase().replaceAll(/[¿?!]/g, "");
+          return word.toLocaleLowerCase().replaceAll(/[¿?!:()]/g, "");
         });
 
         const createSlug = cleanedText.join("-");
@@ -184,7 +184,7 @@ const headings = buildHeadings(body);
     }
 
     .text {
-      color: var(--dark-500);
+      color: var(--dark-300);
       font-size: var(--fs-base);
       transition: color 0.3s ease;
       padding: 0 0.2rem;
