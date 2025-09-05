@@ -323,3 +323,18 @@ export const FAQ_VALORACION_DANO_ESTETICO_CICATRICES: FAQ[] = [
     text: "El daño estético es un tipo de secuela que afecta a la apariencia física de una persona y que puede generar un impacto psicológico, social o profesional. Puede estar provocado por un accidente, una cirugía, una quemadura, una agresión o incluso por un procedimiento estético mal realizado. Este tipo de daño puede ser indemnizable si cumple los criterios establecidos y está correctamente documentado y valorado por un perito médico.",
   },
 ];
+
+export const FAQ_RECLAMAR_RINOPLASTIA: FAQ[] = [
+  {
+    heading: "¿Qué hacer si te hicieron la rinoplastia mal?",
+    text: "Si el resultado de tu rinoplastia no fue el esperado, reúne toda la documentación médica (informes, consentimiento informado y fotos) y consulta con un perito médico especializado para valorar el daño estético y funcional, ya que con ese informe podrás saber si es posible reclamar una indemnización.",
+  },
+  {
+    heading: "¿Se puede reclamar una cirugía mal hecha?",
+    text: "Sí, siempre que exista negligencia médica, es decir, errores técnicos, falta de información sobre riesgos o secuelas que afectan a tu vida diaria; no basta con estar insatisfecho con el resultado estético si la cirugía se realizó correctamente.",
+  },
+  {
+    heading: "¿Qué hacer si te hacen una mala operación de nariz?",
+    text: "En estos casos lo más importante es acudir a un especialista que valore tu situación, obtener un informe pericial que cuantifique las secuelas y, con esa base, iniciar una reclamación para cubrir tanto la indemnización como, en su caso, los costes de una cirugía correctora.",
+  },
+];
