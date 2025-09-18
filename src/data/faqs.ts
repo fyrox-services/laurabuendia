@@ -353,3 +353,18 @@ export const FAQ_RECLAMAR_RINOPLASTIA: FAQ[] = [
     text: "En estos casos lo más importante es acudir a un especialista que valore tu situación, obtener un informe pericial que cuantifique las secuelas y, con esa base, iniciar una reclamación para cubrir tanto la indemnización como, en su caso, los costes de una cirugía correctora.",
   },
 ];
+
+export const FAQ_RECLAMAR_BLEFAROPLASTIA: FAQ[] = [
+  {
+    heading: "¿Cuánto tiempo hay que esperar para corregir una blefaroplastia?",
+    text: "Generalmente se recomienda esperar entre 6 y 12 meses antes de realizar una cirugía correctora, ya que durante ese tiempo los tejidos necesitan cicatrizar y estabilizarse; solo así se puede valorar el resultado final y planificar una nueva intervención con seguridad.",
+  },
+  {
+    heading: "¿Cómo se ve una blefaroplastia mal hecha?",
+    text: "Puede manifestarse con párpados asimétricos, cicatrices visibles, retracción del párpado inferior que deja el ojo más expuesto, dificultad para cerrar completamente los ojos o incluso alteraciones en la expresión facial, lo que evidencia un resultado estético o funcional inadecuado.",
+  },
+  {
+    heading: "¿Por qué mis ojos no coinciden después de la blefaroplastia?",
+    text: "La asimetría tras una blefaroplastia puede deberse a una cicatrización desigual, a la técnica quirúrgica utilizada o a la propia anatomía del paciente; si la diferencia es evidente y supone un perjuicio estético o funcional, puede ser motivo de corrección o incluso de reclamación.",
+  },
+];
