@@ -17,6 +17,7 @@
     "@types/react-dom": "19.1.2",
     "astro": "^5.13.5",
     "nanostores": "0.11.4",
+    "plyr": "3.7.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "7.56.1"
