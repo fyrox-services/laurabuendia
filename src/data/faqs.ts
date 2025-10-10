@@ -15,6 +15,21 @@ export const FAQ_HOME: FAQ[] = [
   },
 ];
 
+export const FAQ_PERITO_VALENCIA: FAQ[] = [
+  {
+    heading: "¿Cuánto se cobra por un peritaje médico?",
+    text: "El coste depende del tipo de caso y del trabajo que requiera el informe, lo mejor es que me contactes para poder orientarle con más precisión sobre el costo total.",
+  },
+  {
+    heading: "¿Cómo puedo conseguir un perito?",
+    text: "Puede contactar directamente conmigo a través del formulario para una valoración inicial del caso.",
+  },
+  {
+    heading: "¿Cuándo es necesario un perito?",
+    text: "Cuando necesitas demostrar el alcance real de una lesión o aclarar si ha existido negligencia o daño médico. El informe pericial aporta una base objetiva que puede ser clave en un procedimiento judicial o extrajudicial.",
+  },
+];
+
 export const FAQ_VALORACION_DANO_CORPORAL: FAQ[] = [
   {
     heading: "¿Qué es la valoración del daño corporal?",

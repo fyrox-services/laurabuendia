@@ -1,0 +1,125 @@
+---
+import AbovePhoto from "@/components/AbovePhoto.astro";
+import CenterContent from "@/components/CenterContent.astro";
+import CommCases from "@/components/CommCases.astro";
+import FAQ from "@/components/FAQ.astro";
+import Heading from "@/components/Heading.astro";
+import HowWorkingCards from "@/components/HowWorkingCards.astro";
+import ImagesGrid from "@/components/ImagesGrid.astro";
+import MainCta from "@/components/MainCta.astro";
+import { MainForm } from "@/components/preact/MainForm";
+import ServicesCards from "@/components/ServicesCards.astro";
+import ShortDescription from "@/components/ShortDescription.astro";
+import SubHeading from "@/components/SubHeading.astro";
+import { valencia } from "@/data/cities";
+import { FAQ_PERITO_VALENCIA } from "@/data/faqs";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+  metaTitle="➤ Perito Médico en Valencia | Dra. Laura Buendía"
+  metaDescription="Hola, soy Laura Buendía, Médico con más de 10 años de experiencia en informes periciales, valoración del daño corporal, pérdida de oportunidad y asesoramiento a letrados. "
+>
+  <section class="above wrapper">
+    <div class="box-content">
+      <span>Laura Buendía</span>
+      <h1 class="text-gradient-primary">Perito médico en Valencia</h1>
+      <p>
+        Soy médico con más de 10 años de experiencia en la elaboración de <strong
+          >informes periciales, informes de valoraciones del daño corporal,
+          pérdida de oportunidad, mediación y asesoramiento a letrados.</strong
+        > Si necesita claridad y opinión experta en temas médico-legales contacte
+        conmigo.
+      </p>
+      <div class="photo-container">
+        <AbovePhoto alt="perito médico en Valencia, doctora laura buendía" />
+      </div>
+    </div>
+    <div class="box-form">
+      <MainForm client:visible modifier="landing" />
+    </div>
+  </section>
+  <section class="wrapper mt-6">
+    <Heading> mis servicios de peritaje médico en Valencia</Heading>
+    <p class="mt-1">
+      Resido en Madrid pero presto mi servicio en toda España, incluyendo la
+      ciudad de Valencia. Le dejo mis 8 servicios con los que podría ayudarle
+      dependiendo de su caso y lo que necesite.
+    </p>
+
+    <ServicesCards />
+  </section>
+
+  <section class="wrapper mt-6">
+    <Heading> Casos en los que puedes necesitar un perito médico</Heading>
+    <CommCases />
+  </section>
+
+  <section class="wrapper mt-6">
+    <Heading> Cómo trabajaremos</Heading>
+    <HowWorkingCards />
+  </section>
+
+  <CenterContent modifier="how-working-section">
+    <SubHeading>solicite información</SubHeading>
+    <ShortDescription>
+      Estoy aquí para ayudarle. Si necesita orientación sobre su caso, los
+      informes o el proceso, puede ponerse en contacto sin ningún tipo de
+      compromiso. Estudiaré su situación con rigor y le daré una respuesta clara
+      y fundamentada.
+    </ShortDescription>
+
+    <MainCta>Solicitar información</MainCta>
+  </CenterContent>
+
+  <section class="wrapper mt-6">
+    <CenterContent>
+      <Heading class="text-center">
+        preguntas frecuentes a un perito médico en Valencia
+      </Heading>
+
+      <FAQ faqs={FAQ_PERITO_VALENCIA} />
+    </CenterContent>
+  </section>
+
+  <section class="wrapper mt-6">
+    <ImagesGrid images={valencia} />
+  </section>
+</Layout>
+
+<style>
+  .above {
+    min-height: 100vh;
+    margin-top: calc(var(--header-height) * 2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: var(--fs-3xl);
+  }
+
+  .photo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    .above {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+</style>

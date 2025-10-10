@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import abovePhoto from "@/assets/mark/laura_above.webp";
+
+interface Props {
+  alt: string;
+}
+
+const { alt } = Astro.props;
+---
+
+<picture class="image-mask">
+  <Image loading="eager" src={abovePhoto} alt={alt} />
+</picture>
+
+<style>
+  .image-mask {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    mask-image: linear-gradient(var(--light) 50%, transparent 100%);
+  }
+
+  .image-mask img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+</style>

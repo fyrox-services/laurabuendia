@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  images: {
+    img: ImageMetadata;
+    alt: string;
+  }[];
+}
+
+const { images } = Astro.props;
+---
+
+<ul>
+  {
+    images.map(({ alt, img }) => {
+      return (
+        <li>
+          <Image src={img} alt={alt} />
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    display: grid;
+    gap: 1rem;
+  }
+
+  img {
+    border-radius: var(--radius);
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

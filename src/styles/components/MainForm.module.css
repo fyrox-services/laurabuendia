@@ -54,6 +54,10 @@
   gap: 0.5rem;
 }
 
+.LabelLegalField {
+  grid-column: 1/-1;
+}
+
 .LabelLegal a {
   color: var(--link);
 }
@@ -110,11 +114,19 @@
   max-height: none;
 }
 
+.Form.landing {
+  max-height: none;
+}
+
 @media (min-width: 1024px) {
   .Form.about-me {
     position: absolute;
     top: 40%;
     left: 0;
     box-shadow: var(--shadow);
+  }
+
+  .Form.landing {
+    padding: 2rem;
   }
 }
