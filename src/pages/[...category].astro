@@ -1,4 +1,5 @@
 ---
+import FilterArticles from "@/components/FilterArticles.astro";
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
 import WrapperPosts from "@/components/WrapperPosts.astro";
@@ -38,6 +39,9 @@ const posts = await getCollection("posts", ({ slug }) => {
 <Layout metaTitle={data.title} metaDescription={`Posts sobre ${data.title}`}>
   <PageSection>
     <H1Heading> {category.data.title} </H1Heading>
+
+    <FilterArticles />
+
     <WrapperPosts posts={posts} />
   </PageSection>
 </Layout>

@@ -1,4 +1,5 @@
 ---
+import FilterArticles from "@/components/FilterArticles.astro";
 import H1Heading from "@/components/H1Heading.astro";
 import PageSection from "@/components/PageSection.astro";
 import WrapperPosts from "@/components/WrapperPosts.astro";
@@ -11,6 +12,9 @@ const posts = await getCollection("posts");
 <Layout metaTitle="Blog" metaDescription="Artículos sobre el peritaje médico">
   <PageSection>
     <H1Heading> Blog: Artículos sobre el peritaje médico </H1Heading>
+
+    <FilterArticles />
+
     <WrapperPosts posts={posts} />
   </PageSection>
 </Layout>

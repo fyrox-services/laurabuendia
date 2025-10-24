@@ -1,0 +1,79 @@
+---
+const { pathname } = Astro.url;
+const [cleanPath] = pathname.split("/").filter((item) => item !== "");
+
+const links = [
+  {
+    text: "todos",
+    path: "blog",
+  },
+  {
+    text: "peritaje médico",
+    path: "peritaje-medico",
+  },
+  {
+    text: "accidentes de tráfico",
+    path: "accidentes-de-trafico",
+  },
+  {
+    text: "negligencias médicas",
+    path: "negligencias-medicas",
+  },
+];
+---
+
+<ul>
+  {
+    links.map(({ path, text }) => {
+      return (
+        <li>
+          <a
+            class:list={[
+              {
+                active: cleanPath === path,
+              },
+            ]}
+            href={`/${path}/`}
+          >
+            {text}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  ul {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  a {
+    font-size: var(--fs-sm);
+    padding: 0.5rem 2rem;
+    border-radius: var(--radius-l);
+    border: 1px solid var(--primary);
+  }
+
+  a.active {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      margin-left: auto;
+      width: fit-content;
+    }
+
+    a {
+      font-size: var(--fs-md);
+    }
+  }
+</style>
