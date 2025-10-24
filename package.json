@@ -9,13 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.7",
+    "@astrojs/mdx": "^4.3.8",
     "@astrojs/react": "^4.4.0",
     "@astrojs/sitemap": "^3.6.0",
     "@nanostores/react": "1.0.0",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
-    "astro": "^5.14.3",
+    "astro": "^5.15.1",
     "nanostores": "0.11.4",
     "plyr": "3.7.8",
     "react": "19.1.0",

@@ -31,6 +31,8 @@ const { images } = Astro.props;
 
   img {
     border-radius: var(--radius);
+    aspect-ratio: 4/3;
+    object-fit: cover;
   }
 
   @media (min-width: 1024px) {
