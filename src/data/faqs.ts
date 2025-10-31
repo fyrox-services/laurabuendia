@@ -399,3 +399,22 @@ export const FAQ_RECLAMAR_BLEFAROPLASTIA: FAQ[] = [
     text: "La asimetría tras una blefaroplastia puede deberse a una cicatrización desigual, a la técnica quirúrgica utilizada o a la propia anatomía del paciente; si la diferencia es evidente y supone un perjuicio estético o funcional, puede ser motivo de corrección o incluso de reclamación.",
   },
 ];
+
+export const FAQ_QUE_ES_NEGLIGENCIA_MEDICA: FAQ[] = [
+  {
+    heading: "¿Qué se entiende por negligencia médica?",
+    text: "Se considera negligencia médica cuando un profesional de la salud actúa de forma inadecuada o contraria a la buena práctica médica, provocando un daño físico o psicológico al paciente. Esto puede ocurrir por un diagnóstico erróneo, un tratamiento inadecuado, una falta de seguimiento, o incluso por errores durante una intervención quirúrgica. En todos los casos, lo importante es determinar si el médico actuó conforme a los protocolos y estándares que se esperan de su especialidad.",
+  },
+  {
+    heading: "¿Qué se requiere para demostrar negligencia médica?",
+    text: "Para demostrar una negligencia médica es necesario probar que existió un error o una actuación inadecuada y que ese error causó un daño concreto al paciente. Aquí es donde interviene el perito médico, quien analiza toda la documentación (informes, pruebas, historiales, consentimientos, etc.) y elabora un informe pericial independiente que detalle qué falló, por qué ocurrió y cuáles fueron las consecuencias. Este informe es la base sobre la que el abogado puede sustentar una reclamación con garantías.",
+  },
+  {
+    heading: "¿Quién paga una negligencia médica?",
+    text: "Depende del tipo de centro donde ocurrió. Si fue en un hospital público, la reclamación se dirige contra la Administración sanitaria (por ejemplo, el Servicio Andaluz de Salud, en el caso de Sevilla). Si fue en una clínica privada, la responsabilidad recae sobre el seguro de responsabilidad civil del médico o del centro. En ambos casos, el informe pericial es fundamental para demostrar la relación entre el error médico y el daño sufrido.",
+  },
+  {
+    heading: "¿Cómo saber si es una negligencia médica?",
+    text: "Muchas veces los pacientes sospechan que algo no se hizo bien, pero no tienen la certeza. La forma más fiable de saberlo es mediante una valoración pericial médica independiente, en la que se revise el caso con objetividad y se determine si la actuación médica fue correcta o no. Si tras el análisis se confirma que existió una mala praxis, el perito te explicará los pasos a seguir para iniciar una reclamación con fundamento y respaldo técnico.",
+  },
+];

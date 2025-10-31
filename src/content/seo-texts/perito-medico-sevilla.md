@@ -12,7 +12,7 @@ Imagina que has tenido un [accidente de tráfico](/accidentes-de-trafico/calcula
 
 En ambos casos, un [informe médico pericial](/servicios/informes-medicos-periciales/) puede ser clave para demostrar de forma objetiva el alcance de tus lesiones y reclamar la compensación que realmente te corresponde.
 
-También puedo ayudarte si sospechas que has sido víctima de una negligencia médica, ya sea por un diagnóstico incorrecto, un tratamiento inadecuado o una intervención que no ha salido como debía. En estas situaciones, el informe pericial permite determinar si la actuación médica fue adecuada y si existió algún tipo de error o falta de diligencia.
+También puedo ayudarte si sospechas que has sido víctima de una [negligencia médica,](/negligencias-medicas/que-es-negligencia-medica/) ya sea por un diagnóstico incorrecto, un tratamiento inadecuado o una intervención que no ha salido como debía. En estas situaciones, el informe pericial permite determinar si la actuación médica fue adecuada y si existió algún tipo de error o falta de diligencia.
 
 Cada caso se analiza con rigor médico y total independencia, siempre con el objetivo de ofrecerte una valoración clara, documentada y fácilmente comprensible para jueces, abogados o aseguradoras.
 
