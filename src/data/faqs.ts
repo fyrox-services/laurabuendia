@@ -30,6 +30,22 @@ export const FAQ_PERITO_VALENCIA: FAQ[] = [
   },
 ];
 
+export const FAQ_PERITO_SEVILLA: FAQ[] = [
+  {
+    heading: "¿Cuánto vale un perito médico?",
+    text: "El precio de un perito médico depende del tipo de caso y del trabajo que sea necesario realizar. No es lo mismo revisar un informe médico sencillo que elaborar una valoración completa con exploración y comparecencia en juicio. En general, un informe pericial puede costar entre 400 € y 900 €, aunque cada situación se valora de forma individual tras revisar la documentación. Lo importante es que tengas claro qué incluye el servicio y qué puedes esperar del resultado antes de empezar.",
+  },
+  {
+    heading: "¿Quién puede hacer un peritaje médico?",
+    text: "Un peritaje médico solo puede realizarlo un médico colegiado con la formación y experiencia necesaria para valorar informes clínicos y emitir conclusiones técnicas. El perito actúa como profesional independiente, aplicando criterios médicos y legales para elaborar un informe imparcial que pueda ser presentado ante tribunales, aseguradoras o mutuas.",
+  },
+  {
+    heading: "¿Tengo que ir hasta Madrid?",
+    text: "No, primero hablaremos por teléfono para recopilar la información del caso, luego vemos si es necesario el desplazamiento por mi parte.",
+  },
+
+];
+
 export const FAQ_VALORACION_DANO_CORPORAL: FAQ[] = [
   {
     heading: "¿Qué es la valoración del daño corporal?",

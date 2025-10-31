@@ -10,6 +10,14 @@ import ciudadBarcelona from "@/assets/cities/barcelona/barcelona-ciudad.jpg"
 import playaBarcelona from "@/assets/cities/barcelona/playa-de-barcelona.jpg"
 import sagradaFamilia from "@/assets/cities/barcelona/sagrada-familia.jpg"
 
+// Barcelona
+
+import sevillaStreets from "@/assets/cities/sevilla/calles-de-sevilla.jpg"
+import sevillaRiver from "@/assets/cities/sevilla/rio-de-sevilla.jpg"
+import sevillaViews from "@/assets/cities/sevilla/vistas-de-sevilla.jpg"
+
+
+
 
 export const valencia = [
   {
@@ -38,5 +46,20 @@ export const barcelona = [
   {
     img: sagradaFamilia,
     alt: "sagrada familia",
+  },
+];
+
+export const sevilla = [
+  {
+    img: sevillaStreets,
+    alt: "calles de sevilla",
+  },
+  {
+    img: sevillaRiver,
+    alt: "rio de sevilla",
+  },
+  {
+    img: sevillaViews,
+    alt: "vistas de sevilla",
   },
 ];
