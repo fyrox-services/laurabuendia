@@ -18,8 +18,12 @@ import FAQ from "@/components/FAQ.astro";
 import { Image } from "astro:assets";
 import MainCta from "@/components/MainCta.astro";
 import img from "@img/valoracion-del-dano-estetico-por-cicatrices.jpg";
+import video from "@/assets/videos/perjuicio-por-cicatrices.mp4";
+import Video from "@/components/Video.astro";
 
 La valoración del daño estético es uno de los aspectos más delicados dentro de una reclamación médica. No hablamos solo de una cicatriz o una marca visible, sino del impacto que puede tener sobre la imagen personal, la autoestima y, en algunos casos, incluso sobre la vida profesional de quien la sufre.
+
+<Video id="player" src={video} />
 
 ## ¿Qué se tiene en cuenta al valorar un perjuicio estético?
 
