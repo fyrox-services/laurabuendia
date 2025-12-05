@@ -30,6 +30,21 @@ export const FAQ_PERITO_VALENCIA: FAQ[] = [
   },
 ];
 
+export const FAQ_PERITO_MALAGA: FAQ[] = [
+  {
+    heading: "¿Cuándo es necesario un perito médico en un juicio?",
+    text: "Un perito médico es necesario cuando el juez o las partes implicadas necesitan entender con claridad el alcance de unas lesiones, una secuela o una posible mala praxis médica. Su informe aporta una visión objetiva, técnica y fundamentada, imprescindible para que el tribunal pueda valorar correctamente lo ocurrido. En casos de accidentes de tráfico, accidentes laborales o negligencias médicas, la participación de un perito médico suele ser determinante para acreditar el daño y respaldar la reclamación.",
+  },
+  {
+    heading: "¿Cuánto cuesta un informe de un perito médico?",
+    text: "El precio depende de la complejidad del caso y del trabajo que sea necesario realizar, pero un informe médico pericial suele situarse entre 400 € y 900 €. Incluye el estudio detallado de la documentación, la valoración médica, la redacción del informe y, si fuera necesario, la defensa del mismo en sede judicial. Antes de empezar, siempre se ofrece una valoración previa para determinar qué necesita el caso y entregar un presupuesto cerrado.",
+  },
+  {
+    heading: "¿Qué garantías ofrecen los informes médicos periciales?",
+    text: "Los informes periciales médicos ofrecen rigurosidad, independencia y fundamentación técnica. Se elaboran siguiendo criterios médicos y legales, con un lenguaje claro para que jueces, abogados y aseguradoras puedan entender fácilmente las conclusiones. Además, un buen informe pericial incluye la garantía de que el perito podrá defenderlo en juicio si el caso lo requiere, explicando con precisión cada parte de la valoración.",
+  },
+];
+
 export const FAQ_PERITO_SEVILLA: FAQ[] = [
   {
     heading: "¿Cuánto vale un perito médico?",
@@ -43,7 +58,6 @@ export const FAQ_PERITO_SEVILLA: FAQ[] = [
     heading: "¿Tengo que ir hasta Madrid?",
     text: "No, primero hablaremos por teléfono para recopilar la información del caso, luego vemos si es necesario el desplazamiento por mi parte.",
   },
-
 ];
 
 export const FAQ_VALORACION_DANO_CORPORAL: FAQ[] = [
