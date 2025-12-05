@@ -339,6 +339,21 @@ export const FAQ_VALORACION_DANO_CORPORAL_TRAFICO: FAQ[] = [
   },
 ];
 
+export const FAQ_CERVICALGIA: FAQ[] = [
+  {
+    heading: "¿Cuánto pagan por punto de secuela?",
+    text: "El valor de cada punto de secuela depende de la edad del lesionado y del total de puntos reconocidos, aunque de forma orientativa suele situarse entre 800 € y 1.200 € por punto. Las personas más jóvenes reciben una indemnización mayor por cada punto, y además del valor específico de la secuela también pueden sumarse otros conceptos como gastos médicos, días de baja, tratamientos de rehabilitación o perjuicios personales derivados del accidente, por lo que la compensación final suele ser superior a la cifra base por punto.",
+  },
+  {
+    heading: "¿Cuánto tiempo se está de baja por una cervicalgia?",
+    text: "La duración de la baja por cervicalgia varía según la intensidad del dolor, el tipo de lesión y la respuesta al tratamiento. En los casos más leves puede durar entre una y tres semanas, mientras que en cervicalgias moderadas puede prolongarse durante varias semanas más. Cuando el cuadro es persistente, con contracturas intensas o irradiación hacia los brazos, la baja puede extenderse durante uno, dos o incluso tres meses, siempre en función de la evolución clínica y la necesidad de continuar con la rehabilitación.",
+  },
+  {
+    heading: "¿Qué secuelas pueden provocar la lesión cervical?",
+    text: "La lesión cervical puede dejar secuelas cuando el dolor persiste después del tratamiento adecuado. Las más frecuentes son el dolor crónico al mover el cuello, la rigidez y la pérdida parcial de movilidad, las cefaleas tensionales, los mareos asociados a contracturas musculares, la irradiación del dolor hacia los hombros o brazos y la dificultad para mantener posturas prolongadas como trabajar sentado o conducir. Si estos síntomas se mantienen en el tiempo y están bien documentados, pueden valorarse como secuelas indemnizables conforme al Baremo de Tráfico.",
+  },
+];
+
 export const FAQ_INFORME_PERICIAL_NEGLIGENCIA_MEDICA: FAQ[] = [
   {
     heading: "¿Cuánto te pueden indemnizar por negligencia médica?",
