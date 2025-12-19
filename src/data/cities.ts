@@ -18,6 +18,11 @@ import malagaToro from "@/assets/cities/malaga/plaza-de-toros-de-malaga.jpg";
 import malagaCity from "@/assets/cities/malaga/ciudad-de-malaga.jpg";
 import malagaPort from "@/assets/cities/malaga/puerto-de-malaga.jpg";
 
+// Granada
+import granadaCampo from "@/assets/cities/granada/granada-campo.jpg";
+import granadaCity from "@/assets/cities/granada/granada-city.jpg";
+import granadaAlhambra from "@/assets/cities/granada/granada-alhambra.jpg";
+
 export const valencia = [
   {
     img: ciudadDeValencia,
@@ -60,6 +65,21 @@ export const malaga = [
   {
     img: malagaPort,
     alt: "puerto de Málaga",
+  },
+];
+
+export const granada = [
+  {
+    img: granadaCampo,
+    alt: "campo de granada",
+  },
+  {
+    img: granadaCity,
+    alt: "ciudad de granada",
+  },
+  {
+    img: granadaAlhambra,
+    alt: "la alhambra de granada",
   },
 ];
 

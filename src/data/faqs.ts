@@ -30,6 +30,21 @@ export const FAQ_PERITO_VALENCIA: FAQ[] = [
   },
 ];
 
+export const FAQ_PERITO_GRANADA: FAQ[] = [
+  {
+    heading: "¿Cuánto se cobra por un peritaje médico?",
+    text: "El precio de un peritaje médico depende del tipo de caso, su complejidad y del tiempo necesario para el estudio y la redacción del informe. De forma orientativa, un peritaje sencillo suele situarse entre 300 y 600 euros, mientras que los casos más complejos o con ratificación en juicio pueden superar los 1.000 euros.",
+  },
+  {
+    heading: "¿Qué hace exactamente un perito médico?",
+    text: "Un perito médico analiza tu estado de salud desde un punto de vista técnico y objetivo, revisa tu documentación médica, te explora y elabora un informe pericial que explica de forma clara cómo te afectan tus lesiones o patologías dentro de un procedimiento legal o administrativo.",
+  },
+  {
+    heading: "¿Cuándo es recomendable contar con un perito médico en Granada?",
+    text: "Es recomendable contar con un perito médico cuando tu estado de salud tiene relevancia legal, por ejemplo en accidentes, incapacidades, negligencias médicas o conflictos laborales o familiares. Cuanto antes se realice la valoración, más sólida y útil será la base médica del procedimiento.",
+  },
+];
+
 export const FAQ_PERITO_MALAGA: FAQ[] = [
   {
     heading: "¿Cuándo es necesario un perito médico en un juicio?",
