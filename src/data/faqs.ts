@@ -462,3 +462,22 @@ export const FAQ_QUE_ES_NEGLIGENCIA_MEDICA: FAQ[] = [
     text: "Muchas veces los pacientes sospechan que algo no se hizo bien, pero no tienen la certeza. La forma más fiable de saberlo es mediante una valoración pericial médica independiente, en la que se revise el caso con objetividad y se determine si la actuación médica fue correcta o no. Si tras el análisis se confirma que existió una mala praxis, el perito te explicará los pasos a seguir para iniciar una reclamación con fundamento y respaldo técnico.",
   },
 ];
+
+export const FAQ_PROBABILIDADES_GANAR_JUICIO: FAQ[] = [
+  {
+    heading: "¿Qué probabilidades hay de ganar un juicio por negligencia médica?",
+    text: "Las probabilidades de éxito son altas cuando el caso está bien fundamentado: hay un error médico demostrable, un daño real y un informe pericial sólido que lo respalde. No existe un porcentaje fijo, ya que cada caso es único, pero los casos con buena documentación y respaldo pericial tienen muchas más opciones de prosperar.",
+  },
+  {
+    heading: "¿Cuánto tarda un juicio por negligencia médica?",
+    text: "Depende de la vía elegida. Una negociación extrajudicial puede resolverse en 6-12 meses. Un juicio civil suele durar entre 1 y 3 años. Si la negligencia fue en sanidad pública, la vía contencioso-administrativa puede prolongarse entre 2 y 4 años. Cuanto mejor documentado esté el caso desde el principio, más ágil será el proceso.",
+  },
+  {
+    heading: "¿Qué necesito para ganar una demanda por negligencia médica?",
+    text: "Necesitas demostrar cuatro elementos: que hubo una actuación contraria a la buena práctica médica (lex artis), que esa actuación causó un daño real, que existe relación directa entre el error y el daño, y que no había causas que justificaran el resultado. El informe pericial médico es la prueba fundamental para acreditar todo esto ante el juez.",
+  },
+  {
+    heading: "¿Merece la pena demandar por negligencia médica?",
+    text: "Merece la pena cuando el daño es significativo, el error es demostrable y cuentas con respaldo pericial. Antes de decidir, es recomendable solicitar un informe de viabilidad que analice si el caso tiene fundamento suficiente. Esto te permite saber tus opciones reales antes de invertir tiempo y recursos en un procedimiento judicial.",
+  },
+];
