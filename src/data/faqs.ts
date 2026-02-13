@@ -463,6 +463,37 @@ export const FAQ_QUE_ES_NEGLIGENCIA_MEDICA: FAQ[] = [
   },
 ];
 
+export const FAQ_INFORME_MEDICO_INCAPACIDAD_PERMANENTE: FAQ[] = [
+  {
+    heading:
+      "¿Qué informes médicos necesito para solicitar la incapacidad permanente?",
+    text: "Los más importantes son los informes de tus especialistas de la Seguridad Social (traumatólogo, reumatólogo, psiquiatra, etc.), ya que son los que más peso tienen ante el EVI. También conviene aportar el informe del médico de cabecera, pruebas diagnósticas recientes (resonancias, TAC, electromiografías) y, si te has tratado en la sanidad privada, los informes de esos especialistas. Lo fundamental es que todos reflejen con claridad tus limitaciones funcionales.",
+  },
+  {
+    heading:
+      "¿Cuándo necesito un informe pericial para la incapacidad permanente?",
+    text: "Generalmente, en la fase administrativa (solicitud inicial ante el INSS) basta con los informes de tus médicos tratantes. El informe pericial cobra importancia cuando el INSS deniega la incapacidad y decides recurrir en vía judicial. En esa fase, el informe pericial puede ser la prueba que marque la diferencia entre ganar o perder el recurso.",
+  },
+  {
+    heading: "¿Qué informes hay que llevar al tribunal médico?",
+    text: "Al tribunal médico (EVI) conviene llevar todos los informes de tus especialistas actualizados, pruebas diagnósticas recientes (resonancias, TAC, electromiografías), el informe de tu médico de cabecera, los partes de baja si los hay y cualquier documentación que acredite tus limitaciones funcionales. Cuanto más completa y detallada sea la documentación, más elementos tendrá el equipo de valoración para evaluar tu situación real.",
+  },
+  {
+    heading:
+      "¿Qué se valora realmente en el tribunal médico para la incapacidad permanente?",
+    text: "El EVI valora fundamentalmente tus limitaciones funcionales: no tanto qué enfermedad tienes, sino cómo afecta a tu capacidad para desempeñar tu trabajo habitual o cualquier actividad profesional. Analizan la documentación médica aportada, pueden realizarte una exploración y elaboran un informe de síntesis con su dictamen-propuesta. Por eso es tan importante que tus informes reflejen con claridad qué no puedes hacer, no solo qué diagnóstico tienes.",
+  },
+  {
+    heading: "¿Qué enfermedades entran en la incapacidad permanente?",
+    text: "No existe una lista cerrada de enfermedades que den derecho automático a una incapacidad permanente. Lo que se valora es cómo la patología limita tu capacidad laboral. Dicho esto, algunas de las más habituales son las enfermedades osteomusculares (hernias discales, artrosis avanzada), trastornos de salud mental (depresión grave, trastorno bipolar), enfermedades neurológicas (esclerosis múltiple, Parkinson), fibromialgia, enfermedades cardíacas y patologías oncológicas, entre otras.",
+  },
+  {
+    heading:
+      "¿Qué grado de discapacidad se puede obtener por Parkinson?",
+    text: "El grado de discapacidad por Parkinson depende del estadio de la enfermedad y de cómo afecte a la autonomía y capacidad funcional de la persona. En fases iniciales puede reconocerse un 33 % o más, mientras que en fases avanzadas con limitaciones severas de movilidad, temblor incapacitante o deterioro cognitivo asociado, el porcentaje puede superar el 65 %. Cada caso se valora individualmente según las limitaciones concretas que presente el paciente.",
+  },
+];
+
 export const FAQ_PROBABILIDADES_GANAR_JUICIO: FAQ[] = [
   {
     heading: "¿Qué probabilidades hay de ganar un juicio por negligencia médica?",
