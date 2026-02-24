@@ -494,6 +494,25 @@ export const FAQ_INFORME_MEDICO_INCAPACIDAD_PERMANENTE: FAQ[] = [
   },
 ];
 
+export const FAQ_INDEMNIZACION_MAL_DIAGNOSTICO: FAQ[] = [
+  {
+    heading: "¿Cuánto se puede cobrar por un mal diagnóstico médico?",
+    text: "No existe una cantidad fija: depende del daño causado, las secuelas, el impacto en la vida del paciente y la vía de reclamación elegida. En casos leves —retraso diagnóstico con recuperación completa— las indemnizaciones suelen oscilar entre 5.000 y 30.000 €. En casos con secuelas permanentes o graves, las cifras pueden superar los 100.000 o 200.000 €. En supuestos de fallecimiento o daños muy severos, el Tribunal Supremo ha reconocido indemnizaciones de 300.000 € o más.",
+  },
+  {
+    heading: "¿Cuánto tiempo hay para reclamar un error de diagnóstico?",
+    text: "Los plazos varían según la vía y el tipo de centro. Si el error ocurrió en sanidad pública, tienes un año para presentar la reclamación por responsabilidad patrimonial ante la Administración, contado desde que conociste el daño. En centros privados, la vía civil tiene un plazo de cinco años si se reclama por responsabilidad contractual. En cualquier caso, es importante no esperar: cuanto antes se actúa, más completa es la documentación disponible.",
+  },
+  {
+    heading: "¿Necesito un abogado y un perito médico para reclamar?",
+    text: "Para iniciar una reclamación judicial necesitarás ambos. El abogado lleva la estrategia legal; el perito médico aporta el análisis técnico que demuestra que hubo un error, que ese error causó un daño y que el daño tiene una valoración económica concreta. Sin un informe pericial sólido, la reclamación queda sin respaldo técnico y las posibilidades de éxito se reducen considerablemente.",
+  },
+  {
+    heading: "¿Todo error de diagnóstico da derecho a indemnización?",
+    text: "No. Para que haya derecho a indemnización, el error debe cumplir tres condiciones: que exista una actuación contraria a la lex artis (lo que se espera de un profesional competente en esa situación), que haya un daño real, y que ese daño sea consecuencia directa del error. Si el médico actuó conforme a los protocolos y el resultado fue adverso por la propia enfermedad, no hay negligencia. Por eso el análisis pericial previo es tan importante antes de iniciar cualquier reclamación.",
+  },
+];
+
 export const FAQ_PROBABILIDADES_GANAR_JUICIO: FAQ[] = [
   {
     heading: "¿Qué probabilidades hay de ganar un juicio por negligencia médica?",
