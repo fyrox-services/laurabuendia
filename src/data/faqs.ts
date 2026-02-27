@@ -531,3 +531,26 @@ export const FAQ_PROBABILIDADES_GANAR_JUICIO: FAQ[] = [
     text: "Merece la pena cuando el daño es significativo, el error es demostrable y cuentas con respaldo pericial. Antes de decidir, es recomendable solicitar un informe de viabilidad que analice si el caso tiene fundamento suficiente. Esto te permite saber tus opciones reales antes de invertir tiempo y recursos en un procedimiento judicial.",
   },
 ];
+
+export const FAQ_BAJA_LABORAL: FAQ[] = [
+  {
+    heading: "¿Cuánto se cobra por una baja laboral por accidente de tráfico?",
+    text: "Hay que distinguir dos conceptos. La Seguridad Social o tu mutua paga un porcentaje de tu salario (60-75%) mientras no puedes trabajar. Aparte, la aseguradora del responsable debe indemnizarte por los días de lesión según el baremo de tráfico: unos 39,20 €/día en perjuicio básico, 67,96 €/día en perjuicio moderado (baja laboral con limitaciones), 98,02 €/día en perjuicio grave y 130,69 €/día en perjuicio muy grave. Ambas compensaciones son compatibles.",
+  },
+  {
+    heading: "¿Cuánto tiempo de baja por accidente de tráfico?",
+    text: "No hay un límite fijo: depende de la gravedad de las lesiones y de la evolución clínica de cada persona. La prestación por incapacidad temporal tiene una duración máxima de 365 días, prorrogable otros 180 si hay expectativa razonable de recuperación. La indemnización del baremo cubre desde el accidente hasta la estabilización lesional, momento en que se valoran las posibles secuelas.",
+  },
+  {
+    heading: "¿Cuánto pagan las compañías de seguros por día de baja?",
+    text: "Las aseguradoras aplican el baremo de la Ley 35/2015. En 2026, el importe es de aproximadamente 39,20 €/día para el perjuicio básico, 67,96 €/día para el moderado, 98,02 €/día para el grave y 130,69 €/día para el muy grave. La clave está en qué categoría se clasifican tus días, ya que la diferencia entre básico y moderado puede suponer más de 1.000 € en una baja de pocas semanas.",
+  },
+  {
+    heading: "¿Cuánto te indemnizan por latigazo cervical?",
+    text: "El latigazo cervical es una de las lesiones más frecuentes en accidentes de tráfico y una causa habitual de baja laboral. La indemnización depende de los días de recuperación, la existencia de secuelas y su gravedad. Una baja sin secuelas puede situarse entre 1.000 y 3.000 €, pero si quedan secuelas como cervicalgia crónica o limitación de movilidad, la cifra puede ser muy superior. Tienes más información en el artículo sobre indemnización por latigazo cervical.",
+  },
+  {
+    heading: "¿Puedo cobrar la baja de la Seguridad Social y la indemnización de la aseguradora a la vez?",
+    text: "Sí, son perfectamente compatibles. La prestación por incapacidad temporal compensa la pérdida de salario y la gestiona la Seguridad Social o la mutua. La indemnización del baremo de tráfico compensa el daño personal sufrido y la paga la aseguradora. Son vías independientes y no se descuentan entre sí.",
+  },
+];
