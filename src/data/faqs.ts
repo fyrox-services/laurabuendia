@@ -513,6 +513,25 @@ export const FAQ_INDEMNIZACION_MAL_DIAGNOSTICO: FAQ[] = [
   },
 ];
 
+export const FAQ_INDEMNIZACION_AGRESION_FISICA: FAQ[] = [
+  {
+    heading: "¿Qué pasa después de poner una denuncia por agresión?",
+    text: "Una vez presentada la denuncia, el juzgado competente inicia las diligencias. Se notifica al denunciado, que puede ser citado a declarar, y se recopilan pruebas: informes médicos, testimonios, grabaciones. Si hay indicios suficientes, se celebra el juicio oral. Durante ese juicio, la víctima —a través de su abogado— puede ejercer simultáneamente la acción penal y la acción civil para reclamar la indemnización por los daños sufridos. Cuanto más sólida sea la documentación médica desde el principio, más fácil es sostener la reclamación económica.",
+  },
+  {
+    heading: "¿Cuál es la indemnización por agresión física?",
+    text: "No existe una cantidad fija. La indemnización por agresión física cubre distintos conceptos: los días de curación (valorados según su gravedad), las secuelas permanentes (puntuadas y traducidas en euros según la edad), el daño estético si hay cicatrices o deformidades, el daño moral y los gastos económicos acreditados. Los tribunales aplican como referencia orientativa el baremo de la Ley 35/2015. El resultado final depende de cómo estén documentados y valorados cada uno de esos conceptos.",
+  },
+  {
+    heading: "¿Cuánto te indemnizan por agresión física?",
+    text: "Las cuantías varían mucho según la gravedad. Como referencia orientativa: lesiones leves sin secuelas pueden dar lugar a indemnizaciones de entre 1.000 y 5.000 €; si hubo baja laboral y tratamiento rehabilitador, entre 5.000 y 20.000 €; con secuelas permanentes reconocidas, entre 20.000 y 80.000 €; y en casos muy graves —pérdida de un órgano, deformidad severa, daño neurológico— la cifra puede superar los 100.000 €. Cada caso es distinto y la cuantía final depende siempre de los daños documentados y de la valoración pericial.",
+  },
+  {
+    heading: "¿Qué pasa si denuncias a una persona por agresión física?",
+    text: "El denunciado es informado de los cargos y citado a declarar ante el juez. Puede negar los hechos o reconocerlos. Si hay pruebas suficientes, se formula acusación formal y el caso va a juicio. El acusado se expone a una condena penal —multa o prisión según la gravedad— y, de forma paralela, a ser condenado a pagar una indemnización civil por todos los daños causados: físicos, morales y patrimoniales. Que la víctima cuente con un informe pericial médico que objetive el daño suele ser determinante para el resultado del proceso.",
+  },
+];
+
 export const FAQ_PROBABILIDADES_GANAR_JUICIO: FAQ[] = [
   {
     heading: "¿Qué probabilidades hay de ganar un juicio por negligencia médica?",
