@@ -8,6 +8,11 @@ import ciudadBarcelona from "@/assets/cities/barcelona/barcelona-ciudad.jpg";
 import playaBarcelona from "@/assets/cities/barcelona/playa-de-barcelona.jpg";
 import sagradaFamilia from "@/assets/cities/barcelona/sagrada-familia.jpg";
 
+// Murcia
+import puenteMurcia from "@/assets/cities/murcia/puente-murcia.jpg";
+import ciudadMurcia from "@/assets/cities/murcia/ciudad-murcia.jpg";
+import rioMurcia from "@/assets/cities/murcia/rio-murcia.jpg";
+
 // Sevilla
 import sevillaStreets from "@/assets/cities/sevilla/calles-de-sevilla.jpg";
 import sevillaRiver from "@/assets/cities/sevilla/rio-de-sevilla.jpg";
@@ -80,6 +85,21 @@ export const granada = [
   {
     img: granadaAlhambra,
     alt: "la alhambra de granada",
+  },
+];
+
+export const murcia = [
+  {
+    img: puenteMurcia,
+    alt: "ciudad de Murcia",
+  },
+  {
+    img: ciudadMurcia,
+    alt: "murcia",
+  },
+  {
+    img: rioMurcia,
+    alt: "río Segura de Murcia",
   },
 ];
 
