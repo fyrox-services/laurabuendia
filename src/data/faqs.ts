@@ -573,3 +573,22 @@ export const FAQ_BAJA_LABORAL: FAQ[] = [
     text: "Sí, son perfectamente compatibles. La prestación por incapacidad temporal compensa la pérdida de salario y la gestiona la Seguridad Social o la mutua. La indemnización del baremo de tráfico compensa el daño personal sufrido y la paga la aseguradora. Son vías independientes y no se descuentan entre sí.",
   },
 ];
+
+export const FAQ_NEGLIGENCIA_SEGURIDAD_SOCIAL: FAQ[] = [
+  {
+    heading: "¿Qué se necesita para denunciar una negligencia médica?",
+    text: "Lo imprescindible es la historia clínica completa (informes, pruebas diagnósticas, partes quirúrgicos, consentimientos informados) y un informe pericial médico independiente que analice si la actuación sanitaria se ajustó a los estándares clínicos y qué daño causó. Sin ese informe, la reclamación carece de soporte técnico y tiene muy pocas posibilidades de prosperar. Si el error ocurrió en sanidad pública, además hay que presentar una reclamación de responsabilidad patrimonial ante el Servicio Autonómico de Salud antes de acudir a los juzgados.",
+  },
+  {
+    heading: "¿Cómo poner una reclamación en la Seguridad Social?",
+    text: "La reclamación se presenta por escrito ante el Servicio Autonómico de Salud de tu comunidad: el SERMAS en Madrid, el SAS en Andalucía, el SERGAS en Galicia, etc. En ese escrito hay que exponer los hechos, explicar la relación entre la actuación sanitaria y el daño sufrido, y aportar una valoración del perjuicio. La Administración tiene seis meses para resolver; si no lo hace, se considera denegación por silencio y se puede recurrir ante los juzgados de lo contencioso-administrativo. Hacerlo respaldado por un abogado y un informe pericial médico es prácticamente necesario.",
+  },
+  {
+    heading: "¿Cuánto dinero te dan por una negligencia médica?",
+    text: "No hay una cifra estándar. En negligencias en la sanidad pública no existe un baremo cerrado como el de los accidentes de tráfico, así que cada caso se valora individualmente en función del tipo de daño, su gravedad, las secuelas que hayan quedado, el impacto en la vida diaria y la pérdida de ingresos si la hubiera. Por eso es tan importante que el informe pericial documente bien todos esos aspectos: la cuantía que se puede reclamar depende en gran medida de cómo se argumenta y se acredita el perjuicio.",
+  },
+  {
+    heading: "¿Dónde hay que ir para denunciar una negligencia médica?",
+    text: "Depende de si fue en sanidad pública o privada. Si fue en un hospital o centro de salud de la Seguridad Social, la reclamación se dirige al Servicio Autonómico de Salud mediante un procedimiento de responsabilidad patrimonial. Si deniegan o no contestan en seis meses, el siguiente paso son los juzgados de lo contencioso-administrativo. Si fue en una clínica privada, la vía es la civil ordinaria. En cualquier caso, antes de dar cualquier paso conviene hacer una consulta con un perito médico que valore si el caso tiene base suficiente para reclamar.",
+  },
+];
