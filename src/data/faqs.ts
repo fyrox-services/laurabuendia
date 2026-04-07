@@ -574,6 +574,29 @@ export const FAQ_BAJA_LABORAL: FAQ[] = [
   },
 ];
 
+export const FAQ_EJEMPLOS_INDEMNIZACIONES: FAQ[] = [
+  {
+    heading: "¿Cuánto suelen dar de indemnización por accidente de tráfico?",
+    text: "Depende del tipo y la gravedad de las lesiones. Un latigazo cervical sin secuelas suele rondar los 3.000 €; con secuelas, entre 5.000 y 6.000 €. Lesiones más graves, como una fractura con cirugía y rehabilitación, pueden alcanzar los 20.000-25.000 € o más. La media en accidentes leves se sitúa en torno a los 3.000-4.000 €, pero la cifra varía enormemente según el caso concreto.",
+  },
+  {
+    heading: "¿Qué daños se consideran indemnizables?",
+    text: "El Baremo de la Ley 35/2015 contempla tres bloques principales: las lesiones temporales (los días desde el accidente hasta el alta médica), las secuelas permanentes (daños físicos o psicológicos que persisten tras la recuperación) y los perjuicios patrimoniales (gastos médicos, ingresos dejados de percibir, adaptaciones necesarias). También se incluyen perjuicios personales particulares como la pérdida de calidad de vida o el daño moral derivado de las lesiones.",
+  },
+  {
+    heading: "¿Cuánto tiempo tarda en pagarse la indemnización?",
+    text: "La aseguradora tiene un plazo legal de 3 meses desde la reclamación para hacer una oferta motivada o responder por escrito. Si se acepta la oferta, el pago suele llegar en pocos días. Si se va a juicio, el proceso puede alargarse uno o dos años. Contar con un informe pericial sólido desde el principio puede acelerar las negociaciones y evitar el proceso judicial.",
+  },
+  {
+    heading: "¿Cuál es la mayor indemnización que se puede obtener en un accidente de coche?",
+    text: "No existe un límite máximo establecido. Las indemnizaciones más elevadas corresponden a casos de fallecimiento o lesiones muy graves con secuelas permanentes severas. Una paraplejia puede superar los 500.000 €; una tetraplejia puede llegar a 1.600.000 € o más, según la edad del lesionado y los perjuicios patrimoniales asociados. En casos de fallecimiento, la indemnización para el cónyuge puede rondar los 120.000 €. En cualquier caso, para alcanzar la indemnización máxima posible es imprescindible una valoración pericial rigurosa que documente todos los daños.",
+  },
+  {
+    heading: "¿Cuánto te indemnizan por latigazo cervical?",
+    text: "Depende de los días de recuperación y de si quedan secuelas. En los casos más habituales —baja laboral más periodo de rehabilitación sin secuelas permanentes— la indemnización suele situarse en torno a los 3.000 €. Si quedan secuelas como cervicalgia crónica o limitación de movilidad, la cifra puede llegar a 5.000-6.000 € o más. El problema es que las aseguradoras suelen ofrecer muy por debajo de eso en su primera oferta, por lo que contar con un informe pericial independiente puede marcar una diferencia significativa en la cuantía final.",
+  },
+];
+
 export const FAQ_NEGLIGENCIA_SEGURIDAD_SOCIAL: FAQ[] = [
   {
     heading: "¿Qué se necesita para denunciar una negligencia médica?",
