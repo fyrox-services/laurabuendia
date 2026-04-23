@@ -615,3 +615,22 @@ export const FAQ_NEGLIGENCIA_SEGURIDAD_SOCIAL: FAQ[] = [
     text: "Depende de si fue en sanidad pública o privada. Si fue en un hospital o centro de salud de la Seguridad Social, la reclamación se dirige al Servicio Autonómico de Salud mediante un procedimiento de responsabilidad patrimonial. Si deniegan o no contestan en seis meses, el siguiente paso son los juzgados de lo contencioso-administrativo. Si fue en una clínica privada, la vía es la civil ordinaria. En cualquier caso, antes de dar cualquier paso conviene hacer una consulta con un perito médico que valore si el caso tiene base suficiente para reclamar.",
   },
 ];
+
+export const FAQ_DIFERENCIA_NEGLIGENCIA_MALA_PRAXIS: FAQ[] = [
+  {
+    heading: "¿Cuál es la diferencia entre negligencia y mala práctica?",
+    text: "En España, prácticamente ninguna. 'Negligencia médica' es el término propio del derecho español, el que aparece en el Código Penal y en la jurisprudencia del Tribunal Supremo. 'Mala praxis' o 'mala práctica' tiene origen anglosajón y no está definido formalmente en nuestro ordenamiento jurídico. En la práctica, los tribunales españoles los usan de forma intercambiable: en la misma sentencia puedes encontrar los dos términos haciendo referencia exactamente a lo mismo. Lo que determina si hay base para reclamar no es el término que se utilice, sino si se cumplen los tres requisitos: que el profesional se apartó de la buena práctica clínica, que hubo un daño real y que ese daño fue consecuencia directa de la actuación incorrecta.",
+  },
+  {
+    heading: "¿Cuáles son las 4 C de la mala praxis?",
+    text: "Las '4 C' es un marco de referencia procedente de la formación médica anglosajona para identificar los factores que con más frecuencia están detrás de una reclamación por mala praxis: Caring (atención y trato al paciente), Communication (comunicación clara, especialmente el consentimiento informado), Competence (actuación conforme a los estándares clínicos reconocidos) y Charting (documentación correcta en la historia clínica). En el derecho español no existe esta clasificación formal, pero los cuatro elementos están presentes en cualquier análisis pericial: la falta en cualquiera de ellos, especialmente en la comunicación y la documentación, puede ser determinante en una reclamación.",
+  },
+  {
+    heading: "¿Cuáles son los 5 tipos de mala praxis médica?",
+    text: "Aunque no existe una clasificación oficial única, los tipos más habituales en la práctica pericial y judicial son: errores de diagnóstico (tardío, erróneo o ausente), errores en el tratamiento (medicación incorrecta, dosis equivocadas o terapia inadecuada), errores quirúrgicos (intervención en zona incorrecta, material olvidado, complicaciones técnicas evitables), deficiencias en el consentimiento informado (no explicar los riesgos antes de una intervención) y falta de seguimiento (alta prematura, no derivar al especialista o no controlar correctamente la evolución del paciente). En todos los casos, para que haya mala praxis en sentido legal, el error debe haber causado un daño real al paciente.",
+  },
+  {
+    heading: "¿Cuándo se considera mala praxis?",
+    text: "Se considera mala praxis cuando concurren tres elementos a la vez: primero, que el profesional sanitario se haya apartado de la lex artis, es decir, de los estándares de buena práctica clínica reconocidos para esa situación concreta; segundo, que el paciente haya sufrido un daño real, ya sea físico, psicológico o económico; y tercero, que ese daño sea consecuencia directa de la actuación incorrecta y no de la evolución natural de la enfermedad o de una complicación inevitable. Si falta cualquiera de los tres elementos, no hay mala praxis en sentido legal aunque el resultado haya sido malo.",
+  },
+];
