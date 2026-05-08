@@ -634,3 +634,22 @@ export const FAQ_DIFERENCIA_NEGLIGENCIA_MALA_PRAXIS: FAQ[] = [
     text: "Se considera mala praxis cuando concurren tres elementos a la vez: primero, que el profesional sanitario se haya apartado de la lex artis, es decir, de los estándares de buena práctica clínica reconocidos para esa situación concreta; segundo, que el paciente haya sufrido un daño real, ya sea físico, psicológico o económico; y tercero, que ese daño sea consecuencia directa de la actuación incorrecta y no de la evolución natural de la enfermedad o de una complicación inevitable. Si falta cualquiera de los tres elementos, no hay mala praxis en sentido legal aunque el resultado haya sido malo.",
   },
 ];
+
+export const FAQ_CAIDA_VIA_PUBLICA: FAQ[] = [
+  {
+    heading: "¿Qué es la indemnización por caída?",
+    text: "Es la compensación económica a la que tiene derecho una persona que ha sufrido lesiones como consecuencia de una caída provocada por el mal estado de una vía pública, un establecimiento o cualquier espacio del que un tercero sea responsable. En el caso de las caídas en la calle, la responsabilidad recae sobre el ayuntamiento, que tiene la obligación legal de mantener las vías en condiciones seguras. La indemnización cubre el daño físico, las secuelas que queden, el impacto económico y el sufrimiento derivado del accidente.",
+  },
+  {
+    heading: "¿Qué daños son indemnizables?",
+    text: "Son indemnizables todos los daños que se puedan acreditar y que tengan relación directa con la caída: los días de recuperación —con o sin hospitalización, con o sin baja laboral—, las secuelas permanentes que hayan quedado, el daño estético si hay cicatrices o alteraciones visibles, el daño moral por el sufrimiento vivido, y los perjuicios económicos como gastos médicos, fisioterapia, desplazamientos o pérdida de ingresos. La clave está en documentar cada uno de estos conceptos desde el primer momento.",
+  },
+  {
+    heading: "¿Cuánta indemnización puedo recibir por una caída?",
+    text: "Depende de la gravedad de las lesiones y de cómo estén documentadas. Como orientación: lesiones leves sin secuelas suelen dar lugar a entre 1.000 y 8.000 €; con baja laboral y tratamiento rehabilitador, entre 8.000 y 25.000 €; con secuelas permanentes reconocidas, más de 20.000 € y sin límite definido según su gravedad. Estas cifras son solo referencias. Lo que determina la cuantía real es la valoración médico-legal del daño: los días de curación clasificados correctamente, las secuelas puntuadas según el baremo y los perjuicios económicos acreditados.",
+  },
+  {
+    heading: "¿Cuánto es la indemnización por lesiones?",
+    text: "No existe una tabla fija de indemnizaciones por lesiones en general. La cuantía se calcula caso a caso en función de varios factores: la gravedad y duración de las lesiones, si han quedado secuelas permanentes y cuáles, la edad del afectado, el impacto en su vida laboral y personal, y los gastos económicos derivados. En España se utiliza como referencia el baremo de la Ley 35/2015 para calcular estas cuantías, aunque en reclamaciones contra la administración su aplicación es orientativa. Un informe pericial médico es lo que permite cuantificar cada concepto de forma técnica y justificada.",
+  },
+];
