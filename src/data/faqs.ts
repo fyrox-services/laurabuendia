@@ -635,6 +635,25 @@ export const FAQ_DIFERENCIA_NEGLIGENCIA_MALA_PRAXIS: FAQ[] = [
   },
 ];
 
+export const FAQ_DANO_MORAL_NEGLIGENCIA_MEDICA: FAQ[] = [
+  {
+    heading: "¿Qué es el daño moral en una negligencia médica?",
+    text: "El daño moral es el sufrimiento psicológico y emocional que experimenta una persona como consecuencia de una negligencia médica. Incluye la angustia, el miedo, el impacto en la calidad de vida y el deterioro del bienestar mental derivado de lo ocurrido. Es un perjuicio indemnizable de forma independiente al daño físico o a la pérdida económica.",
+  },
+  {
+    heading: "¿Se puede reclamar el daño moral si no hay secuelas físicas?",
+    text: "Sí. El daño moral es un perjuicio autónomo que no depende de que queden secuelas permanentes. Si sufriste un procedimiento innecesario, un diagnóstico erróneo o cualquier otra actuación negligente que te haya causado un sufrimiento real, ese impacto psicológico puede ser reclamable aunque te hayas recuperado físicamente por completo.",
+  },
+  {
+    heading: "¿Cuánto se puede reclamar por daño moral en una negligencia?",
+    text: "No existe una cifra fija. Los tribunales lo valoran de forma discrecional según la gravedad del caso, el impacto en la vida del paciente y la jurisprudencia comparable. A modo orientativo, en casos con diagnóstico tardío grave las cuantías oscilan entre 20.000 y 80.000 €; en supuestos de fallecimiento, entre 30.000 y 90.000 € para familiares directos; en negligencias con secuelas graves, pueden superarse los 100.000 €.",
+  },
+  {
+    heading: "¿Cómo se demuestra el daño moral ante el juez?",
+    text: "A través de un informe pericial médico que documente el sufrimiento de forma objetiva: el impacto en la vida cotidiana, el estado psicológico del paciente, los tratamientos derivados (si los hay) y el nexo causal entre la negligencia y ese sufrimiento. Sin ese respaldo técnico, el daño moral es muy difícil de acreditar en un procedimiento judicial.",
+  },
+];
+
 export const FAQ_CAIDA_VIA_PUBLICA: FAQ[] = [
   {
     heading: "¿Qué es la indemnización por caída?",
