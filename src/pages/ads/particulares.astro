@@ -2,8 +2,12 @@
 import AdsLayout from "@/layouts/AdsLayout.astro";
 import HeroAds from "@/components/HeroAds.astro";
 import PainCards from "@/components/PainCards.astro";
+import ScenarioCards from "@/components/ScenarioCards.astro";
 import Heading from "@/components/Heading.astro";
 import Section from "@/components/Section.astro";
+import CenterContent from "@/components/CenterContent.astro";
+import FAQ from "@/components/FAQ.astro";
+import { FAQ_ADS_PARTICULARES } from "@/data/faqs";
 ---
 
 <AdsLayout
@@ -14,5 +18,15 @@ import Section from "@/components/Section.astro";
   <Section>
     <Heading>Lorem ipsum dolor sit amet consectetur</Heading>
     <PainCards />
+  </Section>
+  <Section>
+    <Heading>¿Te sientes identificado con alguno de estos casos?</Heading>
+    <ScenarioCards />
+  </Section>
+  <Section>
+    <CenterContent modifier="faq-section">
+      <Heading>preguntas frecuentes</Heading>
+      <FAQ faqs={FAQ_ADS_PARTICULARES} />
+    </CenterContent>
   </Section>
 </AdsLayout>

@@ -1,0 +1,92 @@
+---
+const scenarios = [
+  {
+    title: "Accidente de tráfico",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+    payer: "Lorem ipsum: la aseguradora del vehículo contrario",
+  },
+  {
+    title: "Accidente en vía pública",
+    description:
+      "Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.",
+    payer: "Lorem ipsum: la aseguradora del ayuntamiento",
+  },
+  {
+    title: "Accidente doméstico",
+    description:
+      "Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    payer: "Lorem ipsum: el seguro de responsabilidad civil",
+  },
+  {
+    title: "Mordedura de perro",
+    description:
+      "Ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+    payer: "Lorem ipsum: el seguro del propietario del animal",
+  },
+];
+---
+
+<ul class="scenario-cards">
+  {
+    scenarios.map(({ title, description, payer }) => (
+      <li class="card">
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+        <p class="payer">{payer}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .scenario-cards {
+    margin: 3rem 0 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .card {
+    border: 2px solid var(--third);
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .card > div {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    font-size: var(--fs-xl);
+    color: var(--primary);
+  }
+
+  p {
+    font-size: var(--fs-md);
+  }
+
+  .payer {
+    background-color: var(--third);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    font-family: var(--base-bold);
+    font-size: var(--fs-sm);
+    color: var(--primary-dark);
+    width: fit-content;
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    .scenario-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

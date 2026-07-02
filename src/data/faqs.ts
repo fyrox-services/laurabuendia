@@ -654,6 +654,37 @@ export const FAQ_DANO_MORAL_NEGLIGENCIA_MEDICA: FAQ[] = [
   },
 ];
 
+export const FAQ_ADS_PARTICULARES: FAQ[] = [
+  {
+    heading: "¿Cuánto cuesta un informe pericial?",
+    text: "Depende del tipo de lesión, de la documentación disponible y de si hace falta ratificación en juicio, así que no hay un precio único. Como orientación, un informe de valoración del daño corporal suele moverse en una horquilla que te confirmo en la primera toma de contacto. Lo más sensato es que echemos un vistazo a tu caso: la primera valoración de viabilidad es sin compromiso, y ahí te doy un presupuesto cerrado y ajustado a lo que necesitas.",
+  },
+  {
+    heading: "¿Qué documentación necesito aportar?",
+    text: "Toda la que tengas relacionada con las lesiones: informes médicos, partes de urgencias, pruebas de imagen (radiografías, resonancias, TAC), informe de alta, y si los hay, el atestado del accidente o el informe de la aseguradora. En lesiones visibles como cicatrices o quemaduras, también fotografías. Si te falta algo, no te preocupes: en la primera valoración te digo exactamente qué es imprescindible y qué no.",
+  },
+  {
+    heading: "¿Cuánto tardáis en entregar el informe?",
+    text: "El plazo depende de la complejidad del caso y de que la documentación esté completa, pero trabajo para entregártelo en el menor tiempo posible, sobre todo si hay una fecha de juicio o un plazo que respetar. Dímelo desde el principio y lo priorizamos.",
+  },
+  {
+    heading: "¿Tengo que acudir a una visita presencial?",
+    text: "No siempre. Muchos casos pueden valorarse a partir de la documentación médica, y en otros conviene una exploración presencial para valorar bien las secuelas. En la primera toma de contacto te digo qué necesita tu caso concreto, y si hace falta vernos, buscamos la forma más cómoda para ti.",
+  },
+  {
+    heading: "¿Trabajáis en toda España?",
+    text: "Sí. Aunque estoy en Madrid, elaboro informes para casos de toda España, y en muchos de ellos no es necesario que te desplaces. Cuéntame dónde estás y lo organizamos.",
+  },
+  {
+    heading: "¿El informe sirve para presentarlo en un juicio? ¿Lo defendéis?",
+    text: "Sí, y es justo su propósito. El informe se elabora con rigor pericial y conforme al baremo vigente para que tenga valor probatorio ante el juez. Y si el procedimiento llega a juicio, acudo a ratificarlo y defender sus conclusiones en sala. Es la diferencia entre un informe que se sostiene y uno que la parte contraria puede tumbar.",
+  },
+  {
+    heading: "No sé si mi caso tiene recorrido. ¿Qué hago?",
+    text: "Escríbeme y lo miramos. Antes de que te comprometas a nada, hago una primera valoración de viabilidad de tu caso, sin compromiso, para decirte con honestidad si merece la pena seguir adelante. Si veo que no tienes recorrido, te lo diré; prefiero eso a hacerte perder tiempo y dinero.",
+  },
+];
+
 export const FAQ_CAIDA_VIA_PUBLICA: FAQ[] = [
   {
     heading: "¿Qué es la indemnización por caída?",
