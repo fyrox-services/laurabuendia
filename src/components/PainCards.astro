@@ -1,0 +1,79 @@
+---
+const situations = [
+  {
+    title: "Lorem ipsum dolor sit amet",
+    description:
+      "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    title: "Ut enim ad minim veniam",
+    description:
+      "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+  },
+  {
+    title: "Duis aute irure dolor",
+    description:
+      "In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+  },
+  {
+    title: "Excepteur sint occaecat",
+    description:
+      "Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+  },
+];
+---
+
+<ul class="pain-cards">
+  {
+    situations.map(({ title, description }) => (
+      <li class="card">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<p class="bridge delimit-text">
+  Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+<style>
+  .pain-cards {
+    margin: 3rem 0 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .card {
+    border: 2px solid var(--third);
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    font-size: var(--fs-xl);
+    color: var(--primary);
+  }
+
+  p {
+    font-size: var(--fs-md);
+  }
+
+  .bridge {
+    margin-top: 3rem;
+    font-size: var(--fs-base);
+    font-family: var(--base-bold);
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    .pain-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

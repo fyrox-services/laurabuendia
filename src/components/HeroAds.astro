@@ -1,0 +1,109 @@
+---
+import { Image } from "astro:assets";
+import heroPhoto from "@/assets/mark/laura_above.webp";
+---
+
+<section class="hero-ads">
+  <div class="wrapper hero-wrap">
+    <div class="presentation">
+      <h1 class="text-gradient-primary">
+        El informe pericial que tú y tu abogado necesitáis para reclamar lo
+        que te corresponde
+      </h1>
+      <p class="tagline">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="photo">
+      <picture class="image-mask">
+        <Image
+          loading="eager"
+          src={heroPhoto}
+          alt="Laura Buendía, perita médica"
+          width={800}
+          height={533}
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-ads {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: calc(var(--header-height) * 1.5);
+    padding: 0 0 3rem;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: var(--fs-3xl);
+    line-height: 1.1;
+  }
+
+  .tagline {
+    font-size: var(--fs-md);
+  }
+
+  .image-mask {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    mask-image: linear-gradient(var(--light) 50%, transparent 100%);
+  }
+
+  .image-mask img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    .hero-wrap {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0;
+      padding: 5rem 0;
+    }
+
+    .presentation {
+      flex: 0 0 55%;
+    }
+
+    h1 {
+      font-size: var(--fs-5xl);
+    }
+
+    .tagline {
+      font-size: var(--fs-base);
+    }
+
+    .image-mask {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+</style>

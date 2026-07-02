@@ -1,0 +1,77 @@
+---
+import { MainModalForm } from "@/components/preact/MainModalForm";
+import "@/styles/global.css";
+import "@/styles/utils.css";
+import { ClientRouter } from "astro:transitions";
+import { siteName } from "@/data/global";
+import ogImgDefault from "@/assets/mark/laura-buendia.jpg";
+
+interface Props {
+  bodyClass?: string;
+  metaTitle: string;
+  metaDescription: string;
+  ogImage?: string;
+}
+
+const {
+  bodyClass,
+  metaDescription,
+  metaTitle = "Add Meta Title",
+  ogImage = ogImgDefault.src,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{metaTitle}</title>
+
+    <!-- Fuentes -->
+    <link
+      rel="preload"
+      href="/fonts/Poppins-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/Poppins-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- og -->
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Laura Buendía" />
+    <meta property="og:image" content={`${Astro.url.origin}${ogImage}`} />
+    <meta name="site:name" content={siteName} />
+    <meta name="author" content="Laura Buendía" />
+    <meta name="publisher" content={siteName} />
+
+    <!-- seo -->
+    <link rel="canonical" href={Astro.url} />
+    <meta name="description" content={metaDescription} />
+    <meta name="robots" content="noindex" />
+
+    <ClientRouter />
+  </head>
+  <body class={bodyClass}>
+    <main>
+      <slot />
+    </main>
+    <MainModalForm client:idle />
+  </body>
+</html>
