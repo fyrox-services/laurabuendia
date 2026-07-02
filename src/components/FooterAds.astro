@@ -1,0 +1,65 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer-ads">
+  <div class="wrapper footer-ads-wrap">
+    <p class="trust-line">Dra. Laura Buendía · Perito Médico · Madrid, ámbito nacional</p>
+    <p class="copyright">&copy; {year} Laura Buendía. Todos los derechos reservados.</p>
+    <ul class="nav-legal">
+      <li>
+        <a href="/legal/aviso-legal">aviso legal</a>
+      </li>
+      <li>
+        <a href="/legal/politica-privacidad">política de privacidad</a>
+      </li>
+      <li>
+        <a href="/legal/politica-cookies">política de cookies</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .footer-ads {
+    margin-top: 5rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--gray);
+  }
+
+  .footer-ads-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .trust-line {
+    font-size: var(--fs-sm);
+    font-family: var(--base-bold);
+    color: var(--dark-500);
+  }
+
+  .copyright {
+    font-size: var(--fs-xs);
+    color: var(--dark-900);
+  }
+
+  .nav-legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-legal a {
+    font-size: var(--fs-xs);
+    color: var(--dark-900);
+  }
+
+  .nav-legal a:hover {
+    color: var(--primary);
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import { MainModalForm } from "@/components/preact/MainModalForm";
+import FooterAds from "@/components/FooterAds.astro";
 import "@/styles/global.css";
 import "@/styles/utils.css";
 import { ClientRouter } from "astro:transitions";
@@ -73,5 +74,6 @@ const {
       <slot />
     </main>
     <MainModalForm client:idle />
+    <FooterAds />
   </body>
 </html>
