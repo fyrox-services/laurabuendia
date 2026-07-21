@@ -20,7 +20,8 @@
     "plyr": "3.7.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-hook-form": "7.56.1"
+    "react-hook-form": "7.56.1",
+    "sharp": "^0.34.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
