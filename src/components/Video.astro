@@ -47,6 +47,16 @@ import "plyr/dist/plyr.css";
     object-fit: cover;
   }
 
+  /* En pantalla completa no "cubrir": el video vertical se vería recortado
+     en pantallas horizontales. Mostrarlo completo con barras negras.
+     Plyr usa :fullscreen (nativo) o .plyr--fullscreen-fallback (navegadores
+     sin soporte), no una clase "--fullscreen-active". */
+  .plyr:fullscreen video,
+  .plyr--fullscreen-fallback video {
+    object-fit: contain !important;
+    background: #000;
+  }
+
   /* Colores de controles Plyr */
   .plyr {
     --plyr-video-control-background-hover: var(--primary);

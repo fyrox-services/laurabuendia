@@ -3,6 +3,7 @@ import AdsLayout from "@/layouts/AdsLayout.astro";
 import HeroAds from "@/components/HeroAds.astro";
 import PainCards from "@/components/PainCards.astro";
 import ScenarioCards from "@/components/ScenarioCards.astro";
+import WhyLauraVideo from "@/components/WhyLauraVideo.astro";
 import Heading from "@/components/Heading.astro";
 import Section from "@/components/Section.astro";
 import CenterContent from "@/components/CenterContent.astro";
@@ -22,6 +23,15 @@ import { FAQ_ADS_PARTICULARES } from "@/data/faqs";
   <Section>
     <Heading>¿Te sientes identificado con alguno de estos casos?</Heading>
     <ScenarioCards />
+  </Section>
+  <Section>
+    <CenterContent>
+      <Heading class="text-center">
+        Si piensas que la compensación económica que te ofrecen está muy por
+        debajo
+      </Heading>
+      <WhyLauraVideo />
+    </CenterContent>
   </Section>
   <Section>
     <CenterContent modifier="faq-section">

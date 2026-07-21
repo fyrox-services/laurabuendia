@@ -1,0 +1,25 @@
+---
+import Video from "@/components/Video.astro";
+import video from "@/assets/videos/ads-particulares.mp4";
+---
+
+<p class="subtitle delimit-text">
+  En este vídeo de 44 segundos te digo algo que te interesa
+</p>
+
+<Video id="why-laura-video" src={video} />
+
+<style>
+  .subtitle {
+    font-size: var(--fs-md);
+    font-family: var(--base-bold);
+    text-align: center;
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    .subtitle {
+      font-size: var(--fs-base);
+    }
+  }
+</style>

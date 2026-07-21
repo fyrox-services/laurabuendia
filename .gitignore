@@ -26,3 +26,6 @@ CLAUDE.md
 .idea/
 todo.md
 snippets.json
+
+# raw/unoptimized video sources (too large to commit)
+*.raw.mp4
