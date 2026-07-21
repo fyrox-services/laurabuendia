@@ -1,19 +1,21 @@
 ---
 import { Image } from "astro:assets";
 import heroPhoto from "@/assets/mark/laura_above.webp";
+import MainCta from "@/components/MainCta.astro";
 ---
 
 <section class="hero-ads">
   <div class="wrapper hero-wrap">
     <div class="presentation">
       <h1 class="text-gradient-primary">
-        El informe pericial que tú y tu abogado necesitáis para reclamar lo
-        que te corresponde
+        El informe pericial que tú y tu abogado necesitáis para reclamar lo que
+        te corresponde
       </h1>
       <p class="tagline">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Redacto tu informe pericial y de valoración del daño corporal en 7 días
+        y si es necesario lo ratifico frente a un juez.
       </p>
+      <MainCta>contáctame aquí</MainCta>
     </div>
 
     <div class="photo">
@@ -60,6 +62,7 @@ import heroPhoto from "@/assets/mark/laura_above.webp";
 
   .tagline {
     font-size: var(--fs-md);
+     text-wrap: balance;
   }
 
   .image-mask {

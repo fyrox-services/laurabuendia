@@ -1,0 +1,121 @@
+---
+import Arrow from "@/components/icons/Arrow.astro";
+
+const steps = [
+  {
+    title: "Contacto",
+    description:
+      "Te pones en contacto conmigo y te explico con detalle, sin compromiso, cómo podría ayudarte en tu caso.",
+  },
+  {
+    title: "Exploración",
+    description:
+      "Si el caso lo requiere, realizamos una exploración física para completar la valoración médica.",
+  },
+  {
+    title: "Redacción del informe",
+    description:
+      "Redacto el informe pericial con el rigor y la claridad que tú y tu abogado necesitáis para reclamar.",
+  },
+  {
+    title: "Ratificación judicial",
+    description:
+      "Si lo necesitas, ratifico el informe ante el juez para darle plena validez en el proceso.",
+  },
+];
+---
+
+<ul class="process-steps">
+  {
+    steps.map(({ title, description }, i) => (
+      <>
+        <li class="card">
+          <span>{i + 1}</span>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </li>
+        {i <= 2 && (
+          <li class="li-with-arrow">
+            <Arrow />
+          </li>
+        )}
+      </>
+    ))
+  }
+</ul>
+
+<style>
+  .process-steps {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 3rem;
+  }
+
+  .card {
+    border: 2px solid var(--third);
+    padding: 1rem;
+    border-radius: var(--radius);
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    min-height: 20dvh;
+    max-height: 500px;
+  }
+
+  .li-with-arrow {
+    color: var(--primary);
+    transform: rotate(90deg);
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    font-size: var(--fs-md);
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--base-bold);
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  h3 {
+    font-size: var(--fs-xl);
+    max-width: 20ch;
+  }
+
+  p {
+    font-size: var(--fs-md);
+  }
+
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      min-height: 220px;
+    }
+
+    /* en 2 columnas el flujo ya no es lineal, se retiran las flechas */
+    .li-with-arrow {
+      display: none;
+    }
+  }
+</style>

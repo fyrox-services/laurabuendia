@@ -4,6 +4,9 @@ import HeroAds from "@/components/HeroAds.astro";
 import PainCards from "@/components/PainCards.astro";
 import ScenarioCards from "@/components/ScenarioCards.astro";
 import WhyLauraVideo from "@/components/WhyLauraVideo.astro";
+import ProcessSteps from "@/components/ProcessSteps.astro";
+import { MainForm } from "@/components/preact/MainForm";
+import MainCta from "@/components/MainCta.astro";
 import Heading from "@/components/Heading.astro";
 import Section from "@/components/Section.astro";
 import CenterContent from "@/components/CenterContent.astro";
@@ -17,21 +20,39 @@ import { FAQ_ADS_PARTICULARES } from "@/data/faqs";
 >
   <HeroAds />
   <Section>
-    <Heading>Lorem ipsum dolor sit amet consectetur</Heading>
+    <Heading>Esto es lo que suele pasar cuando reclamas tú solo</Heading>
     <PainCards />
+    <div class="cta-row">
+      <MainCta>contáctame aquí</MainCta>
+    </div>
   </Section>
   <Section>
     <Heading>¿Te sientes identificado con alguno de estos casos?</Heading>
     <ScenarioCards />
+    <div class="cta-row">
+      <MainCta>contáctame aquí</MainCta>
+    </div>
   </Section>
   <Section>
     <CenterContent>
       <Heading class="text-center">
-        Si piensas que la compensación económica que te ofrecen está muy por
-        debajo
+        Esto marcará la diferencia
       </Heading>
       <WhyLauraVideo />
     </CenterContent>
+  </Section>
+
+  <Section>
+    <CenterContent>
+      <MainForm client:visible modifier="landing" />
+    </CenterContent>
+  </Section>
+  <Section>
+    <Heading class="text-center">Cómo trabajaremos</Heading>
+    <ProcessSteps />
+    <div class="cta-row">
+      <MainCta>contáctame aquí</MainCta>
+    </div>
   </Section>
   <Section>
     <CenterContent modifier="faq-section">
@@ -40,3 +61,11 @@ import { FAQ_ADS_PARTICULARES } from "@/data/faqs";
     </CenterContent>
   </Section>
 </AdsLayout>
+
+<style>
+  .cta-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+</style>
